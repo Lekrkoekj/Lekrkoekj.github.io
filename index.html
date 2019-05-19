@@ -316,6 +316,9 @@ background-repeat: repeat!important;
   background: #555; 
   box-shadow: 0 6px 20px 0 #5faceabf; 
 }
+.site-container {
+    background: #ffffffa3;
+        }
     </style>
     <title>Lekrkoekj Geems</title></head>
 <body>
@@ -333,10 +336,8 @@ Random link button- By JavaScript Kit (http://javascriptkit.com)
 Over 300+ free scripts!
 This credit MUST stay intact for use
 */
-
 //specify random links below. You can have as many as you want
 var randomlinks=new Array()
-
 randomlinks[0]="/papa-s-pancakeria"
 randomlinks[1]="/papa-s-pizzaria"
 randomlinks[2]="/papa-s-bakeria"
@@ -469,17 +470,16 @@ randomlinks[129]="/connect-4"
 randomlinks[130]="/whack-your-ex"
 randomlinks[131]="/bouncing-balls"
 randomlinks[132]="/poop-clicker"
-
-    
-
-    
-
 function randomlink(){
 window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
 }
 //-->
-
-
 </script>
+    
+<div class="site-container">
+    <button class="normal">Button</button>
+    </div>
+    
+    
     </body>
 </html>
