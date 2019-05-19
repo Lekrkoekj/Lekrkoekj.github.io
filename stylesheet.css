@@ -140,7 +140,7 @@ cursor: pointer;
     margin-bottom: 10px;
     transition: 0.3s;
     width: 100%;
-    height: 41px;
+    height: 38px;
     transition-delay: 0.2s;
     display: flex;
     justify-content: center;
@@ -148,7 +148,7 @@ cursor: pointer;
     .menu:hover {
     box-shadow: 0 6px 20px 0 #5faceabf; 
     max-width: 1019px;
-    height: 77px;
+    height: 78px;
     }
     .menu:hover .menuimg {
     height: 30px;
@@ -166,7 +166,7 @@ cursor: pointer;
     }
     .mbtnS, .mbtnM, .mbtnE {
     position: relative;
-    top: -14px;
+    top: -18px;
 }
     .menuimg:hover {
         transform: rotate(-360deg);
@@ -241,20 +241,6 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         100% {opacity:1; position: relative; top: 0px;}
     }
 
-.name {
-    padding-bottom: 15px !important;
-}
-
-
-#wrapper, [data-design="custom_layout_footer"], #footer {
-background:#ffffffa3!important;
-border-color:#ffffff00!important;
-}
-#footer {
-color: #ffffff00!important;
-opacity: 0;
-}
-
 @keyframes zoom {
 50% {transform: scale(2);}
 }
@@ -277,10 +263,6 @@ transform: scale(1.025);
 box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0), 0 0px 20px 0 #5faceabf; 
 }
 
-body#view-usersite {
-animation: bg-scroll 500s infinite cubic-bezier(0, 0, 0, 0);
-background-repeat: repeat!important; 
-}
 
 @keyframes bg-scroll {
   0% {
@@ -289,9 +271,6 @@ background-repeat: repeat!important;
   100% {
     background-position: -8000px 0px;
   }
-}
-#wrapper {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 ::-webkit-scrollbar {
@@ -310,14 +289,12 @@ background-repeat: repeat!important;
 }
 .site-container {
     background: #ffffffa3;
-   /*margin-left: -8px;
-    margin-right: -8px;*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-        .full-topbar {
-            /*margin-left: -8px;*/
-        }
-        .topbar {
-            padding-bottom: 10px;
-            padding-top:9px;
-        }
+.topbar {
+    padding-bottom: 10px;
+    padding-top:9px;
+}
+span.menutext {
+    font-family: Tahoma;
+}
