@@ -184,6 +184,7 @@ body {
     background-size: cover;
     background-position: top center;
     background-attachment: fixed;
+    margin:0;
 }
 
 button.normal, button#fullscreen {
@@ -309,14 +310,14 @@ background-repeat: repeat!important;
 }
 .site-container {
     background: #ffffffa3;
-    margin-left: -8px;
-    margin-right: -8px;
+   /*margin-left: -8px;
+    margin-right: -8px;*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
         .full-topbar {
-            margin-left: -8px
+            /*margin-left: -8px;*/
         }
         .topbar {
             padding-bottom: 10px;
-            padding-top:1px;
+            padding-top:9px;
         }
