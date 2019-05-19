@@ -102,6 +102,8 @@ display: inline-block;
 font-size: 16px;
 border-radius: 25px 0px 0px 25px;
 transition: 0.3s;
+position: relative;
+top: -18px;
     }
 button.mbtnM {
 background-color: transparent; 
@@ -114,6 +116,8 @@ display: inline-block;
 font-size: 16px;
 transition: 0.3s;
 border-radius: 0px;
+position: relative;
+top: -18px;
     }
         button.mbtnE {
 background-color: transparent; 
@@ -126,6 +130,8 @@ display: inline-block;
 font-size: 16px;
 border-radius: 0px 25px 25px 0px;
 transition: 0.3s;
+position: relative;
+top: -18px;
     }
 button.mbtnS:hover, button.mbtnM:hover, button.mbtnE:hover {
 background-color: #ffffff80;
@@ -164,10 +170,6 @@ cursor: pointer;
     .menu:hover .mbtnS, .menu:hover .mbtnM, .menu:hover .mbtnE {
         top:0;
     }
-    .mbtnS, .mbtnM, .mbtnE {
-    position: relative;
-    top: -18px;
-}
     .menuimg:hover {
         transform: rotate(-360deg);
     }
@@ -175,8 +177,6 @@ cursor: pointer;
         transform: rotate(-360deg);
         transition-delay: 0;
     }
-
-
 body {
     background-image: url(http://www.simpsite.nl/uploads/161/920/Home/achergrond976939.png);
     animation: bg-scroll 500s infinite cubic-bezier(0, 0, 0, 0);
@@ -188,7 +188,7 @@ body {
 }
 
 button.normal, button#fullscreen {
-background-color: #F0F0EB; 
+background-color: #f0f0ebbf; 
 border: none;
 color: black;
 padding: 10px 15px;
@@ -201,7 +201,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 transition: 0.3s; 
     }
 button.big {
-background-color: #F0F0EB; 
+background-color: #f0f0ebbf; 
 border: none;
 color: black;
 padding: 10px 15px;
@@ -214,7 +214,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 transition: 0.3s; 
     }
 button.small {
-background-color: #F0F0EB; 
+background-color: #f0f0ebbf; 
 border: none;
 color: black;
 padding: 10px 15px;
