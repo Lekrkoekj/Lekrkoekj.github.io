@@ -133,7 +133,7 @@ cursor: pointer;
 }
     .menu {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    max-width: 1014px;
+    max-width: 992px;
     border-radius: 25px;
     margin: auto;
     background-color: #ffffffcc;
@@ -147,7 +147,7 @@ cursor: pointer;
 }
     .menu:hover {
     box-shadow: 0 6px 20px 0 #5faceabf; 
-    max-width: 1019px;
+    max-width: 998px;
     height: 78px;
     }
     .menu:hover .menuimg {
