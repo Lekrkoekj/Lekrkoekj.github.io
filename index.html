@@ -1,6 +1,105 @@
 <!DOCTYPE html>
 <html>
     <head><style>
+    .reddit:hover, .youtube:hover, .instagram:hover, .discord:hover, .discordtech:hover, .adswakos:hover {
+        transform: scale(1.1);
+    }
+    .reddit, .youtube, .instagram, .lkg-logo, .discord, .discordtech, .adswakos {
+        transition: 0.3s ease-in-out;
+    }
+    img.lkg-logo:hover {
+    transform: scale(1.05) !important;
+}
+div#header {
+padding: 0px !important;
+}
+div#content {
+padding-top: 0px;
+}
+
+.made-with-simpsite {
+    /*opacity: 0 !important;*/
+}
+
+
+
+img.reddit {
+transition: 0.3s;
+margin-left: 10px;
+margin-right: 10px;
+margin-bottom:25px;
+border-radius: 12px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+max-width: 60px;
+max-height:60px;
+}
+    img.youtube {
+transition: 0.3s;
+margin-left: 10px;
+margin-right: 10px;
+margin-bottom: 25px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+border-radius:12px;
+max-width: 60px;
+max-height:60px;
+width: 60px;
+
+}
+    img.instagram {
+transition: 0.3s;
+margin-left: 10px;
+margin-right: 10px;
+margin-bottom:25px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+max-width: 60px;
+max-height:60px;
+border-radius: 12px;
+
+}
+    .lkg-logo {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+max-width:372px;
+border-radius: 20px;
+transition: 0.3s;
+margin-left: 207px;
+margin-right: 207px;
+}
+.lkg-logo:hover, img.youtube:hover, img.instagram:hover, img.discord:hover, img.reddit:hover, img.adswakos:hover, img.discordtech:hover {
+box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0), 0 0px 20px 0 #5faceabf; 
+}
+    img.discord {
+transition: 0.3s;
+margin-left: 10px;
+margin-right: 10px;
+margin-bottom:25px;
+max-width:60px !important;
+max-height:60px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+border-radius:12px;
+    }
+    img.discordtech {
+transition: 0.3s;
+margin-left: 10px;
+margin-right: 10px;
+margin-bottom:25px;
+max-width:60px;
+max-height:60px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+border-radius:12px;
+    }
+    img.adswakos {
+transition: 0.3s;
+margin-left: 10px;
+margin-right: 10px;
+margin-bottom:25px;
+max-width:60px;
+max-height:60px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+border-radius:12px;
+}
+
+
+
     button.mbtnS {
 background-color: transparent; 
 border: none;
@@ -43,7 +142,7 @@ cursor: pointer;
 }
     .menu {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    max-width: 1014px;
+    max-width: 992px;
     border-radius: 25px;
     margin: auto;
     background-color: #ffffffcc;
@@ -57,7 +156,7 @@ cursor: pointer;
 }
     .menu:hover {
     box-shadow: 0 6px 20px 0 #5faceabf; 
-    max-width: 1019px;
+    max-width: 998px;
     height: 73px;
     }
     .menu:hover .menuimg {
@@ -81,13 +180,330 @@ cursor: pointer;
     .menuimg:hover {
         transform: rotate(-360deg);
     }
-    .mbtnS:hover .menuimg, .mbtnM:hover .menuimg, .mbtnE:hover .menuimg {
+.mbtnS:hover .menuimg, .mbtnM:hover .menuimg, .mbtnE:hover .menuimg {
         transform: rotate(-360deg);
         transition-delay: 0;
     }
+
+
+
+button.normal, button#fullscreen {
+background-color: #F0F0EB; 
+border: none;
+color: black;
+padding: 10px 15px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+border-radius: 25px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+transition: 0.3s; 
+    }
+button.big {
+background-color: #F0F0EB; 
+border: none;
+color: black;
+padding: 10px 15px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 25px;
+border-radius: 25px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+transition: 0.3s; 
+    }
+button.small {
+background-color: #F0F0EB; 
+border: none;
+color: black;
+padding: 10px 15px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 10px;
+border-radius: 25px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+transition: 0.3s; 
+    }
+
+button.normal:hover, button.big:hover, button.small:hover, button#fullscreen:hover {
+background-color:#d4d4d1;
+cursor:pointer;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #5faceabf;
+}
+
+.made-with-simpsite {
+opacity:0 !important;
+}
+[data-uid="usersiteFooter"] {
+    opacity: 0. !important;
+}
+div#footer {
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+a.button {
+font-size: 0px !important;
+margin: 0 !important;
+padding: 0 !important;
+border: 0 !important;
+}
+.slogan {
+margin: 0 !important;
+font-size: 0 !important;
+}
+.logo {
+font-size: 0 !important;
+margin: 0 !important;
+}
+.made-with-simpsite#made-with-simpsite {
+height: 0 !important;
+max-height: 0 !important;
+min-height: 0 !important;
+}
+
+iframe {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@keyframes fade {
+        0% {opacity:0; position: relative; top: 15px;}
+        100% {opacity:1; position: relative; top: 0px;}
+    }
+
+.name {
+    padding-bottom: 15px !important;
+}
+
+
+#wrapper, [data-design="custom_layout_footer"], #footer {
+background:#ffffffa3!important;
+border-color:#ffffff00!important;
+}
+#footer {
+color: #ffffff00!important;
+opacity: 0;
+}
+
+@keyframes zoom {
+50% {transform: scale(2);}
+}
+@keyframes draai {
+50% {transform: rotateZ(360deg);}
+}
+@keyframes knipper {
+50% {opacity:0;}
+}
+
+img.big-discord-icon {
+height: 180px !important; 
+width: 180px !important;
+transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 12px;
+}
+.big-discord-icon:hover {
+transform: scale(1.025);
+box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0), 0 0px 20px 0 #5faceabf; 
+}
+
+body#view-usersite {
+animation: bg-scroll 500s infinite cubic-bezier(0, 0, 0, 0);
+background-repeat: repeat!important; 
+}
+
+@keyframes bg-scroll {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -8000px 0px;
+  }
+}
+#wrapper {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+  box-shadow: 0 6px 20px 0 #5faceabf; 
+}
     </style>
     <title>Lekrkoekj Geems</title></head>
 <body>
-<center><div class="menu"><a href="/lekrkoekj-home"><button class="mbtnS"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948624771/menubalk/unnamed.png" class="menuimg" style="transition-delay: 0.025s"><span class="menutext">Home</span></button></a><a href="/lekrkoekj"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948624771/menubalk/unnamed.png" class="menuimg" style="transition-delay: 0.05s"><span class="menutext">Lekrkoekj</span></button></a><a href="/lekre-pagina-s"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948624771/menubalk/unnamed.png" class="menuimg" style="transition-delay: 0.075s"><span class="menutext">Lekre Pagina's</span></button></a><a href="/retro-geems"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948591742/menubalk/unnamed%20%281%29.png" class="menuimg" style="transition-delay: 0.1s"><span class="menutext">Retro</span></button></a><a href="/papa-louie-geems"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948595808/menubalk/unnamed%20%282%29.png" class="menuimg" style="transition-delay: 0.125s"><span class="menutext">Papa Louie</span></button></a><a href="/puzzel-geems"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948605083/menubalk/unnamed%20%284%29.png" class="menuimg" style="transition-delay: 0.15s"><span class="menutext">Puzzel</span></button></a><a href="/clicker-geems"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948600212/menubalk/unnamed%20%283%29.png" class="menuimg" style="transition-delay: 0.175s"><span class="menutext">Clickers</span></button></a><a href="/tower-defense-geems"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948609998/menubalk/unnamed%20%285%29.png" class="menuimg" style="transition-delay: 0.2s"><span class="menutext">Tower Defense</span></button></a><a href="/io-geems"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948614086/menubalk/unnamed%20%286%29.png" class="menuimg" style="transition-delay: 0.225s"><span class="menutext">IO's</span></button></a><a href="javascript:randomlink()"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948617398/menubalk/unnamed%20%287%29.png" class="menuimg" style="transition-delay: 0.25s"><span class="menutext">Random</span></button></a><a href="/andere-geems"><button class="mbtnE"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948621016/menubalk/unnamed%20%288%29.png" class="menuimg" style="transition-delay: 0.275s"><span class="menutext">Overig</span></button></a></div></center>
+<div class="full-topbar"><div class="full-topbar"><div class="topbar" style="padding-top:10px; padding-bottom: 10px;"><center><a href="https://reddit.com/r/lekrkoekjgeems"><img class="reddit" src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555780192010/logo-s/Logo%20Reddit.png"></a>
+    <a href="https://www.youtube.com/channel/UCVlNgXxnGCM70vkYRMZ8hTw"><img class="youtube" src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555780194300/logo-s/Logo%20YT.png"></a>
+        <a href="https://instagram.com/010204hoi"><img class="instagram" src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555780196688/logo-s/Logo.png"></a><a href="http://lekrkoekj.simpsite.nl"><img class="lkg-logo" src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555780182325/logo-s/Logo%203%20LKG.png" style="width:372px;" alt="Lekrkoekj Geems"></a><a href="https://discord.gg/cfXHyKt"><img class="discord" src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555780188717/logo-s/Logo%20Kleiner.png"></a><a href="https://discord.gg/WgCGNNj"><img class="discordtech" src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555780185362/logo-s/Logo%203.png"></a><a href="https://discord.gg/k2XPF3a"><img class="adswakos" src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555775812765/logo-s/Logo%201%20Kleiner.png"></a></div>
+
+
+
+        <div class="menu"><a href="/lekrkoekj-home"><button class="mbtnS"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948624771/menubalk/unnamed.png" class="menuimg" style="transition-delay: 0.025s"><span class="menutext">Home</span></button></a><a href="/lekrkoekj"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948624771/menubalk/unnamed.png" class="menuimg" style="transition-delay: 0.05s"><span class="menutext">Lekrkoekj</span></button></a><a href="/lekre-pagina-s"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948624771/menubalk/unnamed.png" class="menuimg" style="transition-delay: 0.075s"><span class="menutext">Lekre Pagina's</span></button></a><a href="/retro-geems"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948591742/menubalk/unnamed%20%281%29.png" class="menuimg" style="transition-delay: 0.1s"><span class="menutext">Retro</span></button></a><a href="/papa-louie-geems"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948595808/menubalk/unnamed%20%282%29.png" class="menuimg" style="transition-delay: 0.125s"><span class="menutext">Papa Louie</span></button></a><a href="/puzzel-geems"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948605083/menubalk/unnamed%20%284%29.png" class="menuimg" style="transition-delay: 0.15s"><span class="menutext">Puzzel</span></button></a><a href="/clicker-geems"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948600212/menubalk/unnamed%20%283%29.png" class="menuimg" style="transition-delay: 0.175s"><span class="menutext">Clickers</span></button></a><a href="/tower-defense-geems"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948609998/menubalk/unnamed%20%285%29.png" class="menuimg" style="transition-delay: 0.2s"><span class="menutext">Tower Defense</span></button></a><a href="/io-geems"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948614086/menubalk/unnamed%20%286%29.png" class="menuimg" style="transition-delay: 0.225s"><span class="menutext">IO's</span></button></a><a href="javascript:randomlink()"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948617398/menubalk/unnamed%20%287%29.png" class="menuimg" style="transition-delay: 0.25s"><span class="menutext">Random</span></button></a><a href="/andere-geems"><button class="mbtnE"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948621016/menubalk/unnamed%20%288%29.png" class="menuimg" style="transition-delay: 0.275s"><span class="menutext">Overig</span></button></a></div>
+<script>
+<!--
+/*
+Random link button- By JavaScript Kit (http://javascriptkit.com)
+Over 300+ free scripts!
+This credit MUST stay intact for use
+*/
+
+//specify random links below. You can have as many as you want
+var randomlinks=new Array()
+
+randomlinks[0]="/papa-s-pancakeria"
+randomlinks[1]="/papa-s-pizzaria"
+randomlinks[2]="/papa-s-bakeria"
+randomlinks[3]="/papa-s-taco-mia"
+randomlinks[4]="/papa-s-wingeria"
+randomlinks[5]="/papa-s-cheeseria"
+randomlinks[6]="/papa-s-hot-doggeria"
+randomlinks[7]="/papa-s-scooperia"
+randomlinks[8]="/papa-s-cupcakeria"
+randomlinks[9]="/papa-s-sushiria"
+randomlinks[11]="/papa-s-burgeria"
+randomlinks[12]="/papa-s-freezeria"
+randomlinks[13]="/papa-s-pastaria"
+randomlinks[14]="/papa-s-donuteria"
+randomlinks[15]="/papa-louie-1"
+randomlinks[16]="/papa-louie-2"
+randomlinks[17]="/papa-louie-3"
+randomlinks[18]="/tetris-marathon"
+randomlinks[19]="/tetris-survival"
+randomlinks[20]="/tetris-battle-2p"
+randomlinks[21]="/tetris-1989"
+randomlinks[22]="/tetris-n-blox"
+randomlinks[23]="/tetris-ultra"
+randomlinks[24]="/tetris-sprint"
+randomlinks[25]="/my-tetris"
+randomlinks[26]="/pac-man"
+randomlinks[27]="/pac-xon"
+randomlinks[28]="/pac-man-scribble"
+randomlinks[29]="/google-pac-man"
+randomlinks[30]="/snake-trouble"
+randomlinks[31]="/flash-snake"
+randomlinks[32]="/classicsnake-io"
+randomlinks[33]="/super-mario-bros"
+randomlinks[34]="/super-mario-63-hacked"
+randomlinks[35]="/super-mario-63"
+randomlinks[36]="/atari-breakout"
+randomlinks[37]="/bob-de-slak-1"
+randomlinks[38]="/bob-de-slak-2"
+randomlinks[39]="/bob-de-slak-3"
+randomlinks[40]="/bob-de-slak-4"
+randomlinks[41]="/bob-de-slak-5"
+randomlinks[42]="/bob-de-slak-6"
+randomlinks[43]="/bob-de-slak-7"
+randomlinks[44]="/trollface-quest-1"
+randomlinks[45]="/trollface-quest-2"
+randomlinks[46]="/trollface-quest-3"
+randomlinks[47]="/trollface-quest-4"
+randomlinks[48]="/trollface-quest-5"
+randomlinks[49]="/trollface-quest-internet-memes"
+randomlinks[50]="/trollface-quest-trolltube"
+randomlinks[51]="/trollface-quest-tv-shows"
+randomlinks[52]="/trollface-quest-sports"
+randomlinks[53]="/trollface-quest-video-games"
+randomlinks[54]="/trollface-quest-video-games-2"
+randomlinks[55]="/adam-and-eve-1"
+randomlinks[56]="/adam-and-eve-2"
+randomlinks[57]="/adam-and-eve-3"
+randomlinks[58]="/adam-and-eve-4"
+randomlinks[59]="/adam-and-eve-zombies"
+randomlinks[60]="/adam-and-eve-sleepwalker"
+randomlinks[61]="/adam-and-eve-adam-the-ghost"
+randomlinks[62]="/adam-and-eve-love-quest"
+randomlinks[63]="/adam-and-eve-golf"
+randomlinks[64]="/cookie-clicker"
+randomlinks[65]="/doge-miner-1"
+randomlinks[66]="/doge-miner-2"
+randomlinks[67]="/kitty-clicker"
+randomlinks[68]="/minecraft-tower-defense-1"
+randomlinks[70]="/minecraft-tower-defense-2"
+randomlinks[71]="/pokemon-tower-defense-1"
+randomlinks[72]="/pokemon-tower-defense-2"
+randomlinks[73]="/pokemon-tower-defense-2-hacked"
+randomlinks[74]="/pokemon-tower-defense-3"
+randomlinks[75]="/pokemon-tower-defense-3-hacked"
+randomlinks[76]="/bloons-td-1"
+randomlinks[77]="/bloons-td-2"
+randomlinks[78]="/bloons-td-3"
+randomlinks[79]="/bloons-td-4"
+randomlinks[80]="/bloons-td-5"
+randomlinks[81]="/kingdom-rush"
+randomlinks[82]="/hole-io"
+randomlinks[83]="/drawbest.io"
+randomlinks[83]="/cowaboom"
+randomlinks[84]="/city-siege-3"
+randomlinks[85]="/bowmaster-prelude"
+randomlinks[86]="/flight"
+randomlinks[87]="/happy-wheels"
+randomlinks[88]="/mine-blocks"
+randomlinks[89]="/chrome-dino-spel"
+randomlinks[90]="/bubble-shooter"
+randomlinks[91]="/basketball-line"
+randomlinks[92]="/robbies-avontuur"
+randomlinks[93]="/uno-online"
+randomlinks[94]="/the-impossible-quiz"
+randomlinks[95]="/run-1"
+randomlinks[96]="/run-2"
+randomlinks[97]="/run-3"
+randomlinks[98]="/landleven"
+randomlinks[99]="/earn-to-die-1"
+randomlinks[100]="/earn-to-die-2"
+randomlinks[101]="/bubble-shooter-classic"
+randomlinks[102]="/knife-hit"
+randomlinks[103]="/knife-hit-2"
+randomlinks[104]="/jack-smith"
+randomlinks[105]="/helix-jump"
+randomlinks[106]="/earn-to-die-1"
+randomlinks[107]="/cut-the-rope"
+randomlinks[108]="/cute-the-rope-2"
+randomlinks[109]="/cut-the-rope-time-travel"
+randomlinks[110]="/cut-the-rope-magic"
+randomlinks[111]="/cut-the-rope-experiments"
+randomlinks[112]="/dead-paradise"
+randomlinks[113]="/dead-paradise-2"
+randomlinks[114]="/dead-paradise-3"
+randomlinks[115]="/dead-paradise-4"
+randomlinks[116]="/tetr-js"
+randomlinks[117]="/jstris"
+randomlinks[118]="/tentrix"
+randomlinks[119]="/tuper-tario-tros"
+randomlinks[120]="/tetris-battle-6p"
+randomlinks[121]="/agar-io"
+randomlinks[122]="/superhex-io"
+randomlinks[123]="/mope-io"
+randomlinks[124]="/spinz-io"
+randomlinks[125]="/slither-io"
+randomlinks[126]="/skribbl-io"
+randomlinks[127]="/color-tunnel"
+randomlinks[128]="/super-hot"
+randomlinks[129]="/connect-4"
+randomlinks[130]="/whack-your-ex"
+randomlinks[131]="/bouncing-balls"
+randomlinks[132]="/poop-clicker"
+
+    
+
+    
+
+function randomlink(){
+window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
+}
+//-->
+
+
+</script>
 </body>
 </html>
