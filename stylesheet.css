@@ -184,7 +184,7 @@ body {
     background-size: cover;
     background-position: top center;
     background-attachment: fixed;
-    margin:0;
+    margin:0 !important;
 }
 
 button.normal, button#fullscreen {
