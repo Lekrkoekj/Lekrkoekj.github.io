@@ -1,6 +1,6 @@
 .nieuwste-geems {
     width: 100%;
-    height: 584px;
+    height: 561px;
     transition: 0.3s;
     background-color: #f0f0ebbf;
     max-width: 648px;
@@ -17,17 +17,14 @@
     }
 .title {
     padding-top: 20px;
-    padding-bottom: 18px;
-    }
-    
-    body {
-        margin: 0;
+    font-size: 29px;
+    padding-bottom: 0px;
     }
    .lekrkoekj-paginas {
     width: 100%;
-    height: 409px;
+    height: 399px;
     transition: 0.3s;
-    background-color: #F0F0EB;
+    background-color: #F0F0EBbf;
     max-width: 648px;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -37,18 +34,6 @@
 .lekrkoekj-paginas:hover {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #5faceabf; 
     }
-    .hovereffect:hover {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #5faceabf; 
-    }
-.title {
-    padding-top: 20px;
-    padding-bottom: 18px;
-    }
-    
-    body {
-        margin: 0;
-    }
-
 
 .hovereffect {
 width:162px;
