@@ -34,6 +34,20 @@
 .lekrkoekj-paginas:hover {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #5faceabf; 
     }
+.populaire-geems {
+    width: 100%;
+    height: 560px;
+    transition: 0.3s;
+    background-color: #f0f0ebbf;
+    max-width: 648px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: .8s cubic-bezier(.2,.8,.2,1);
+    animation: fade 1s ease-in-out;
+    }
+.populaire-geems:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #5faceabf; 
+    }
 
 .hovereffect {
 width:162px;
