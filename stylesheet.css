@@ -191,6 +191,11 @@ body {
 button {
     font-family: Tahoma;
 }
+button#fullscreen {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 0px 0px 25px 0px;
+}
 button.normal, button#fullscreen {
 background-color: #f0f0ebbf; 
 border: none;
