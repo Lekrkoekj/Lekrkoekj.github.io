@@ -150,6 +150,7 @@ cursor: pointer;
     transition-delay: 0.2s;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
     .menu:hover {
     box-shadow: 0 6px 20px 0 #5faceabf; 
