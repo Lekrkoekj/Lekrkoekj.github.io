@@ -312,3 +312,8 @@ box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0), 0 0px 20px 0 #5faceabf;
 span.menutext {
     font-family: Tahoma;
 }
+.gsc-control-cse.gsc-control-cse-nl {
+    border: 0;
+    border-color: transparent;
+    background: transparent;
+}
