@@ -1,6 +1,6 @@
 function toggleInvert() {
 
-    if (document.getElementById("invert").checked == true) {
+    if (document.getElementById("invert").checked = true) {
         
         document.getElementById("view-usersite").style.filter = "invert(100%)";
         
@@ -14,7 +14,7 @@ function toggleInvert() {
     
 function toggleSaturation() {
 
-    if (document.getElementById("saturation").checked == true) {
+    if (document.getElementById("saturation").checked = true) {
         
         document.getElementById("view-usersite").style.filter = "saturate(10000%)";
         
@@ -27,7 +27,7 @@ function toggleSaturation() {
 }
 function toggleTurn() {
 
-    if (document.getElementById("turn").checked == true) {
+    if (document.getElementById("turn").checked = true) {
         
         document.getElementById("view-usersite").style.transform = "rotate(180deg)";
         
@@ -40,7 +40,7 @@ function toggleTurn() {
 }
 function toggleSpin() {
 
-    if (document.getElementById("spin").checked == true) {
+    if (document.getElementById("spin").checked = true) {
         
         document.getElementById("wrapper").style.animation = "wrapper-spin 5s infinite";
         
