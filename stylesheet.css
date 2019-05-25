@@ -251,13 +251,14 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .geem {
     transition: 0.3s;
-    background-color: #F0F0EB;
+    background-color: #F0F0EB00;
     width: 144px;
     padding: 0;
     margin: 0;
     border: 0;
     animation: fade 1s ease-in-out;
     padding-bottom: 20px;
+    border-radius: 0px;
 }
 .geem:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 #5faceabf;
@@ -275,7 +276,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 20px;
     width:100%;
     max-width: 1296px;
-    background-color: #F0F0EB;
+    background-color: #F0F0EBbf;
     transition: 0.3s;
 }
 .geem#lb {
@@ -287,19 +288,16 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 .geem#ro {
     border-radius: 0px 0px 20px 0px;
 }
-.geem {
-border-radius: 0px;
-}
-    .title {
-            padding-top: 20px;
+.title {
+    padding-top: 20px;
     padding-bottom: 18px;
-    }
-    .name {
-        padding-top: 5px;
-        padding-bottom: 4px;
-        color: #444444;
-        font-size: 15px;
-    }
+}
+.name {
+    padding-top: 5px;
+    padding-bottom: 4px;
+    color: #444444;
+    font-size: 15px;
+}
 @keyframes fade {
         0% {opacity:0; position: relative; top: 15px;}
         100% {opacity:1; position: relative; top: 0px;}
