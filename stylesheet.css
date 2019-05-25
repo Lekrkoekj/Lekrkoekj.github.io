@@ -334,6 +334,8 @@ span.menutext {
     }
     .effect-title {
         margin-bottom: 10px;
+        margin-top: 0 !important;
+        font-size: 21px;
     }
     @keyframes wrapper-spin {
         50% {transform:rotate(360deg)}
