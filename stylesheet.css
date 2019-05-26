@@ -268,7 +268,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 #5faceabf;
 }
 .geem-thumb {
-    border-radius: 20px 20px 0px 0px;
+    */border-radius: 20px 20px 0px 0px;*/
     margin-bottom: 15px;
 }
 .geems {
@@ -280,14 +280,23 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: 0.3s;
     animation: fade 1s ease-in-out;
 }
-.geem#lb {
+.geem#l {
     border-radius: 20px 0px 0px 20px;
 }
-.geem#rb {
+.geem#r {
     border-radius: 0px 20px 20px 0px;
 }
 .geem#ro {
     border-radius: 0px 0px 20px 0px;
+}
+.geem#lb {
+    border-radius: 20px 0px 0px 0px;
+}
+.geem#ro {
+    border-radius: 0px 0px 0px 20px;
+}
+.geem#rb {
+    border-radius: 0px 20px 20px 0px;
 }
 .title {
     padding-top: 20px;
