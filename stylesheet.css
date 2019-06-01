@@ -139,7 +139,7 @@ cursor: pointer;
 }
     .menu {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    max-width: 992px;
+    max-width: 1044px;
     border-radius: 25px;
     margin: auto;
     background-color: #ffffffcc;
@@ -154,7 +154,7 @@ cursor: pointer;
 }
     .menu:hover {
     box-shadow: 0 6px 20px 0 #5faceabf; 
-    max-width: 998px;
+    max-width: 1050px;
     height: 78px;
     }
     .menu:hover .menuimg {
@@ -240,12 +240,16 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 transition: 0.3s; 
 padding: 13px;
     }
+.menu:hover button.mbtnE {
+    height: 78px !important;
+}
 
 button.normal:hover, button.big:hover, button.small:hover, button#fullscreen:hover {
 background-color:#d4d4d1;
 cursor:pointer;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #5faceabf;
 }
+
 iframe {
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -469,4 +473,39 @@ span.menutext {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+.theme-switch-link {
+    text-decoration: none !important;
+    width: 30px;
+    overflow: hidden;
+}
+.theme-switch-emoji {
+    font-size:20px;
+    margin:0;
+    width: 30px;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+.theme-switch {
+    width: 30px;
+    overflow: hidden;
+}
+body.dark .theme-switch-emoji {
+    font-size: 0px;
+}
+body.dark .theme-switch-emoji:after {
+    font-size: 20px;
+    content: '☀️'
+}
+body.dark .site-container, body.dark .effect-bar, body.dark button {
+    background: #000000a3 !important;
+}
+body.dark .lekrkoekj-paginas, body.dark .nieuwste-geems, body.dark .populaire-geems {
+    background: #1b2022 !important;
+}
+body.dark .lekrkoekj-paginas *, body.dark .nieuwste-geems *, body.dark .populaire-geems *, body.dark button, body.dark p, body.dark h1, body.dark h2, body.dark h3 {
+    color: white !important;
+}
+body.dark {
+    background: #131719 !important;
 }
