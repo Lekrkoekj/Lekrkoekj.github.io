@@ -504,7 +504,7 @@ body.dark .site-container, body.dark .effect-bar {
 body.dark .lekrkoekj-paginas, body.dark .nieuwste-geems, body.dark .populaire-geems, body.dark button.small, body.dark button.normal, body.dark button.big, body.dark .menu, body.dark .geems {
     background: #1b2022 !important;
 }
-body.dark .lekrkoekj-paginas *, body.dark .nieuwste-geems *, body.dark .populaire-geems *, body.dark button.small, body.dark button.normal, body.dark button.big, body.dark p, body.dark h1, body.dark h2, body.dark h3, body.dark .menutext, body.dark label.checkbox-container, body.dark span.name {
+body.dark .lekrkoekj-paginas *, body.dark .nieuwste-geems *, body.dark .populaire-geems *, body.dark button.small, body.dark button.normal, body.dark button.big, body.dark p, body.dark h1, body.dark h2, body.dark h3, body.dark .menutext, body.dark label.checkbox-container, body.dark span.name, body.dark h4, body.dark h5, body.dark h6 {
     color: white !important;
 }
 body.dark {
