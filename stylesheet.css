@@ -481,6 +481,9 @@ span.menutext {
 .mbtnE {
     width: 52px !important;
 }
+.theme-switcher-emoji {
+    transition: 0.3s ease-in-out;
+}
 body.dark .theme-switcher-emoji {
     font-size: 0px;
 }
