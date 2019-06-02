@@ -2,6 +2,9 @@
 <head>
     <title>404 - Niet gevonden :(</title>    
     <link rel="stylesheet" type="text/css" href="/stylesheet.css">
+    <script>document.addEventListener('DOMContentLoaded', (event) => {
+  ((localStorage.getItem('mode') || 'dark') === 'dark') ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')
+})</script>
 </head>
 <style>
     .site-container {

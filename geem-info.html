@@ -35,7 +35,7 @@
   <input id="spin" type="checkbox" onclick="toggleSpin()">
   <span class="checkmark"></span>
     </label></center></div>
-    
+    <a href="#"><button class="mbtnE" style="height: 71px;" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Wissel tussen een donker en licht thema"><span class="theme-switcher-emoji" style="height: 58px;">🌙</span></button></a>
     
     </body>
 </html>

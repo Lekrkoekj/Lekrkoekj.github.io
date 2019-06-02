@@ -3,6 +3,9 @@
     <head>
         <link rel="stylesheet" type="text/css" href="/stylesheet.css">
         <link rel="stylesheet" type="text/css" href="/home-category.css">
+        <script>document.addEventListener('DOMContentLoaded', (event) => {
+  ((localStorage.getItem('mode') || 'dark') === 'dark') ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')
+})</script>
     <title>Site Plannen - Lekrkoekj Geems</title></head>
 <body id="view-usersite">
 <div class="full-topbar"><div class="topbar"><center><a href="https://reddit.com/r/lekrkoekjgeems"><img class="reddit" src="/images/reddit-logo.png"></a>
@@ -36,7 +39,7 @@
   <input id="spin" type="checkbox" onclick="toggleSpin()">
   <span class="checkmark"></span>
     </label></center></div>
-    <div class="theme-switch"><a class="theme-switch-link" href="#" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Wissel tussen een donker en licht thema"><p class="theme-switch-emoji">🌙</p></a></div>
+   <a href="#"><button class="mbtnE" style="height: 71px;" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Wissel tussen een donker en licht thema"><span class="theme-switcher-emoji" style="height: 58px;">🌙</span></button></a></div>
     
     </body>
 </html>

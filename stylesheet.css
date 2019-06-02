@@ -240,7 +240,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 transition: 0.3s; 
 padding: 13px;
     }
-.menu:hover button.mbtnE {
+.menu:hover button.mbtnE, .menu:hover button.mbtnM, .menu:hover button.mbtnS {
     height: 78px !important;
 }
 
@@ -474,36 +474,37 @@ span.menutext {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.theme-switch-link {
-    text-decoration: none !important;
-    width: 30px;
-    overflow: hidden;
+
+
+
+
+.mbtnE {
+    width: 52px !important;
 }
-.theme-switch-emoji {
-    font-size:20px;
-    margin:0;
-    width: 30px;
-    overflow: hidden;
-    transition: 0.3s ease-in-out;
-}
-.theme-switch {
-    width: 30px;
-    overflow: hidden;
-}
-body.dark .theme-switch-emoji {
+body.dark .theme-switcher-emoji {
     font-size: 0px;
 }
-body.dark .theme-switch-emoji:after {
+body.dark .menu:hover .theme-switcher-emoji {
+    top: -10px;
+    left: -2px;
+    position: relative;
+}
+body.dark .theme-switcher-emoji {
+    top: -7px;
+    left: -2px;
+    position: relative;
+}
+body.dark .theme-switcher-emoji:after {
     font-size: 20px;
     content: '☀️'
 }
-body.dark .site-container, body.dark .effect-bar, body.dark button {
+body.dark .site-container, body.dark .effect-bar {
     background: #000000a3 !important;
 }
-body.dark .lekrkoekj-paginas, body.dark .nieuwste-geems, body.dark .populaire-geems {
+body.dark .lekrkoekj-paginas, body.dark .nieuwste-geems, body.dark .populaire-geems, body.dark button.small, body.dark button.normal, body.dark button.big, body.dark .menu, body.dark .geems {
     background: #1b2022 !important;
 }
-body.dark .lekrkoekj-paginas *, body.dark .nieuwste-geems *, body.dark .populaire-geems *, body.dark button, body.dark p, body.dark h1, body.dark h2, body.dark h3 {
+body.dark .lekrkoekj-paginas *, body.dark .nieuwste-geems *, body.dark .populaire-geems *, body.dark button.small, body.dark button.normal, body.dark button.big, body.dark p, body.dark h1, body.dark h2, body.dark h3, body.dark .menutext, body.dark label.checkbox-container, body.dark span.name {
     color: white !important;
 }
 body.dark {
