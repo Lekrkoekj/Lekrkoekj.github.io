@@ -511,6 +511,12 @@ body.dark {
     background: #131719 !important;
 }
 
+body.dark a {
+color: #0089ff;
+}
+body.dark a:active {
+color: #5db4ff;
+}
 
 body.old {
     background-image: url(/images/lekrkoekj-fast.gif) !important;
