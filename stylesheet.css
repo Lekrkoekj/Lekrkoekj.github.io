@@ -167,6 +167,7 @@ cursor: pointer;
     }
     .menutext {
         display: block;
+        transition: 0.3s;
     }
     .menu:hover .mbtnS, .menu:hover .mbtnM, .menu:hover .mbtnE {
         top:0;
@@ -190,6 +191,10 @@ body {
     color: #444444;
     transition: 0.5s ease-in-out;
 }
+h1, h2, h3, h4, h5, h6, p, .site-container {
+    transition: 0.3s;
+}
+
 button {
     font-family: Tahoma;
 }
@@ -528,6 +533,10 @@ color: #0089ff;
 body.dark a:active {
 color: #5db4ff;
 }
+body.dark img[src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948621016/menubalk/unnamed%20%288%29.png"] {
+    filter: invert(1);
+}
+
 
 body.old {
     background-image: url(/images/lekrkoekj-fast.gif) !important;
@@ -535,7 +544,7 @@ body.old {
     background-size: auto;
 }
 
-.social-media {
+.social-media, .style-div {
     background: #f0f0ebbf;
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -546,7 +555,10 @@ body.old {
     cursor: pointer;
     transition: 0.3s;
 }
-.social-media:hover {
+.style-div {
+    max-width: 280px !important;
+}
+.social-media:hover, .style-div:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 #5faceabf;
 }
 .sm-name {
