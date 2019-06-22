@@ -50,10 +50,20 @@ border-radius: 12px;
     .lkg-logo {
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 max-width:372px;
+        width: 100%;
 border-radius: 20px;
 transition: 0.3s;
 margin-left: 207px;
 margin-right: 207px;
+background-image: url(/images/lkg-logo.png);
+max-height: 107px;
+height: 100%;
+background-size: cover;
+        display: inline-block;
+}
+.lkg-logo:hover {
+    transform: scale(1.05);
+    background-image: url(https://i.imgur.com/gRHS4Bc.png);
 }
 .lkg-logo:hover, img.youtube:hover, img.instagram:hover, img.discord:hover, img.reddit:hover, img.adswakos:hover, img.discordtech:hover {
 box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0), 0 0px 20px 0 #5faceabf; 

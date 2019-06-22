@@ -11,14 +11,32 @@
         .site-container p {
     margin: 8px 0px;
 }</style>
+        <script>Element.prototype.remove = function() {
+    this.parentElement.removeChild(this);
+}
+NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
+    for(var i = this.length - 1; i >= 0; i--) {
+        if(this[i] && this[i].parentElement) {
+            this[i].parentElement.removeChild(this[i]);
+        }
+    }
+}
+function removeUpdate() {
+    
+    document.getElementById("update-overlay").remove();
+    
+}        
+        </script>
     <title>Lekrkoekj Geems - 100+ Unblocked Games</title></head>
 <body id="view-usersite">
  
-    <div class="site-container" style="position: absolute;top: 0px; width: 99.8%;height: 328%; z-index: 1; background: #fffffff0;">
+    <div class="site-container" style="position: absolute;top: 0px; width: 99.8%;height: 328%; z-index: 1; background: #fffffff0;" id="update-overlay">
 
         <center style="padding-top: 180px;"><img class="wow" src="/images/lekrkoekj-slow.gif" style="animation: fade 1s ease-in-out;"><style>.wow:hover {animation: fade 1s cubic-bezier(0, -1.37, 1, 2.51) infinite !important;}</style>
-<h1 style="margin-bottom: 57px; animation: fade 1s ease-in-out;">Bijna klaar voor de vooropening!</h1>
-        <a href="http://lekrkoekj.simpsite.nl/lkg-naar-github"><button class="normal" style="
+<h1 style="margin-bottom: 57px; animation: fade 1s ease-in-out;">Klaar voor de vooropening!</h1>
+        <button class="normal" style="font-size: 20px; animation: fade 1s ease-in-out; margin-bottom: 10px;" onclick="removeUpdate()">Ga naar de site!</button><p>
+            
+            <a href="http://lekrkoekj.simpsite.nl/lkg-naar-github"><button class="normal" style="
     margin-right: 70px;
     margin-bottom: 110px;
     animation: fade 1s ease-in-out;
@@ -60,9 +78,9 @@
     <p>- Klein beetje tekst in de Lekrkoekj Home overlay veranderd.</p>
     <p>De volgende update (of de update daarna idk) wordt wrs de vooropening! Hierbij zal de site geopend worden, maar zullen nog niet alle geems op de site staan. Alle LKG pagina's (zoals Suggesties, Sociale Media, Random Dingen etc.) zijn dan al af en kunnen worden gebruikt. ok doei 👋</p></div></div> 
     
-<div class="full-topbar"><div class="topbar"><center><a href="https://reddit.com/r/lekrkoekjgeems"><img class="reddit" src="/images/reddit-logo.png"></a>
-    <a href="https://www.youtube.com/channel/UCVlNgXxnGCM70vkYRMZ8hTw"><img class="youtube" src="/images/yt-logo.png"></a>
-        <a href="https://instagram.com/010204hoi"><img class="instagram" src="/images/ig-logo.png"></a><a href="/"><img class="lkg-logo" src="/images/lkg-logo.png" style="width:372px;" alt="Lekrkoekj Geems"></a><a href="https://discord.gg/cfXHyKt"><img class="discord" src="/images/lkg-discord-logo.png"></a><a href="https://discord.gg/WgCGNNj"><img class="discordtech" src="/images/new-dct-logo.png"></a><a href="https://discord.gg/k2XPF3a"><img class="adswakos" src="/images/adswakos-logo.png"></a></div>
+<div class="full-topbar"><div class="topbar"><center><a target="_blank" href="https://reddit.com/r/lekrkoekjgeems"><img class="reddit" src="/images/reddit-logo.png"></a>
+    <a target="_blank" href="https://www.youtube.com/channel/UCVlNgXxnGCM70vkYRMZ8hTw"><img class="youtube" src="/images/yt-logo.png"></a>
+    <a target="_blank" href="https://instagram.com/010204hoi"><img class="instagram" src="/images/ig-logo.png"></a><a href="/"><div class="lkg-logo"><img height="107px" src="/images/lkg-logo.png" style="opacity:0;"></div></a><a target="_blank" href="https://discord.gg/cfXHyKt"><img class="discord" src="/images/lkg-discord-logo.png"></a><a target="_blank" href="https://discord.gg/WgCGNNj"><img class="discordtech" src="/images/new-dct-logo.png"></a><a target="_blank" href="https://discord.gg/k2XPF3a"><img class="adswakos" src="/images/adswakos-logo.png"></a></center></div>
 
     <div class="menu"><a href="/"><button class="mbtnS"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948624771/menubalk/unnamed.png" class="menuimg" style="transition-delay: 0.025s"><span class="menutext">Home</span></button></a><a href="/lekrkoekj"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948624771/menubalk/unnamed.png" class="menuimg" style="transition-delay: 0.05s"><span class="menutext">Lekrkoekj</span></button></a><a href="/lekre-pagina-s"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948624771/menubalk/unnamed.png" class="menuimg" style="transition-delay: 0.075s"><span class="menutext">Lekre Pagina's</span></button></a><a href="/retro-geems"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948591742/menubalk/unnamed%20%281%29.png" class="menuimg" style="transition-delay: 0.1s"><span class="menutext">Retro</span></button></a><a href="/papa-louie-geems"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948595808/menubalk/unnamed%20%282%29.png" class="menuimg" style="transition-delay: 0.125s"><span class="menutext">Papa Louie</span></button></a><a href="/puzzel-geems"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948605083/menubalk/unnamed%20%284%29.png" class="menuimg" style="transition-delay: 0.15s"><span class="menutext">Puzzel</span></button></a><a href="/clicker-geems"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948600212/menubalk/unnamed%20%283%29.png" class="menuimg" style="transition-delay: 0.175s"><span class="menutext">Clickers</span></button></a><a href="/tower-defense-geems"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948609998/menubalk/unnamed%20%285%29.png" class="menuimg" style="transition-delay: 0.2s"><span class="menutext">Tower Defense</span></button></a><a href="/io-geems"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948614086/menubalk/unnamed%20%286%29.png" class="menuimg" style="transition-delay: 0.225s"><span class="menutext">IO's</span></button></a><a href="javascript:randomlink()"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948617398/menubalk/unnamed%20%287%29.png" class="menuimg" style="transition-delay: 0.25s"><span class="menutext">Random</span></button></a><a href="/andere-geems"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948621016/menubalk/unnamed%20%288%29.png" class="menuimg" style="transition-delay: 0.275s"><span class="menutext">Overig</span></button></a><a href="#"><button class="mbtnE" style="height: 71px;" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Wissel tussen een donker en licht thema"><span class="theme-switcher-emoji" style="height: 58px;">🌙</span></button></a></div></div></div>
 <script src="/random-geem.js"></script>
