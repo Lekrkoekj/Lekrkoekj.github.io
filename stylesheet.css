@@ -558,23 +558,15 @@ body.effects-visible .effect-menu {
 body.inverted {
     filter: invert(1);
 }
-body.inverted #invert {
+body.inverted #invert, body.all-turned-1deg #all-turn-1deg, body.saturated #saturation, body.turned #turn, body.spinning #site-spin, body.slow-spinning #slow-site-spin, body.img-turned #img-turn, body.pinkgreen #pink-green, body.text-turned #text-turn, body.all-turned #all-turn, body.pink #pink, body.all-turned-36deg #all-turn-36deg, body.white #white, body.old #old, body.white-background #white-background {
     font-weight: bold;
     color: forestgreen;
 }
 body.saturated {
     filter: saturate(10000%);
 }
-body.saturated #saturation {
-    font-weight: bold;
-    color: forestgreen;
-}
 body.turned {
     transform:rotate(180deg);
-}
-body.turned #turn {
-    font-weight: bold;
-    color: forestgreen;
 }
 body.spinning .site-container {
     animation: wrapper-spin 2.5s infinite linear;
@@ -582,30 +574,14 @@ body.spinning .site-container {
 body.spinning {
     overflow-x: hidden;
 }
-body.spinning #site-spin {
-    font-weight: bold;
-    color: forestgreen;
-}
 body.slow-spinning .site-container {
     animation: wrapper-spin 10s infinite linear;
 }
 body.slow-spinning {
     overflow-x: hidden;
 }
-body.slow-spinning #slow-site-spin {
-    font-weight: bold;
-    color: forestgreen;
-}
 body.img-turned img, body.img-turned .lkg-logo {
     transform: rotate(180deg);
-}
-body.img-turned #img-turn {
-    font-weight: bold;
-    color: forestgreen;
-}
-body.pinkgreen #pink-green {
-    font-weight: bold;
-    color: forestgreen;
 }
 body.pinkgreen *, body.pinkgreen {
     color: deeppink !important;
@@ -615,37 +591,33 @@ body.pinkgreen *, body.pinkgreen {
 body.text-turned h1, body.text-turned h2, body.text-turned h3, body.text-turned h4, body.text-turned h5, body.text-turned h6, body.text-turned p, body.text-turned span, body.text-turned .hovereffect a {
     transform: rotate(180deg);
 }
-body.text-turned #text-turn {
-    font-weight: bold;
-    color: forestgreen;
-}
-body.all-turned #all-turn {
-    font-weight: bold;
-    color: forestgreen;
-}
 body.all-turned *, body.all-turned {
     transform: rotate(180deg);
 }
 body.all-turned-1deg *, body.all-turned-1deg {
     transform: rotate(1deg);
 }
+body.all-turned-36deg *, body.all-turned-36deg {
+    transform: rotate(36deg);
+}
 body.pink * {
     color: pink !important;
     border-color: pink !important;
 }
-body.all-turned-1deg #all-turn-1deg {
-    font-weight: bold;
-    color: forestgreen;
+body.white * {
+    color: white !important;
+    border-color: white !important;
 }
-body.pink #pink {
-    font-weight: bold;
-    color: forestgreen;
+body.white-background {
+    background: white !important;
+    background-image: none;
 }
-/*body.old {
+body.old {
     background-image: url(/images/lekrkoekj-fast.gif) !important;
     background-repeat: repeat;
     background-size: auto;
-}*/
+    animation: none;
+}
 
 .social-media, .style-div {
     background: #f0f0ebbf;

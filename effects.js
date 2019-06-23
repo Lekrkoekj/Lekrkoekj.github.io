@@ -42,6 +42,22 @@ function toggleTurnAll1deg() {
 localStorage.setItem('mode', (localStorage.getItem('mode') || 'all-turned-1deg') === 'all-turned-1deg' ? 'light' : 'all-turned-1deg'); localStorage.getItem('mode') === 'all-turned-1deg' ? document.querySelector('body').classList.add('all-turned-1deg') : document.querySelector('body').classList.remove('all-turned-1deg')
 }
 
+function toggleTurnAll36deg() {
+localStorage.setItem('mode', (localStorage.getItem('mode') || 'all-turned-36deg') === 'all-turned-36deg' ? 'light' : 'all-turned-36deg'); localStorage.getItem('mode') === 'all-turned-36deg' ? document.querySelector('body').classList.add('all-turned-36deg') : document.querySelector('body').classList.remove('all-turned-36deg')
+}
+
 function togglePink() {
 localStorage.setItem('mode', (localStorage.getItem('mode') || 'pink') === 'pink' ? 'light' : 'pink'); localStorage.getItem('mode') === 'pink' ? document.querySelector('body').classList.add('pink') : document.querySelector('body').classList.remove('pink')
+}
+
+function toggleWhite() {
+localStorage.setItem('mode', (localStorage.getItem('mode') || 'white') === 'white' ? 'light' : 'white'); localStorage.getItem('mode') === 'white' ? document.querySelector('body').classList.add('white') : document.querySelector('body').classList.remove('white')
+}
+
+function toggleOld() {
+localStorage.setItem('mode', (localStorage.getItem('mode') || 'old') === 'old' ? 'light' : 'old'); localStorage.getItem('mode') === 'old' ? document.querySelector('body').classList.add('old') : document.querySelector('body').classList.remove('old')
+}
+
+function toggleWhiteBackground() {
+localStorage.setItem('mode', (localStorage.getItem('mode') || 'white-background') === 'white-background' ? 'light' : 'white-background'); localStorage.getItem('mode') === 'white-background' ? document.querySelector('body').classList.add('white-background') : document.querySelector('body').classList.remove('white-background')
 }
