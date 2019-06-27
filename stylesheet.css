@@ -558,7 +558,7 @@ body.effects-visible .effect-menu {
 body.inverted {
     filter: invert(1);
 }
-body.inverted #invert, body.all-turned-1deg #all-turn-1deg, body.saturated #saturation, body.turned #turn, body.spinning #site-spin, body.slow-spinning #slow-site-spin, body.img-turned #img-turn, body.pinkgreen #pink-green, body.text-turned #text-turn, body.all-turned #all-turn, body.pink #pink, body.all-turned-36deg #all-turn-36deg, body.white #white, body.old #old, body.white-background #white-background {
+body.inverted #invert, body.all-turned-1deg #all-turn-1deg, body.saturated #saturation, body.turned #turn, body.spinning #site-spin, body.slow-spinning #slow-site-spin, body.img-turned #img-turn, body.pinkgreen #pink-green, body.text-turned #text-turn, body.all-turned #all-turn, body.pink #pink, body.all-turned-36deg #all-turn-36deg, body.white #white, body.old #old, body.white-background #white-background, body.effect-spin #f-effect, body.spastic-background #spastic-background, body.lekrdraaitj #lekrdraaitj, body.lekrknippertj #lekrknippertj, body.shadow #lekrschaduwtj, body.shadow-inset #lekrschaduwtj-inset, body.zoomed #lekrzoompj, body.border #lekrrandj, body.fat-border #lekrdikrandj {
     font-weight: bold;
     color: forestgreen;
 }
@@ -618,6 +618,55 @@ body.old {
     background-size: auto;
     animation: none;
 }
+body.effect-spin *:hover {
+    width: 120px;
+   height: 120px;
+    animation: effect-spin 1s cubic-bezier(0, 0, 0, 0) infinite;
+        float:left;
+    }
+@keyframes effect-spin {
+        0% { transform:rotateY(360deg) rotateZ(360deg);}
+        }
+body.spastic-background {
+animation: bg-scroll2 1s infinite cubic-bezier(0, 0, 0, 0);
+}
+@keyframes bg-scroll2 {
+50% {background-position: -8000px 800px;}
+75% {background-position: -8000px 8000px;}
+}
+body.lekrdraaitj * {
+animation: draai 10s infinite ease-in-out !important;
+}
+@keyframes draai {
+50% {transform: rotateZ(360deg);}
+}
+body.lekrknippertj * {
+animation: knipper 0.1s infinite
+}
+body.shadow * {
+box-shadow: 0px 0px 20px 20px black !important;
+    text-shadow: 0px 0px 20px black !important;
+}
+body.shadow-inset * {
+box-shadow: 0px 0px 20px 20px inset black !important;
+    text-shadow: 0px 0px 20px inset black !important;
+}
+body.zoomed * {
+animation: zoom 2.5s infinite ease-in-out;
+}
+@keyframes zoom {
+50% {transform: scale(2);}
+}
+body.border * {
+    border: 1px solid red !important;
+}
+body.fat-border * {
+    border: 5px solid red !important;
+}
+
+
+
+
 
 .social-media, .style-div {
     background: #f0f0ebbf;

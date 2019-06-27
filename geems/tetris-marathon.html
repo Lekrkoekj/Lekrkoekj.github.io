@@ -2,19 +2,12 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="/stylesheet.css">
+        <script src="/random-geem.js"></script>
         <link rel="stylesheet" type="text/css" href="/home-category.css">
         <script>document.addEventListener('DOMContentLoaded', (event) => {
   ((localStorage.getItem('mode') || 'dark') === 'dark') ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')
 })</script>
-    <title>Lekrkoekj - Lekrkoekj Geems</title>
-    <style>
-        body {
-    background-image: url(/images/lekrkoekj-fast.gif) !important;
-    background-size: auto!important;
-    background-repeat: repeat!important;
-}
-        </style>
-    </head>
+    <title>Tetris Marathon - Lekrkoekj Geems</title></head>
 <body id="view-usersite">
 <div class="full-topbar"><div class="topbar"><center><a target="_blank" href="https://reddit.com/r/lekrkoekjgeems"><img class="reddit" src="/images/reddit-logo.png"></a>
     <a target="_blank" href="https://www.youtube.com/channel/UCVlNgXxnGCM70vkYRMZ8hTw"><img class="youtube" src="/images/yt-logo.png"></a>
@@ -24,24 +17,63 @@
 <script src="/random-geem.js"></script>
     
 <div class="site-container" id="wrapper">
-    <center><div class="geems"><h1 class="title">Lekrkoekj</h1>
-<a href="/lekrkoekj-suggesties"><button class="geem" id="l" ><img class="geem-thumb" src="https://i.imgur.com/QAGUxBi.gif" width="144">
-    <span class="name">Lekrkoekj Suggesties</span></button></a><a href="/lekrkoekj/lekrkoekj-bugs"><button class="geem"><img class="geem-thumb" src="https://i.imgur.com/QAGUxBi.gif" width="144">
-    <span class="name">Lekrkoekj Bugs</span></button></a><a href="/lekrkoekj/lekrkoekj-updates"><button class="geem"><img class="geem-thumb" src="https://i.imgur.com/QAGUxBi.gif" width="144">
-    <span class="name">Lekrkoekj Updates</span></button></a><a href="/random-dingen"><button class="geem"><img class="geem-thumb" src="https://i.imgur.com/QAGUxBi.gif" width="144">
-    <span class="name">Random Dingen</span></button></a><a href="/lekrkoekj/lekrkoekj-info"><button class="geem"><img class="geem-thumb" src="https://i.imgur.com/QAGUxBi.gif" width="144">
-    <span class="name">Lekrkoekj Info</span></button></a><a href="/lekrkoekj/social-media"><button class="geem"><img class="geem-thumb" src="https://i.imgur.com/QAGUxBi.gif" width="144">
-    <span class="name">Social Media</span></button></a><a href="/lekrkoekj/lekrkoekj-home-1-0"><button class="geem"><img class="geem-thumb" src="https://i.imgur.com/QAGUxBi.gif" width="144">
-    <span class="name">Lekrkoekj Home 1.0</span></button></a><a href="/lekrkoekj/lekrkoekj-home-2-0"><button class="geem"><img class="geem-thumb" src="https://i.imgur.com/QAGUxBi.gif" width="144">
-    <span class="name">Lekrkoekj Home 2.0</span></button></a><a href="/lekrkoekj/lekrkoekj-home-3-0"><button class="geem" id="r"><img class="geem-thumb" src="https://i.imgur.com/QAGUxBi.gif" width="144">
-    <span class="name">Lekrkoekj Home 3.0</span></button></a></div></center>
-    <center style="margin-top:15px; margin-bottom: 15px;"><img src="/images/lekrkoekj-fast.gif"><img src="/images/lekrkoekj-fast.gif"><img src="/images/lekrkoekj-fast.gif"><img src="/images/lekrkoekj-fast.gif"><img src="/images/lekrkoekj-fast.gif"><img src="/images/lekrkoekj-fast.gif"><img src="/images/lekrkoekj-fast.gif"><img src="/images/lekrkoekj-fast.gif"><img src="/images/lekrkoekj-fast.gif"><img src="/images/lekrkoekj-fast.gif"><img src="/images/lekrkoekj-fast.gif"></center>
-        </div>
+    <div id="container"><center><button class="button" id="fullscreen">Fullscreen</button>
+  <object type="application/x-shockwave-flash" allowscriptaccess="always" data="http://tetrisow-a.akamaihd.net/data5_0_0_4/games/Marathon/OWGameMarathon.swf?version=3" width="1152" height="768" id="contentFlash"></object></center>
+</div>
+
+<script>
+var button = document.querySelector('#fullscreen');
+button.addEventListener('click', fullscreen);
+document.addEventListener('keydown', function (e) {
+  console.log('key press' + e.keyCode);
+});
+document.addEventListener('webkitfullscreenchange', fullscreenChange);
+document.addEventListener('mozfullscreenchange', fullscreenChange);
+document.addEventListener('fullscreenchange', fullscreenChange);
+document.addEventListener('MSFullscreenChange', fullscreenChange);
+
+function fullscreen() {
+  if (document.fullscreenEnabled || 
+    document.webkitFullscreenEnabled || 
+    document.mozFullScreenEnabled ||
+    document.msFullscreenEnabled) {
+    var iframe = document.querySelector('#container object');
+    // Do fullscreen
+    if (iframe.requestFullscreen) {
+      iframe.requestFullscreen();
+    } else if (iframe.webkitRequestFullscreen) {
+      iframe.webkitRequestFullscreen();
+    } else if (iframe.mozRequestFullScreen) {
+      iframe.mozRequestFullScreen();
+    } else if (iframe.msRequestFullscreen) {
+      iframe.msRequestFullscreen();
+    }
+  }
+  else {
+    document.querySelector('.error').innerHTML = 'Your browser is not supported';
+  }
+}
+
+function fullscreenChange() {
+  if (document.fullscreenEnabled ||
+       document.webkitIsFullScreen || 
+       document.mozFullScreen ||
+       document.msFullscreenElement) {
+    console.log('enter fullscreen');
+  }
+  else {
+    console.log('exit fullscreen');
+  }
+}
+</script>
+    </div>
     
-<script src="/effects.js"></script>
+        <script src="/effects.js"></script>
 <div class="effect-bar"><center><a href="#invert"><button class="normal" onclick="showEffects()">Lekre effectj's</button></a>
     <div class="effect-menu">
         <p style="margin-top: 8px; margin-bottom: 5px; font-size: 20px;">Filters, effecten en animaties</p>
     <button class="normal" id="invert" onclick="toggleInvert()" style="margin-right: 5px; margin-top: 5px;">Draai kleuren om</button><button class="normal" id="saturation" onclick="toggleSaturation()" style="margin-right: 5px;">10000% Saturation</button><button class="normal" id="turn" onclick="toggleTurn()" style="margin-right: 5px;">Ondersteboven</button><button class="normal" id="site-spin" onclick="toggleSiteSpin()" style="margin-right: 5px;">Site draaien</button><button class="normal" id="slow-site-spin" onclick="toggleSlowSiteSpin()" style="margin-right: 5px;">Sloom site draaien</button><button class="normal" id="img-turn" onclick="toggleTurnIMG()" style="margin-right: 5px;">Draai plaatj's</button><button class="normal" id="text-turn" onclick="toggleTurnText()" style="margin-right: 5px;">Draai tekst</button><button class="normal" id="all-turn" onclick="toggleTurnAll()"style="margin-right: 5px;">Draai alles</button><button class="normal" id="all-turn-1deg" onclick="toggleTurnAll1deg()" style="margin-right: 5px;">Draai alles 1°</button><button class="normal" id="all-turn-36deg" onclick="toggleTurnAll36deg()" style=" margin-top: 5px;">Draai alles 36°</button><p style="margin-top: 8px; margin-bottom: 5px; font-size: 20px;">Kleuren en achtergronden</p><button class="normal" id="pink-green" onclick="togglePinkGreen()" style="margin-right: 5px; margin-top: 5px;">Deeppink Tekst + Lime Achtergrond</button><button class="normal" id="pink" onclick="togglePink()" style="margin-right: 5px; margin-top: 5px;">Roze Tekst</button><button class="normal" id="white" onclick="toggleWhite()" style="margin-right: 5px; margin-top: 5px;">Witte Tekst</button><button class="normal" id="old" onclick="toggleOld()" style="margin-right: 5px; margin-top: 5px;">Lekrkoekj Achtergrond</button><button class="normal" id="white-background" onclick="toggleWhiteBackground()" "margin-right: 5px; margin-top: 5px;">Witte Achtergrond</button><p style="margin-top: 8px; margin-bottom: 5px; font-size: 20px;">Random Dingen</p><button class="normal" id="f-effect" onclick="toggleF()" style="margin-right: 5px; margin-top: 5px;">F</button><button class="normal" id="spastic-background" onclick="toggleSpasticBackground()" style="margin-right: 5px; margin-top: 5px;">Lekrachtergrondj</button><button class="normal" id="lekrdraaitj" onclick="toggleLekrdraaitj()" style="margin-right: 5px; margin-top: 5px;">Lekrdraaitj</button><button class="normal" id="lekrknippertj" onclick="toggleLekrknippertj()" style="margin-right: 5px; margin-top: 5px;">Lekrknippertj</button><button class="normal" id="lekrschaduwtj" onclick="toggleLekrschaduwtj()" style="margin-right: 5px; margin-top: 5px;">Lekrschaduwtj</button><button class="normal" id="lekrschaduwtj-inset" onclick="toggleLekrschaduwtjInset()" style="margin-right: 5px; margin-top: 5px;">Lekrschaduwtj Inset</button><button class="normal" id="lekrzoompj" onclick="toggleLekrzoompj()" style="margin-right: 5px; margin-top: 5px;">Lekrzoompj</button><button class="normal" id="lekrrandj" onclick="toggleLekrrandj()" style="margin-right: 5px; margin-top: 5px;">Lekrrandj</button><button class="normal" id="lekrdikrandj" onclick="toggleLekrdikrandj()" style="margin-right: 5px; margin-top: 5px;">Lekrdikrandj</button></div>
+ </center></div>
+    
     </body>
 </html>

@@ -38,6 +38,7 @@
     <p>- Alle tekst op de IO Geems pagina is nu goed.</p>
     <h3>Nieuwe Geems:</h3>
     <p>- Tetris Sprint JP toegevoegd.</p>
+    <p>- Tetris Marathon toegevoegd.</p>
     <h3>Nieuwe Lekre Pagina's:</h3>
     <p>- x</p>
     <h3>Veranderingen aan de site:</h3>
@@ -71,20 +72,11 @@
     
     
 <script src="/effects.js"></script>
-<div class="effect-bar"><center><h2 class="effect-title">Lekre effectj's</h2><label class="checkbox-container">Draai kleuren om
-  <input id="invert" type="checkbox" onclick="toggleInvert()">
-  <span class="checkmark"></span>
-</label><label class="checkbox-container">10000% Saturation
-  <input id="saturation" type="checkbox" onclick="toggleSaturation()">
-  <span class="checkmark"></span>
-</label><label class="checkbox-container">Opzekop
-  <input id="turn" type="checkbox" onclick="toggleTurn()">
-  <span class="checkmark"></span>
-    </label>
-    <label class="checkbox-container">Draaien
-  <input id="spin" type="checkbox" onclick="toggleSpin()">
-  <span class="checkmark"></span>
-    </label></center></div>    
+<div class="effect-bar"><center><a href="#invert"><button class="normal" onclick="showEffects()">Lekre effectj's</button></a>
+    <div class="effect-menu">
+        <p style="margin-top: 8px; margin-bottom: 5px; font-size: 20px;">Filters, effecten en animaties</p>
+    <button class="normal" id="invert" onclick="toggleInvert()" style="margin-right: 5px; margin-top: 5px;">Draai kleuren om</button><button class="normal" id="saturation" onclick="toggleSaturation()" style="margin-right: 5px;">10000% Saturation</button><button class="normal" id="turn" onclick="toggleTurn()" style="margin-right: 5px;">Ondersteboven</button><button class="normal" id="site-spin" onclick="toggleSiteSpin()" style="margin-right: 5px;">Site draaien</button><button class="normal" id="slow-site-spin" onclick="toggleSlowSiteSpin()" style="margin-right: 5px;">Sloom site draaien</button><button class="normal" id="img-turn" onclick="toggleTurnIMG()" style="margin-right: 5px;">Draai plaatj's</button><button class="normal" id="text-turn" onclick="toggleTurnText()" style="margin-right: 5px;">Draai tekst</button><button class="normal" id="all-turn" onclick="toggleTurnAll()"style="margin-right: 5px;">Draai alles</button><button class="normal" id="all-turn-1deg" onclick="toggleTurnAll1deg()" style="margin-right: 5px;">Draai alles 1°</button><button class="normal" id="all-turn-36deg" onclick="toggleTurnAll36deg()" style=" margin-top: 5px;">Draai alles 36°</button><p style="margin-top: 8px; margin-bottom: 5px; font-size: 20px;">Kleuren en achtergronden</p><button class="normal" id="pink-green" onclick="togglePinkGreen()" style="margin-right: 5px; margin-top: 5px;">Deeppink Tekst + Lime Achtergrond</button><button class="normal" id="pink" onclick="togglePink()" style="margin-right: 5px; margin-top: 5px;">Roze Tekst</button><button class="normal" id="white" onclick="toggleWhite()" style="margin-right: 5px; margin-top: 5px;">Witte Tekst</button><button class="normal" id="old" onclick="toggleOld()" style="margin-right: 5px; margin-top: 5px;">Lekrkoekj Achtergrond</button><button class="normal" id="white-background" onclick="toggleWhiteBackground()" "margin-right: 5px; margin-top: 5px;">Witte Achtergrond</button><p style="margin-top: 8px; margin-bottom: 5px; font-size: 20px;">Random Dingen</p><button class="normal" id="f-effect" onclick="toggleF()" style="margin-right: 5px; margin-top: 5px;">F</button><button class="normal" id="spastic-background" onclick="toggleSpasticBackground()" style="margin-right: 5px; margin-top: 5px;">Lekrachtergrondj</button><button class="normal" id="lekrdraaitj" onclick="toggleLekrdraaitj()" style="margin-right: 5px; margin-top: 5px;">Lekrdraaitj</button><button class="normal" id="lekrknippertj" onclick="toggleLekrknippertj()" style="margin-right: 5px; margin-top: 5px;">Lekrknippertj</button><button class="normal" id="lekrschaduwtj" onclick="toggleLekrschaduwtj()" style="margin-right: 5px; margin-top: 5px;">Lekrschaduwtj</button><button class="normal" id="lekrschaduwtj-inset" onclick="toggleLekrschaduwtjInset()" style="margin-right: 5px; margin-top: 5px;">Lekrschaduwtj Inset</button><button class="normal" id="lekrzoompj" onclick="toggleLekrzoompj()" style="margin-right: 5px; margin-top: 5px;">Lekrzoompj</button><button class="normal" id="lekrrandj" onclick="toggleLekrrandj()" style="margin-right: 5px; margin-top: 5px;">Lekrrandj</button><button class="normal" id="lekrdikrandj" onclick="toggleLekrdikrandj()" style="margin-right: 5px; margin-top: 5px;">Lekrdikrandj</button></div>
+ </center></div>  
 
     </body>
 </html>

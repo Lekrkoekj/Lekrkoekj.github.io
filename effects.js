@@ -61,3 +61,39 @@ localStorage.setItem('mode', (localStorage.getItem('mode') || 'old') === 'old' ?
 function toggleWhiteBackground() {
 localStorage.setItem('mode', (localStorage.getItem('mode') || 'white-background') === 'white-background' ? 'light' : 'white-background'); localStorage.getItem('mode') === 'white-background' ? document.querySelector('body').classList.add('white-background') : document.querySelector('body').classList.remove('white-background')
 }
+
+function toggleF() {
+localStorage.setItem('mode', (localStorage.getItem('mode') || 'effect-spin') === 'effect-spin' ? 'light' : 'effect-spin'); localStorage.getItem('mode') === 'effect-spin' ? document.querySelector('body').classList.add('effect-spin') : document.querySelector('body').classList.remove('effect-spin')
+}
+
+function toggleSpasticBackground() {
+localStorage.setItem('mode', (localStorage.getItem('mode') || 'spastic-background') === 'spastic-background' ? 'light' : 'spastic-background'); localStorage.getItem('mode') === 'spastic-background' ? document.querySelector('body').classList.add('spastic-background') : document.querySelector('body').classList.remove('spastic-background')
+}
+
+function toggleLekrdraaitj() {
+localStorage.setItem('mode', (localStorage.getItem('mode') || 'lekrdraaitj') === 'lekrdraaitj' ? 'light' : 'lekrdraaitj'); localStorage.getItem('mode') === 'lekrdraaitj' ? document.querySelector('body').classList.add('lekrdraaitj') : document.querySelector('body').classList.remove('lekrdraaitj')
+}
+
+function toggleLekrknippertj() {
+localStorage.setItem('mode', (localStorage.getItem('mode') || 'lekrknippertj') === 'lekrknippertj' ? 'light' : 'lekrknippertj'); localStorage.getItem('mode') === 'lekrknippertj' ? document.querySelector('body').classList.add('lekrknippertj') : document.querySelector('body').classList.remove('lekrknippertj')
+}
+
+function toggleLekrschaduwtj() {
+localStorage.setItem('mode', (localStorage.getItem('mode') || 'shadow') === 'shadow' ? 'light' : 'shadow'); localStorage.getItem('mode') === 'shadow' ? document.querySelector('body').classList.add('shadow') : document.querySelector('body').classList.remove('shadow')
+}
+
+function toggleLekrschaduwtjInset() {
+localStorage.setItem('mode', (localStorage.getItem('mode') || 'shadow-inset') === 'shadow-inset' ? 'light' : 'shadow-inset'); localStorage.getItem('mode') === 'shadow-inset' ? document.querySelector('body').classList.add('shadow-inset') : document.querySelector('body').classList.remove('shadow-inset')
+}
+
+function toggleLekrzoompj() {
+localStorage.setItem('mode', (localStorage.getItem('mode') || 'zoomed') === 'zoomed' ? 'light' : 'zoomed'); localStorage.getItem('mode') === 'zoomed' ? document.querySelector('body').classList.add('zoomed') : document.querySelector('body').classList.remove('zoomed')
+}
+
+function toggleLekrrandj() {
+localStorage.setItem('mode', (localStorage.getItem('mode') || 'border') === 'border' ? 'light' : 'border'); localStorage.getItem('mode') === 'border' ? document.querySelector('body').classList.add('border') : document.querySelector('body').classList.remove('border')
+}
+
+function toggleLekrdikrandj() {
+localStorage.setItem('mode', (localStorage.getItem('mode') || 'fat-border') === 'fat-border' ? 'light' : 'fat-border'); localStorage.getItem('mode') === 'fat-border' ? document.querySelector('body').classList.add('fat-border') : document.querySelector('body').classList.remove('fat-border')
+}
