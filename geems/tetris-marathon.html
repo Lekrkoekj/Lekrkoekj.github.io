@@ -18,7 +18,7 @@
     
 <div class="site-container" id="wrapper">
     <div id="container"><center><button class="button" id="fullscreen">Fullscreen</button>
-  <object type="application/x-shockwave-flash" allowscriptaccess="always" data="http://tetrisow-a.akamaihd.net/data5_0_0_4/games/Marathon/OWGameMarathon.swf?version=3" width="1152" height="768" id="contentFlash"><param name="wmode" value="window"><param name="flashvars" value="theGamePath=&amp;sessionId=u7tpFP8R0Cg%3D&amp;sessionToken=17abcb12f3829dbd49f5049fc278fbb7da0b9db3&amp;timestamp=1513107004&amp;startParam=clickToPlay&amp;isForceLogin=false&amp;isDemo=&amp;&amp;externalId=u7tpFP8R0Cg=&amp;loginId=2026&amp;channelId=1513107004&amp;numGamesToPlayAd=0&amp;isPrerollEnabled=true&amp;isAnalyticsEnabled=false&amp;apiUrl=http%3A%2F%2Fapi.tetrisfriends.com%2Fapi&amp;showChallenge=0&amp;prerollId=52907938&amp;guestId=44648952&amp;currentVoxId=4001"></object></center>
+  <iframe src="http://wetvlkg.simpsite.nl/tetris-marathon" height="768" width="1152"></iframe></center>
 </div>
 
 <script>
@@ -37,7 +37,7 @@ function fullscreen() {
     document.webkitFullscreenEnabled || 
     document.mozFullScreenEnabled ||
     document.msFullscreenEnabled) {
-    var iframe = document.querySelector('#container object');
+    var iframe = document.querySelector('#container iframe');
     // Do fullscreen
     if (iframe.requestFullscreen) {
       iframe.requestFullscreen();
