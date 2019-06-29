@@ -1,3 +1,22 @@
+/*geen effect maar dit scriptj staat op elke pagina dus ik makklijkr*/
+Element.prototype.remove = function() {
+    this.parentElement.removeChild(this);
+}
+NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
+    for(var i = this.length - 1; i >= 0; i--) {
+        if(this[i] && this[i].parentElement) {
+            this[i].parentElement.removeChild(this[i]);
+        }
+    }
+}
+function removeBlockedOverlay() {
+    
+    document.getElementById("blocked-game-overlay").remove();
+    
+}  
+/*wow*/
+
+
 function showEffects() {
     localStorage.setItem('mode', (localStorage.getItem('mode') || 'effects-visible') === 'effects-visible' ? 'light' : 'effects-visible'); localStorage.getItem('mode') === 'effects-visible' ? document.querySelector('body').classList.add('effects-visible') : document.querySelector('body').classList.remove('effects-visible')
 }
