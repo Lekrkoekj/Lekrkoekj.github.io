@@ -7,7 +7,7 @@
         <script>document.addEventListener('DOMContentLoaded', (event) => {
   ((localStorage.getItem('mode') || 'dark') === 'dark') ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')
 })</script>
-    <title>Tetris Marathon - Lekrkoekj Geems</title></head>
+    <title>Tetris 2008 - Lekrkoekj Geems</title></head>
 <body id="view-usersite">
 <div class="full-topbar"><div class="topbar"><center><a target="_blank" href="https://reddit.com/r/lekrkoekjgeems"><img class="reddit" src="/images/reddit-logo.png"></a>
     <a target="_blank" href="https://www.youtube.com/channel/UCVlNgXxnGCM70vkYRMZ8hTw"><img class="youtube" src="/images/yt-logo.png"></a>
@@ -18,7 +18,7 @@
     
 <div class="site-container" id="wrapper">
     <div id="container"><center><button class="button" id="fullscreen">Fullscreen</button>
-  <iframe src="http://wetvlkg.simpsite.nl/tetris-marathon" height="768" width="1152"></iframe></center>
+  <object type="application/x-shockwave-flash" allowscriptaccess="always" data="/geems/tetris-marathon.swf" width="1152" height="768" id="contentFlash"></object></center>
 </div>
 
 <script>
@@ -37,7 +37,7 @@ function fullscreen() {
     document.webkitFullscreenEnabled || 
     document.mozFullScreenEnabled ||
     document.msFullscreenEnabled) {
-    var iframe = document.querySelector('#container iframe');
+    var iframe = document.querySelector('#container object');
     // Do fullscreen
     if (iframe.requestFullscreen) {
       iframe.requestFullscreen();
