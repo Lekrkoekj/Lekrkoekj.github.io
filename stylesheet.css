@@ -212,6 +212,7 @@ button#fullscreen {
     position: absolute !important;
     cursor: pointer !important;
     border-radius: 0px 0px 25px 0px !important;
+    z-index: 1;
 }
 button.normal, button#fullscreen {
 background-color: #f0f0ebbf; 
@@ -691,4 +692,10 @@ body.fat-border * {
     color: #444444;
     text-decoration: none !important;
     font-size: 16px;
+}
+
+.blocked-game-overlay {
+    width: 1152px;
+    height: 768px;
+    background-color: #fffffff0;
 }
