@@ -14,6 +14,15 @@ function removeBlockedOverlay() {
     document.getElementById("blocked-game-overlay").remove();
     
 }  
+
+
+function darkModeSwitch() {
+localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')
+}
+function search() {
+localStorage.setItem('mode', (localStorage.getItem('mode') || 'search-open') === 'search-open' ? 'light' : 'search-open'); localStorage.getItem('mode') === 'search-open' ? document.querySelector('body').classList.add('search-open') : document.querySelector('body').classList.remove('search-open')
+}
+
 /*wow*/
 
 
