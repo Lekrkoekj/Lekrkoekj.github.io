@@ -259,13 +259,18 @@ padding: 13px;
 .menu:hover button.mbtnE, .menu:hover button.mbtnM, .menu:hover button.mbtnS {
     height: 78px !important;
 }
+button.mbtnS:active, button.mbtnM:active, button.mbtnE:active, button.mbtnS:focus, button.mbtnM:focus, button.mbtnE:focus {
+    background-color: #ffffffad;
+}
 
 button.normal:hover, button.big:hover, button.small:hover, button#fullscreen:hover, .social-media:hover, .style-div:hover {
-background-color:#d4d4d1;
+background-color:#d4d4d1b0;
 cursor:pointer;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #5faceabf;
 }
-
+button.normal:active, button.big:active, button.small:active, button#fullscreen:active, .social-media:active, .style-div:active, button.normal:focus, button.big:focus, button.small:focus, button#fullscreen:focus, .social-media:focus, .style-div:focus {
+    background-color: #d4d4d1;
+}
 iframe {
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: 0;

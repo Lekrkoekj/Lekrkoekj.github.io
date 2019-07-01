@@ -91,7 +91,6 @@ transition:all .4s linear;
 }
 
 .hovereffect h2 {
-
 color:#fff;
 text-align:center;
 position:relative;
@@ -103,7 +102,10 @@ transform:translatey(-100px);
 -webkit-transition:all .2s ease-in-out;
 transition:all .2s ease-in-out;
 padding:10px;
-
+width: 135px;
+display: inline-block;
+border-radius: 25px;
+font-weight: normal;
 }
 
 .hovereffect a.info {
@@ -119,6 +121,7 @@ filter:alpha(opacity=0);
 transition:all .2s ease-in-out;
 margin:25px 0 0;
 padding:7px 14px;
+    border-radius: 25px;
 }
 
 .hovereffect:hover, a.info:hover {
