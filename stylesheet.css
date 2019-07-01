@@ -262,7 +262,12 @@ padding: 13px;
 button.mbtnS:active, button.mbtnM:active, button.mbtnE:active, button.mbtnS:focus, button.mbtnM:focus, button.mbtnE:focus {
     background-color: #ffffffad;
 }
-
+body.dark button.mbtnS:active, body.dark button.mbtnM:active, body.dark button.mbtnE:active, body.dark button.mbtnS:focus, body.dark button.mbtnM:focus, body.dark button.mbtnE:focus {
+    background-color: #d4d4d1b0;
+}
+body.dark button.mbtnS:hover, body.dark button.mbtnM:hover, body.dark button.mbtnE:hover {
+background-color: #ffffff38;
+}
 button.normal:hover, button.big:hover, button.small:hover, button#fullscreen:hover, .social-media:hover, .style-div:hover {
 background-color:#d4d4d1b0;
 cursor:pointer;
@@ -771,6 +776,9 @@ body.fat-border * {
     background-color: #fffffff0;
     animation: fade 1s;
 }
+body.dark .blocked-game-overlay {
+    background-color: #1b2022a3;
+}
 body.search-open #blocked-game-overlay {
     display: none;
 }
@@ -782,4 +790,8 @@ body.search-open #blocked-game-overlay {
 }
 body.search-open #wrapper {
     height: 100% !important;
+}
+body.dark button#fullscreen {
+    background-color: #1b2022bf;
+    color: white;
 }
