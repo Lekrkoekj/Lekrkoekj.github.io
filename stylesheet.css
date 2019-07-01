@@ -764,7 +764,17 @@ body.fat-border * {
     width: 1152px;
     height: 768px;
     background-color: #fffffff0;
+    animation: fade 1s;
 }
 body.search-open #blocked-game-overlay {
-    top: 289px !important;
+    display: none;
+}
+#blocked-game-overlay {
+    position: relative;
+    width: 100%;
+    top: -771px; 
+    z-index: 2;
+}
+body.search-open #wrapper {
+    height: 100% !important;
 }
