@@ -450,7 +450,7 @@ button.gsc-search-button.gsc-search-button-v2:hover {
 .gsc-results.gsc-webResult {
     overflow: hidden;
 }
-input.gsc-input, .gsc-webResult.gsc-result {
+input.gsc-input, .gsc-webResult.gsc-result, .gsc-results .gsc-cursor-box .gsc-cursor-page {
     font-family: Tahoma;
     background: transparent !important;
 }
@@ -472,7 +472,7 @@ body.dark button.gsc-search-button.gsc-search-button-v2, body.dark .gsc-input-bo
 body.dark .gsc-input-box {
     border-color: #1b2022 !important;
 }
-body.dark input#gsc-i-id1, body.dark .gsst_a .gscb_a, body.dark .gs-bidi-start-align.gs-snippet, body.dark div#resInfo-0 {
+body.dark input#gsc-i-id1, body.dark .gsst_a .gscb_a, body.dark .gs-bidi-start-align.gs-snippet, body.dark div#resInfo-0, body.dark .gsc-results .gsc-cursor-box .gsc-cursor-page {
     color: white !important;
 }
 
