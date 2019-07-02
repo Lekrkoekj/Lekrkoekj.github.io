@@ -86,8 +86,7 @@ transition:all .4s cubic-bezier(1, 0.03, 1, 0.99);
 .hovereffect img {
 display:block;
 position:relative;
--webkit-transition:all .4s linear;
-transition:all .4s linear;
+transition: 0.3s;
 }
 
 .hovereffect h2 {
@@ -112,16 +111,17 @@ font-weight: normal;
 text-decoration:none;
 display:inline-block;
 text-transform:uppercase;
-color:#fff;
-border:1px solid #fff;
-background-color:transparent;
+color: black;
+border: none;
+background: #f0f0ebbf;
 opacity:0;
 filter:alpha(opacity=0);
 -webkit-transition:all .2s ease-in-out;
 transition:all .2s ease-in-out;
 margin:25px 0 0;
 padding:7px 14px;
-    border-radius: 25px;
+border-radius: 25px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .hovereffect:hover, a.info:hover {
