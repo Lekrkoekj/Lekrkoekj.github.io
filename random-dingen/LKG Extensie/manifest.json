@@ -1,0 +1,19 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "js/flashenabler.js" ]
+   },
+   "description": "Deze extensie zorgt ervoor dat alle Flash geems op LKG automatisch starten.",
+   "icons": {
+      "128": "image/icon128.png",
+      "16": "image/icon16.png",
+      "256": "image/icon256.png",
+      "32": "image/icon32.png",
+      "48": "image/icon48.png"
+   },
+   "manifest_version": 2,
+   "name": "LKG Flash Enabler",
+   "permissions": [ "contentSettings"],
+   "short_name": "LKG Flash Enabler",
+   "version": "1.0"
+}

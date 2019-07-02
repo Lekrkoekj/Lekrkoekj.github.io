@@ -732,3 +732,18 @@ body.dark button#fullscreen {
     background-color: #1b2022bf;
     color: white;
 }
+.instruction-image {
+    transition: 0.3s ease-in-out;
+}
+.instruction-image:hover {
+    transform: scale(2);
+}
+img#aaa:hover {
+        transform: scale(3) translate(66px, 0px);
+}
+img#aab:hover {
+    transform: scale(2) translate(38px, 0px);
+}
+img#aac:hover {
+    transform: scale(2) translate(-42px, 0px);
+}
