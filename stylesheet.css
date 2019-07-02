@@ -482,6 +482,9 @@ body.dark button.gsc-search-button.gsc-search-button-v2, body.dark .gsc-input-bo
 body.dark .gsc-input-box {
     border-color: #1b2022 !important;
 }
+.gsc-webResult.gsc-result {
+    animation: fade 1s;
+}
 body.dark input#gsc-i-id1, body.dark .gsst_a .gscb_a, body.dark .gs-bidi-start-align.gs-snippet, body.dark div#resInfo-0, body.dark .gsc-results .gsc-cursor-box .gsc-cursor-page {
     color: white !important;
 }
@@ -512,72 +515,6 @@ body.dark .gsc-search-button-v2 svg {
     body#view-usersite {
         transition: 0.5s ease-in-out;
     }
-.checkbox-container {
-  display: inline-block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  padding-right: 12px;
-  font-size: 16px;
-}
-
-.checkbox-container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-.checkmark {
-  position: absolute;
-  top: -4px;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-  transition: 0.3s;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 4px;
-  transform: scale(0.7);
-}
-
-.checkbox-container:hover input ~ .checkmark {
-  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0), 0 0px 20px 0 #5faceabf;
-}
-
-.checkbox-container input:checked ~ .checkmark {
-  background-color: #2196F3;
-}
-
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.checkbox-container input:checked ~ .checkmark:after {
-  display: block;
-}
-
-.checkbox-container .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
 
 
 
