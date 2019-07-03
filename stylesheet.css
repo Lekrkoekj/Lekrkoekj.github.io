@@ -265,8 +265,8 @@ button.mbtnS:active, button.mbtnM:active, button.mbtnE:active, button.mbtnS:focu
 body.dark button.mbtnS:active, body.dark button.mbtnM:active, body.dark button.mbtnE:active, body.dark button.mbtnS:focus, body.dark button.mbtnM:focus, body.dark button.mbtnE:focus {
     background-color: #d4d4d1b0;
 }
-body.dark button.mbtnS:hover, body.dark button.mbtnM:hover, body.dark button.mbtnE:hover {
-background-color: #ffffff38;
+body.dark button.mbtnS:hover, body.dark button.mbtnM:hover, body.dark button.mbtnE:hover, body.dark button.mbtnS:focus, body.dark button.mbtnM:focus, body.dark button.mbtnE:focus {
+background-color: #ffffff38 !important;
 }
 button.normal:hover, button.big:hover, button.small:hover, button#fullscreen:hover, .social-media:hover, .style-div:hover {
 background-color:#d4d4d1b0;
@@ -291,6 +291,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding-bottom: 20px;
     border-radius: 0px;
     overflow: hidden;
+    height: 200px;
 }
 .geem:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 #5faceabf;
@@ -336,9 +337,6 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 .title {
     padding-top: 20px;
     padding-bottom: 18px;
-}
-.geem-full-height {
-    height: 200px
 }
 .geem:hover .blocked-game-name:after {
     font-size: 12px;
@@ -486,7 +484,7 @@ input.gsc-input, .gsc-webResult.gsc-result, .gsc-results .gsc-cursor-box .gsc-cu
 }
 body.search-open .site-container .search-box {
     display: block !important;
-}.
+}
 .site-container .search-box {
     display: none;
 }
@@ -695,7 +693,9 @@ body.fat-border * {
     border: 5px solid red !important;
 }
 
-
+button#lekrdikrandj {
+    margin-right: 0px !important;
+}
 
 
 
