@@ -80,7 +80,7 @@ left:0;
 opacity:0;
 background-color:rgba(0,0,0,0.5);
 -webkit-transition:all .4s ease-in-out;
-transition:all .4s cubic-bezier(1, 0.03, 1, 0.99);
+transition: 0.3s;
 }
 
 .hovereffect img {
@@ -98,8 +98,7 @@ background:rgba(0,0,0,0.6);
 -webkit-transform:translatey(-100px);
 -ms-transform:translatey(-100px);
 transform:translatey(-100px);
--webkit-transition:all .2s ease-in-out;
-transition:all .2s ease-in-out;
+transition: 0.3s;
 padding:10px;
 width: 135px;
 display: inline-block;

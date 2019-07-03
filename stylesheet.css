@@ -554,6 +554,9 @@ body.dark {
 body.dark a {
 color: #0089ff;
 }
+body.dark a.info {
+    background: #1b2022 !important;
+}
 body.dark a:active {
 color: #5db4ff;
 }
@@ -734,6 +737,7 @@ body.dark button#fullscreen {
 }
 .instruction-image {
     transition: 0.3s ease-in-out;
+    cursor: zoom-in;
 }
 .instruction-image:hover {
     transform: scale(2);
@@ -746,4 +750,7 @@ img#aab:hover {
 }
 img#aac:hover {
     transform: scale(2) translate(-42px, 0px);
+}
+button.small, button.normal, button.big, .mbtnS, .mbtnM, .mbtnE, #fullscreen, img {
+    user-select: none;
 }
