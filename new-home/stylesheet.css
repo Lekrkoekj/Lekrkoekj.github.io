@@ -19,11 +19,24 @@ h1, h2, h3, h4, h5, h6, span {
 p, .site-container {
     font-family: Open Sans;
 }
-button.small, button.normal, button.big, button#fullscreen {
+.site-container {
+    margin-bottom: 10px;
+    position: relative;
+    top: -2px;
+}
+button.small, button.normal, button.big, button#fullscreen, button.gsc-search-button.gsc-search-button-v2 {
     font-family: Lato;
     border-radius: 5px;
     padding: 13px;
     border: 0;
+    box-shadow: 0px 2px 7px 0px #0000001a;
+    background: #ffffffe3;
+}
+button.gsc-search-button.gsc-search-button-v2  {
+    padding: 7px 7px;
+}
+button.gsc-search-button.gsc-search-button-v2 svg {
+    fill: black;
 }
 button.small {
     font-size: 12px;
@@ -33,8 +46,7 @@ button.normal {
 }
 /*Menu*/
 .logo {
-    max-width:78px;
-    width: 100%;
+    width:78px;
     cursor: pointer;
 }
 .menu {
@@ -90,6 +102,13 @@ p[no-margin] {
 .white {
     background: #ffffffa3;
 }
+.use-background {
+    background-image: url(http://www.simpsite.nl/uploads/161/920/Home/achergrond976939.png);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+}
 
 /*Search bar and results*/
 div#___gcse_0 {
@@ -101,20 +120,36 @@ input#gsc-i-id1 {
     font-size: 16px;
     color: black;
     font-family: Lato;
+    padding: 0px 10px !important;
+    background: transparent;
 }
 table#gs_id50 {
     height: 27px;
 }
 .search-results {
-    position: absolute;
     top: 77px;
+    z-index: 1;
+    background: #ffffffa3;
 }
 .gsc-control-cse {
     border-color: transparent !important;
-    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.gsc-input-box {
+    border-radius: 5px;
+    border:0 !important;
+    box-shadow: 0px 2px 7px 0px #0000001a;
+    background: #ffffffe3 !important;
+}
+td.gsc-orderby-container {
+    display: none;
 }
 
+
+
 /*Homepage slideshow*/
+
 /* Slideshow container */
 .slideshow-container {
     width: 100%;
@@ -151,6 +186,9 @@ table#gs_id50 {
   .slideshow-container p {
       margin-top: 5px !important;
       font-family: Open Sans;
+  }
+  .mySlides {
+      height: 370px;
   }
 
 
