@@ -31,6 +31,7 @@ button.small, button.normal, button.big, button#fullscreen, button.gsc-search-bu
     border: 0;
     box-shadow: 0px 2px 7px 0px #0000001a;
     background: #ffffffe3;
+    cursor: pointer;
 }
 button.gsc-search-button.gsc-search-button-v2  {
     padding: 7px 7px;
@@ -39,10 +40,13 @@ button.gsc-search-button.gsc-search-button-v2 svg {
     fill: black;
 }
 button.small {
-    font-size: 12px;
+    font-size: 10px;
 }
 button.normal {
     font-size: 16px;
+}
+button.big {
+    font-size: 25px;
 }
 /*Menu*/
 .logo {
@@ -162,13 +166,13 @@ td.gsc-orderby-container {
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: #ffffff80;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
   }
   .active {
-    background-color: #717171;
+    background-color: white;
   }
   .fade {
     -webkit-animation-name: fade;
