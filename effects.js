@@ -23,7 +23,57 @@ localStorage.setItem('mode', (localStorage.getItem('mode') || 'search-open') ===
 }
 
 /*wow*/
-
+function deactivateAll() {
+    document.querySelector('body').classList.remove('inverted');document.querySelector('body').classList.remove('saturated');
+    document.querySelector('body').classList.remove('turned');
+    document.querySelector('body').classList.remove('spinning');
+    document.querySelector('body').classList.remove('slow-spinning');
+    document.querySelector('body').classList.remove('text-turned');
+    document.querySelector('body').classList.remove('img-turned');
+    document.querySelector('body').classList.remove('pinkgreen');
+    document.querySelector('body').classList.remove('all-turned');
+    document.querySelector('body').classList.remove('all-turned-1deg');
+    document.querySelector('body').classList.remove('all-turned-36deg');
+    document.querySelector('body').classList.remove('pink');
+    document.querySelector('body').classList.remove('white');
+    document.querySelector('body').classList.remove('old');
+    document.querySelector('body').classList.remove('white-background');
+    document.querySelector('body').classList.remove('effect-spin');
+    document.querySelector('body').classList.remove('spastic-background');
+    document.querySelector('body').classList.remove('lekrdraaitj');
+    document.querySelector('body').classList.remove('fat-border');
+    document.querySelector('body').classList.remove('lekrknippertj');
+    document.querySelector('body').classList.remove('border');
+    document.querySelector('body').classList.remove('shadow');
+    document.querySelector('body').classList.remove('shadow-inset');
+    document.querySelector('body').classList.remove('zoomed');
+}
+function activateAll() {
+    toggleInvert();
+    toggleSaturation();
+    toggleTurn();
+    toggleSiteSpin();
+    toggleSlowSiteSpin();
+    toggleTurnIMG();
+    togglePinkGreen();
+    toggleTurnText();
+    toggleTurnAll();
+    toggleTurnAll1deg();
+    toggleTurnAll36deg();
+    togglePink();
+    toggleWhite();
+    toggleOld();
+    toggleWhiteBackground();
+    toggleF();
+    toggleSpasticBackground();
+    toggleLekrdraaitj();
+    toggleLekrdikrandj();
+    toggleLekrknippertj();
+    toggleLekrrandj();
+    toggleLekrschaduwtj();
+    toggleLekrschaduwtjInset();
+    toggleLekrzoompj();
+}
 
 function showEffects() {
     localStorage.setItem('mode', (localStorage.getItem('mode') || 'effects-visible') === 'effects-visible' ? 'light' : 'effects-visible'); localStorage.getItem('mode') === 'effects-visible' ? document.querySelector('body').classList.add('effects-visible') : document.querySelector('body').classList.remove('effects-visible')
