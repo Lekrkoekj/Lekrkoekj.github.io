@@ -80,8 +80,7 @@ button.big {
     vertical-align: top;
 }
 .menu-button {
-    max-height: 78px;
-    height: 100%;
+    height: 78px;
     border: 0;
     background-color: transparent;
     font-family: Lato;
@@ -91,6 +90,19 @@ button.big {
     transition: 0.3s;
     min-width: 81px;
     color: black;
+}
+.sun, body.dark .moon {
+    display: none;
+}
+body.dark .sun {
+    display: inline-block;
+}
+body.dark .dark-mode-text {
+    font-size: 0px;
+}
+body.dark .dark-mode-text:after {
+    font-size: 16px;
+    content: 'Licht';
 }
 .menu-button:hover {
     background-color: #ffffffcc;
@@ -129,7 +141,7 @@ p[no-margin] {
 /*Search bar and results*/
 div#___gcse_0 {
     display: inline-block;
-    width: 482px;
+    width: 396px;
     vertical-align: middle;
 }
 input#gsc-i-id1 {
@@ -161,8 +173,18 @@ table#gs_id50 {
 td.gsc-orderby-container {
     display: none;
 }
-
-
+.gsc-webResult.gsc-result, .gsc-above-wrapper-area {
+    border: 0 !important;
+}
+.search-results * {
+    font-family: Lato;
+}
+.gs-bidi-start-align.gs-snippet {
+    font-family: Open Sans !important;
+}
+.gsc-results .gsc-cursor-box .gsc-cursor-page {
+    background: none !important;
+}
 
 /*Homepage slideshow*/
 
@@ -172,8 +194,7 @@ td.gsc-orderby-container {
     position: relative;
     margin: auto;
     color: white;
-  }
-  /* The dots/bullets/indicators */
+}
   .dot {
     height: 15px;
     width: 15px;
@@ -206,7 +227,54 @@ td.gsc-orderby-container {
   .mySlides {
       height: 370px;
   }
-
+/*Dark mode styles*/
+body.dark {
+    background: #131719;
+}
+body.dark .white {
+    background: #131719;
+}
+body.dark .blue {
+    background: #313333;
+}
+body.dark .menu {
+    background: #1b2022cc;
+}
+body.dark button.small, body.dark button.normal, body.dark button.big, body.dark .lekrkoekj-paginas, body.dark .populaire-geems, body.dark .nieuwste-geems, body.dark .on-white {
+    background: #1b2022 !important;
+    color: white;
+}
+body.dark .hovereffect a.info, body.dark .hovereffect h2 {
+        background: #1b2022bf !important;
+        color: white !important;
+}
+body.dark .menu-button:hover {
+    background: #313333cc
+}
+body.dark img[src="/images/misc-icon.png"] {
+    filter: invert(1);
+}
+body.dark h1, body.dark h2, body.dark h3, body.dark span, body.dark h4, body.dark h5, body.dark h6, body.dark p, body.dark .gs-bidi-start-align.gs-snippet, body.dark div#resInfo-0 {
+    color: white;
+}
+body.dark .gsc-input-box, body.dark button.gsc-search-button.gsc-search-button-v2 {
+    background: #313333cc !important;
+}
+body.dark .gsc-input-box input {
+    color: white !important;
+}
+body.dark button.gsc-search-button.gsc-search-button-v2 svg {
+    fill: white !important;
+}
+body.dark .gsc-control-cse, .gsc-resultsbox-visible, body.dark .gsc-webResult.gsc-result, body.dark .gsc-results .gsc-imageResult {
+    background: #131719;
+}
+body.dark a {
+    color: #0089ff !important;
+}
+body.dark a:active {
+    color: #5db4ff !important;
+}
 /*Lekre effectj's effecten*/
 body.inverted {
     filter: invert(1);
