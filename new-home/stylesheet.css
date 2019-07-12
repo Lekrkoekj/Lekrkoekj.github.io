@@ -111,7 +111,16 @@ body.dark .dark-mode-text:after {
     max-height: 35px;
     height: 100%;
 }
-
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
 /*Tags for elements*/
 p[no-margin] {
     padding: 0 !important;
