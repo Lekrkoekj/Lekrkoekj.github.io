@@ -266,7 +266,7 @@ body.dark .gsc-input-box input {
 body.dark button.gsc-search-button.gsc-search-button-v2 svg {
     fill: white !important;
 }
-body.dark .gsc-control-cse, .gsc-resultsbox-visible, body.dark .gsc-webResult.gsc-result, body.dark .gsc-results .gsc-imageResult {
+body.dark .gsc-control-cse, body.dark .gsc-resultsbox-visible, body.dark .gsc-webResult.gsc-result, body.dark .gsc-results .gsc-imageResult {
     background: #131719;
 }
 body.dark a {
