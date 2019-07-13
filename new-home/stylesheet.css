@@ -57,6 +57,27 @@ button.normal {
 button.big {
     font-size: 25px;
 }
+body.dark a {
+    color: #0089ff !important;
+}
+body.dark a:active {
+    color: #5db4ff !important;
+}
+/*Site counter*/
+.site-counter.visible {
+    display:  inline-block;
+}
+.site-counter {
+    display: none;
+}
+.site-counter * {
+    color: black !important;
+    text-decoration: none;
+}
+body.dark .site-counter a[href="http://www.scriptsocket.com/textcounter.php"] {
+    color: white !important;
+    text-decoration: none;
+}
 /*Menu*/
 .logo {
     width:78px;
@@ -281,12 +302,6 @@ body.dark button.gsc-search-button.gsc-search-button-v2 svg {
 body.dark .gsc-control-cse, body.dark .gsc-resultsbox-visible, body.dark .gsc-webResult.gsc-result, body.dark .gsc-results .gsc-imageResult {
     background: #131719;
 }
-body.dark a {
-    color: #0089ff !important;
-}
-body.dark a:active {
-    color: #5db4ff !important;
-}
 /*Lekre effectj's effecten*/
 body.inverted {
     filter: invert(1);
@@ -420,7 +435,7 @@ button#lekrdikrandj {
     }
 
 .lekrkoekj-paginas {
-    height: 399px;
+    height: 398px;
 }
 
 .hovereffect {
@@ -480,6 +495,7 @@ margin:25px 0 0;
 padding:7px 14px;
 border-radius: 5px;
 box-shadow: 0px 2px 7px 0px #0000001a;
+font-family: Lato;
 }
 
 /*.hovereffect:hover, a.info:hover {

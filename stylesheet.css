@@ -339,12 +339,12 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding-bottom: 18px;
 }
 .geem:hover .blocked-game-name:after {
-    font-size: 12px;
+    font-size: 12px !important;
     content: 'Geblokkeerd op schoolwifi';
 }
 
 .geem:hover .blocked-game-name {
-    font-size: 0;
+    font-size: 0px !important;
 }
 .blocked-game-name {
     color: #790c0c !important;
