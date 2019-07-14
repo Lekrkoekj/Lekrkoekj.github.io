@@ -7,7 +7,7 @@
         <script>document.addEventListener('DOMContentLoaded', (event) => {
   ((localStorage.getItem('mode') || 'dark') === 'dark') ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')
 })</script>
-    <title>Tetris Sprint JP - Lekrkoekj Geems</title><meta name="description" content="Speel Tetris Sprint JP nu op Lekrkoekj Geems!"/>
+    <title>Cut the Rope 2 - Lekrkoekj Geems</title><meta name="description" content="Speel Cut the Rope 2 nu op Lekrkoekj Geems!"/>
         <meta property="og:image" content="https://lekrkoekj.github.io/images/lkg-logo-small.png"/>
         <meta property="og:image:secure_url" content="https://lekrkoekj.github.io/images/lkg-logo-small.png" /></head>
 <body id="view-usersite">
@@ -20,8 +20,9 @@
     <div class="search-box" style="display:none"><center><p>Je kan nog niet naar alle pagina's zoeken hiermee. Zodra mensen de site meer gaan gebruiken komen er langzaam meer pagina's bij.</p></center><script async src="https://cse.google.com/cse.js?cx=017866478519957740827:suj422r5i_w"></script>
         <div class="gcse-search"></div></div>
     <div id="container"><center><button class="button" id="fullscreen">Fullscreen</button>
-  <object type="application/x-shockwave-flash" allowscriptaccess="always" data="/geems/tetris-sprint-jp.swf" width="950" height="768" id="contentFlash"></object></center>
+      <iframe src="https://games.gamepix.com/play/40214?sid=110727" id="swf" allowfullscreen="" frameborder="0" scrolling="no" width="100%" height="100%"></iframe></center>
 </div>
+<center id="blocked-game-overlay"><div class="blocked-game-overlay"><center style="padding-top: 250px;"><p style="font-size: 70px; margin: 0;">⚠️</p><p>Deze geem is geblokkeerd op de schoolwifi!</p><p><button class="normal" onclick="removeBlockedOverlay()">Ik speel niet op school, laat me spelen!</button></p></center></div></center>
 
 <script>
 var button = document.querySelector('#fullscreen');
@@ -39,7 +40,7 @@ function fullscreen() {
     document.webkitFullscreenEnabled || 
     document.mozFullScreenEnabled ||
     document.msFullscreenEnabled) {
-    var iframe = document.querySelector('#container object');
+    var iframe = document.querySelector('#container iframe');
     // Do fullscreen
     if (iframe.requestFullscreen) {
       iframe.requestFullscreen();
@@ -75,6 +76,7 @@ function fullscreenChange() {
     <div class="effect-menu">
         <p style="margin-top: 8px; margin-bottom: 5px; font-size: 20px;">Filters, effecten en animaties</p>
     <button class="normal" id="invert" onclick="toggleInvert()" style="margin-right: 5px; margin-top: 5px;">Draai kleuren om</button><button class="normal" id="saturation" onclick="toggleSaturation()" style="margin-right: 5px;">10000% Saturation</button><button class="normal" id="turn" onclick="toggleTurn()" style="margin-right: 5px;">Ondersteboven</button><button class="normal" id="site-spin" onclick="toggleSiteSpin()" style="margin-right: 5px;">Site draaien</button><button class="normal" id="slow-site-spin" onclick="toggleSlowSiteSpin()" style="margin-right: 5px;">Sloom site draaien</button><button class="normal" id="img-turn" onclick="toggleTurnIMG()" style="margin-right: 5px;">Draai plaatj's</button><button class="normal" id="text-turn" onclick="toggleTurnText()" style="margin-right: 5px;">Draai tekst</button><button class="normal" id="all-turn" onclick="toggleTurnAll()"style="margin-right: 5px;">Draai alles</button><button class="normal" id="all-turn-1deg" onclick="toggleTurnAll1deg()" style="margin-right: 5px;">Draai alles 1°</button><button class="normal" id="all-turn-36deg" onclick="toggleTurnAll36deg()" style=" margin-top: 5px;">Draai alles 36°</button><p style="margin-top: 8px; margin-bottom: 5px; font-size: 20px;">Kleuren en achtergronden</p><button class="normal" id="pink-green" onclick="togglePinkGreen()" style="margin-right: 5px; margin-top: 5px;">Deeppink Tekst + Lime Achtergrond</button><button class="normal" id="pink" onclick="togglePink()" style="margin-right: 5px; margin-top: 5px;">Roze Tekst</button><button class="normal" id="white" onclick="toggleWhite()" style="margin-right: 5px; margin-top: 5px;">Witte Tekst</button><button class="normal" id="old" onclick="toggleOld()" style="margin-right: 5px; margin-top: 5px;">Lekrkoekj Achtergrond</button><button class="normal" id="white-background" onclick="toggleWhiteBackground()" "margin-right: 5px; margin-top: 5px;">Witte Achtergrond</button><p style="margin-top: 8px; margin-bottom: 5px; font-size: 20px;">Random Dingen</p><button class="normal" id="f-effect" onclick="toggleF()" style="margin-right: 5px; margin-top: 5px;">F</button><button class="normal" id="spastic-background" onclick="toggleSpasticBackground()" style="margin-right: 5px; margin-top: 5px;">Lekrachtergrondj</button><button class="normal" id="lekrdraaitj" onclick="toggleLekrdraaitj()" style="margin-right: 5px; margin-top: 5px;">Lekrdraaitj</button><button class="normal" id="lekrknippertj" onclick="toggleLekrknippertj()" style="margin-right: 5px; margin-top: 5px;">Lekrknippertj</button><button class="normal" id="lekrschaduwtj" onclick="toggleLekrschaduwtj()" style="margin-right: 5px; margin-top: 5px;">Lekrschaduwtj</button><button class="normal" id="lekrschaduwtj-inset" onclick="toggleLekrschaduwtjInset()" style="margin-right: 5px; margin-top: 5px;">Lekrschaduwtj Inset</button><button class="normal" id="lekrzoompj" onclick="toggleLekrzoompj()" style="margin-right: 5px; margin-top: 5px;">Lekrzoompj</button><button class="normal" id="lekrrandj" onclick="toggleLekrrandj()" style="margin-right: 5px; margin-top: 5px;">Lekrrandj</button><button class="normal" id="lekrdikrandj" onclick="toggleLekrdikrandj()" style="margin-right: 5px; margin-top: 5px;">Lekrdikrandj</button></div>
+ </center></div>
     
     </body>
 </html>

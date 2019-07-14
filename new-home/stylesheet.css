@@ -466,11 +466,11 @@ position:relative;
 transition: 0.3s;
 }
 .hovereffect h2 {
-color:#fff;
+color:black;
 text-align:center;
 position:relative;
 font-size:17px;
-background:rgba(0,0,0,0.6);
+background:#f0f0ebbf;
 -webkit-transform:translatey(-100px);
 -ms-transform:translatey(-100px);
 transform:translatey(-100px);
@@ -497,23 +497,17 @@ border-radius: 5px;
 box-shadow: 0px 2px 7px 0px #0000001a;
 font-family: Lato;
 }
-
-/*.hovereffect:hover, a.info:hover {
-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0), 0 0px 20px 0 #5faceabf;
-}*/
-
 .hovereffect:hover img {
 -ms-transform:scale(1.2);
 -webkit-transform:scale(1.2);
 transform:scale(1.2);
-filter: blur(2px);
+filter: blur(1px);
+backface-visibility: hidden;
 }
-
 .hovereffect:hover .overlay {
 opacity:1;
 filter:alpha(opacity=100);
 }
-
 .hovereffect:hover h2,.hovereffect:hover a.info {
 opacity:1;
 filter:alpha(opacity=100);
