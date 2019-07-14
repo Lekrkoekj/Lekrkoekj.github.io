@@ -90,6 +90,7 @@ body.dark .site-counter a[href="http://www.scriptsocket.com/textcounter.php"] {
     background-color: #ffffffcc;
     z-index: 2;
     box-shadow: -2px 1px 12px 3px #0000004f;
+    overflow: hidden;
 }
 .menu-table {
     padding: 0;
@@ -208,7 +209,7 @@ table#gs_id50 {
 td.gsc-orderby-container {
     display: none;
 }
-.gsc-webResult.gsc-result, .gsc-above-wrapper-area {
+.gsc-webResult.gsc-result, .gsc-above-wrapper-area, .gcsc-more-maybe-branding-root {
     border: 0 !important;
 }
 .search-results * {
@@ -219,6 +220,36 @@ td.gsc-orderby-container {
 }
 .gsc-results .gsc-cursor-box .gsc-cursor-page {
     background: none !important;
+}
+.gs-webResult.gs-result a b {
+    color: #00aef1 !important;
+}
+/*Categorieën*/
+.category-title {
+    color: white;
+    display: inline-block;
+    width: 49.6%;
+    transform: translateY(33%);
+}
+.category-title h1 {
+    transform: scale(1.5);
+}
+.category-background {
+    display: inline-table;
+    width: 50.1%;
+}
+.category-background, .category-gradient, .category-title {
+    height: 150px;
+}
+.category-gradient {
+    display: inline-table;
+    background: linear-gradient(90deg, #5facea 20%, #fff0 100%);
+    position: absolute;
+    height: 150px;
+    width: 113px;
+}
+.category-title h1, .category-background h1 {
+    margin: 0;
 }
 
 /*Homepage slideshow*/
@@ -432,12 +463,10 @@ button#lekrdikrandj {
     transition: 0.3s;
     overflow: hidden;
     margin-top: 20px;   
-    }
-
+}
 .lekrkoekj-paginas {
     height: 398px;
 }
-
 .hovereffect {
 width:162px;
 height:162px;
@@ -446,8 +475,7 @@ overflow:hidden;
 position:relative;
 text-align:center;
 cursor:default;
-    transition: 0.3s;
-    
+transition: 0.3s;
 }
 .hovereffect .overlay {
 width:100%;
