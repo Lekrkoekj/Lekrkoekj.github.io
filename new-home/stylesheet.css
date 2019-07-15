@@ -33,6 +33,9 @@ body.effects-visible .effect-menu {
 .effect-bar {
     padding: 10px 0px;
 }
+button, img, span {
+    user-select: none;
+}
 button.small, button.normal, button.big, button#fullscreen, button.gsc-search-button.gsc-search-button-v2 {
     font-family: Lato;
     border-radius: 5px;
@@ -73,6 +76,7 @@ body.dark a:active {
 .site-counter * {
     color: black !important;
     text-decoration: none;
+    cursor: default;
 }
 body.dark .site-counter a[href="http://www.scriptsocket.com/textcounter.php"] {
     color: white !important;
@@ -137,11 +141,11 @@ body.dark .dark-mode-text:after {
     width: 10px;
 }
 ::-webkit-scrollbar-thumb {
-    background: #888;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background: #5facead9;
+    box-shadow: 0px 2px 7px 0px #0000001a;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #f4f4f061;
 }
 /*Tags for elements*/
 p[no-margin] {
@@ -237,6 +241,7 @@ td.gsc-orderby-container {
 .category-background {
     display: inline-table;
     width: 50.1%;
+    user-select: none;
 }
 .category-background, .category-gradient, .category-title {
     height: 150px;
@@ -246,10 +251,31 @@ td.gsc-orderby-container {
     background: linear-gradient(90deg, #5facea 20%, #fff0 100%);
     position: absolute;
     height: 150px;
-    width: 113px;
+    width: 203px;
+    user-select: none;
 }
 .category-title h1, .category-background h1 {
     margin: 0;
+}
+.game {
+    box-shadow: 0px 2px 7px 0px #0000001a;
+    border-radius: 5px;
+    border: 0;
+    font-size: 16px;
+    padding: 0px 0px 10px 0px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.game-img {
+    width:162px;
+    padding-bottom: 5px;
+}
+.category-table td {
+    vertical-align: top;
+}
+.category-table {
+    margin: 10px 0px;
 }
 
 /*Homepage slideshow*/
@@ -332,6 +358,9 @@ body.dark button.gsc-search-button.gsc-search-button-v2 svg {
 }
 body.dark .gsc-control-cse, body.dark .gsc-resultsbox-visible, body.dark .gsc-webResult.gsc-result, body.dark .gsc-results .gsc-imageResult {
     background: #131719;
+}
+body.dark .category-gradient {
+    background: linear-gradient(90deg, #313333 20%, #fff0 100%);
 }
 /*Lekre effectj's effecten*/
 body.inverted {
@@ -446,7 +475,9 @@ body.fat-border * {
 button#lekrdikrandj {
     margin-right: 0px !important;
 }
-
+@keyframes wrapper-spin {
+        100% {transform:rotate(360deg)}
+    }
 /*Homepage only*/
 .title {
     font-size: 29px;
