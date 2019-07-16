@@ -557,11 +557,13 @@ box-shadow: 0px 2px 7px 0px #0000001a;
 font-family: Lato;
 }
 .hovereffect:hover img {
--ms-transform:scale(1.2);
--webkit-transform:scale(1.2);
-transform:scale(1.2);
 filter: blur(1px);
 backface-visibility: hidden;
+}
+.hovereffect:hover img#scale-img {
+    -ms-transform:scale(1.2);
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
 }
 .hovereffect:hover .overlay {
 opacity:1;
