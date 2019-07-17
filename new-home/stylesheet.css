@@ -216,6 +216,9 @@ td.gsc-orderby-container {
 .gsc-webResult.gsc-result, .gsc-above-wrapper-area, .gcsc-more-maybe-branding-root {
     border: 0 !important;
 }
+.gcsc-more-maybe-branding-root {
+    display: none;
+}
 .search-results * {
     font-family: Lato;
 }
