@@ -282,8 +282,8 @@ td.gsc-orderby-container {
     max-width: 150px;
     width: 100%;
 }
-@media screen and (max-width: 1279px) {
-    .category-gradient {
+@media screen and (max-width: 1236px) {
+    .category-gradient, .category-background {
     display: none;
     }
   }
@@ -534,6 +534,7 @@ position:relative;
 text-align:center;
 cursor:default;
 transition: 0.3s;
+z-index: 1;
 }
 .hovereffect .overlay {
 width:100%;
@@ -583,6 +584,7 @@ padding:7px 14px;
 border-radius: 5px;
 box-shadow: 0px 2px 7px 0px #0000001a;
 font-family: Lato;
+font-size: 16px;
 }
 .hovereffect:hover img {
 filter: blur(1px);
@@ -619,7 +621,25 @@ img#gif {
 @keyframes gif {
     100% {transform: rotate(-360deg);}
 }
-
+/*Zoom fixes*/
+@media only screen and (max-width: 1280px) {
+    .hovereffect, .hovereffect img {
+        width: 152px;
+        height: 152px;
+    }
+    .populaire-geems, .nieuwste-geems {
+        height: 530px;
+}
+.lekrkoekj-paginas {
+    height: 377px;
+}
+div#___gcse_0 {
+    width: 281px;
+}
+.hovereffect h2 {
+    width: 120px;
+}
+}
 /*Mobile styles*/
 @media only screen and (max-width: 930px) {
     .announcement-td2, .populaire-geems, .lekrkoekj-paginas, .nieuwste-geems, .home-td {
@@ -628,6 +648,17 @@ img#gif {
     .home-mobile-message {
         display: block;
     }
+    .game-img {
+        width: 100px;
+    }
+    span.game-name {
+        font-size: 11px;
+    }
+}
+@media only screen and (min-width: 930px) {
+.home-mobile-message, div#myNav {
+    display: none;
+}
 }
 /*Mobile Menu*/
 @media only screen and (max-width: 930px) {
