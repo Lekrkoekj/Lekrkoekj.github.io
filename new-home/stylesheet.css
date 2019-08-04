@@ -24,6 +24,9 @@ p, .site-container {
     position: relative;
     top: -2px;
 }
+.site-container p {
+    margin: 8px 0px;
+}
 body.effects-visible .effect-menu {
     display: block;
 }
