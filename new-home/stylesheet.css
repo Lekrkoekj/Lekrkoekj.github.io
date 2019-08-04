@@ -156,7 +156,7 @@ body.dark .dark-mode-text:after {
     background: #f4f4f061;
 }
 /*Mobile Menu*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 930px) {
     .menu {
         display: none;
     }
@@ -735,7 +735,13 @@ img#gif {
     100% {transform: rotate(-360deg);}
 }
 
-
+/*Mobile styles*/
+@media only screen and (max-width: 930px) {
+    .announcement-td2, .populaire-geems, .lekrkoekj-paginas, .nieuwste-geems, .home-td {
+        display: none;
+    }
+    
+}
 
 
 
