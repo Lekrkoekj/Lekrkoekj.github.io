@@ -290,7 +290,6 @@ td.gsc-orderby-container {
     display: none;
     }
   }
-}
 div#___gcse_0 {
     width: 291px;
 }
@@ -663,6 +662,33 @@ div#___gcse_0 {
     display: none;
 }
 }
+@media only screen and (min-width: 930px) {
+.mobile-category {
+    display: none;
+}
+}
+@media only screen and (max-width: 930px) {
+.mobile-game {
+    box-shadow: 0px 2px 7px 0px #0000001a;
+    border-radius: 5px;
+    border: 0;
+    font-size: 16px;
+    padding: 0px 0px 10px 0px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 10px;
+    max-width: 150px;
+    width: 100%;
+}
+.category-table {
+    display: none;
+}
+
+.mobile-category {
+
+}
+}
+
 /*Mobile Menu*/
 @media only screen and (max-width: 930px) {
     .menu {
