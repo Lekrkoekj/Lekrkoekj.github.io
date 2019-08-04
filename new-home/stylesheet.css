@@ -155,122 +155,7 @@ body.dark .dark-mode-text:after {
 ::-webkit-scrollbar-track {
     background: #f4f4f061;
 }
-/*Mobile Menu*/
-@media only screen and (max-width: 930px) {
-    .menu {
-        display: none;
-    }
-    .mobile-menu {
-        display: block !important;
-    }
-}
-.mobile-menu {
-    display: none;
-}
-.hamburger {
-    padding: 15px 15px;
-    display: inline-block;
-    cursor: pointer;
-    transition-property: opacity, filter;
-    transition-duration: 0.15s;
-    transition-timing-function: linear;
-    font: inherit;
-    color: inherit;
-    text-transform: none;
-    background-color: transparent;
-    border: 0;
-    margin: 0;
-    overflow: visible; }
-    .hamburger:hover {
-      opacity: 0.7; }
-    .hamburger.is-active:hover {
-      opacity: 0.7; }
-    .hamburger.is-active .hamburger-inner,
-    .hamburger.is-active .hamburger-inner::before,
-    .hamburger.is-active .hamburger-inner::after {
-      background-color: #000; }
-  
-  .hamburger-box {
-    width: 40px;
-    height: 24px;
-    display: inline-block;
-    position: relative; }
-  
-  .hamburger-inner {
-    display: block;
-    top: 50%;
-    margin-top: -2px; }
-    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-      width: 40px;
-      height: 4px;
-      background-color: #000;
-      border-radius: 4px;
-      position: absolute;
-      transition-property: transform;
-      transition-duration: 0.15s;
-      transition-timing-function: ease; }
-    .hamburger-inner::before, .hamburger-inner::after {
-      content: "";
-      display: block; }
-    .hamburger-inner::before {
-      top: -10px; }
-    .hamburger-inner::after {
-      bottom: -10px; }
-    body.dark  .hamburger-inner, body.dark .hamburger-inner::before, body.dark .hamburger-inner::after {
-        background-color: white;
-    }
 
-          .overlay {
-            height: 0%;
-            width: 100%;
-            position: fixed;
-            z-index: 10;
-            top: 0;
-            left: 0;
-            background-color: #ffffffcc;
-            overflow-y: hidden;
-            transition: 0.5s;
-          }
-          body.dark .overlay, body.dark .mobile-menu {
-              background-color: #1b2022cc;
-          }
-          .overlay-content {
-            position: relative;
-            top: 25%;
-            width: 100%;
-            text-align: center;
-            margin-top: 30px;
-          }
-          
-          .overlay a {
-            padding: 8px;
-            text-decoration: none;
-            font-size: 36px;
-            color: #818181;
-            display: block;
-            transition: 0.3s;
-          }
-          
-          .overlay a:hover, .overlay a:focus {
-            color: #f1f1f1;
-          }
-          
-          .overlay .closebtn {
-            position: absolute;
-            top: 20px;
-            right: 45px;
-            font-size: 60px;
-          }
-          
-          @media screen and (max-height: 450px) {
-            .overlay {overflow-y: auto;}
-            .overlay a {font-size: 20px}
-            .overlay .closebtn {
-            font-size: 40px;
-            top: 15px;
-            right: 35px;
-            }
-          }
 /*Tags for elements*/
 p[no-margin] {
     padding: 0 !important;
@@ -744,7 +629,124 @@ img#gif {
         display: block;
     }
 }
+/*Mobile Menu*/
+@media only screen and (max-width: 930px) {
+    .menu {
+        display: none;
+    }
+    .mobile-menu {
+        display: block !important;
+    }
+}
+.mobile-menu {
+    display: none;
+}
+.hamburger {
+    padding: 15px 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible; }
+    .hamburger:hover {
+      opacity: 0.7; }
+    .hamburger.is-active:hover {
+      opacity: 0.7; }
+    .hamburger.is-active .hamburger-inner,
+    .hamburger.is-active .hamburger-inner::before,
+    .hamburger.is-active .hamburger-inner::after {
+      background-color: #000; }
+  
+  .hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative; }
+  
+  .hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px; }
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+      width: 40px;
+      height: 4px;
+      background-color: #000;
+      border-radius: 4px;
+      position: absolute;
+      transition-property: transform;
+      transition-duration: 0.15s;
+      transition-timing-function: ease; }
+    .hamburger-inner::before, .hamburger-inner::after {
+      content: "";
+      display: block; }
+    .hamburger-inner::before {
+      top: -10px; }
+    .hamburger-inner::after {
+      bottom: -10px; }
+    body.dark  .hamburger-inner, body.dark .hamburger-inner::before, body.dark .hamburger-inner::after {
+        background-color: white;
+    }
 
+          .overlay {
+            height: 0%;
+            width: 100%;
+            position: fixed;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            background-color: #ffffffcc;
+            overflow-y: hidden;
+            transition: 0.5s;
+          }
+          body.dark .overlay, body.dark .mobile-menu {
+              background-color: #1b2022cc;
+          }
+          .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+          }
+          
+          .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #818181;
+            transition: 0.3s;
+          }
+          
+          .overlay a:hover, .overlay a:focus {
+            color: black;
+          }
+          
+          .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+          }
+          
+          @media screen and (max-height: 450px) {
+            .overlay {overflow-y: auto;}
+            .overlay a {font-size: 20px}
+            .overlay .closebtn {
+            font-size: 40px;
+            top: 15px;
+            right: 35px;
+            }
+          }
+          body.dark a.closebtn {
+            color: white !important;
+        }
 
 
 
