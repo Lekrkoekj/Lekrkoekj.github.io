@@ -740,7 +740,9 @@ img#gif {
     .announcement-td2, .populaire-geems, .lekrkoekj-paginas, .nieuwste-geems, .home-td {
         display: none;
     }
-    
+    .home-mobile-message {
+        display: block;
+    }
 }
 
 
