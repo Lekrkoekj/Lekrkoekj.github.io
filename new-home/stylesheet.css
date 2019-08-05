@@ -290,9 +290,6 @@ td.gsc-orderby-container {
     display: none;
     }
   }
-div#___gcse_0 {
-    width: 291px;
-}
 .game-img {
     width:162px;
     padding-bottom: 5px;
@@ -628,6 +625,9 @@ img#gif {
     .hovereffect, .hovereffect img {
         width: 152px;
         height: 152px;
+    }
+    div#___gcse_0 {
+        width: 291px;
     }
     .populaire-geems, .nieuwste-geems {
         height: 530px;
