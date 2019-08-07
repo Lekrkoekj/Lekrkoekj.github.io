@@ -90,7 +90,25 @@
           </div><div id="slide"></div>
         </div>
         <div class="white">
+            <script>var slideIndex = 0;
+                showSlides();
                 
+                function showSlides() {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 15000);
+                }</script>       
     <table class="table" width="100%"><tr><td width="50%" height="100%" style="vertical-align: top" class="home-td"><center><div class="nieuwste-geems"><center><h1 class="title" id="1">Nieuwste Geems</h1></center>
     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
     <div class="hovereffect" id="lb">
