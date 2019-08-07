@@ -16,6 +16,26 @@
 <script src="/mobile.js"></script>
 <script src="/remove.js"></script>
 <script src="/random-geem.js"></script>
+<script src="/effects.js"></script>
+<script>var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 15000);
+        }</script>
 
 <!-- Styles -->
 
@@ -67,25 +87,7 @@
             <span class="dot"></span> 
             <span class="dot"></span> 
             <span class="dot"></span> 
-          </div><div id="slide"></div><script>var slideIndex = 0;
-            showSlides();
-            
-            function showSlides() {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("dot");
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-              }
-              slideIndex++;
-              if (slideIndex > slides.length) {slideIndex = 1}    
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-              setTimeout(showSlides, 15000);
-            }</script>
+          </div><div id="slide"></div>
         </div>
         <div class="white">
                 
@@ -369,7 +371,6 @@
     
             <!-- Lekre Effectj's -->
     
-    <script src="/effects.js"></script>
 <div class="effect-bar blue"><center><a href="#invert"><button class="normal" onclick="showEffects()">Lekre effectj's</button></a>
     <div class="effect-menu">
         <p style="margin-top: 8px; margin-bottom: 5px; font-size: 20px;">Filters, effecten en animaties</p>
