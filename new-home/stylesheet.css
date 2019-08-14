@@ -1,6 +1,5 @@
 /*Body and general styles*/
 body {
-    /*background-image: url(http://www.simpsite.nl/uploads/161/920/Home/achergrond976939.png);*/
     background-repeat: repeat;
     background-size: cover;
     background-position: top center;
@@ -9,6 +8,9 @@ body {
     font-family: Open Sans;
     color: #444444;
     transition: 0.5s ease-in-out;
+}
+html {
+    scroll-behavior: smooth;
 }
 h1, h2, h3, h4, h5, h6, p, .site-container {
     transition: 0.3s;
@@ -30,6 +32,9 @@ p, .site-container {
 body.effects-visible .effect-menu {
     display: block;
 }
+.effect-menu p {
+    color: white;
+}
 .effect-menu {
     display: none;
 }
@@ -49,7 +54,7 @@ button.small, button.normal, button.big, button#fullscreen, button.gsc-search-bu
     cursor: pointer;
     transition: 0.2s;
 }
-.game:hover, button.small:hover, button.normal:hover, button.big:hover, button#fullscreen:hover, button.gsc-search-button.gsc-search-button-v2:hover {
+.game:hover, button.small:hover, button.normal:hover, button.big:hover, button#fullscreen:hover, button.gsc-search-button.gsc-search-button-v2:hover, .hovereffect a:hover {
     box-shadow: 0px 2px 7px 0px #00000024;
 }
 button.gsc-search-button.gsc-search-button-v2  {
@@ -72,22 +77,6 @@ body.dark a {
 }
 body.dark a:active {
     color: #5db4ff !important;
-}
-/*Site counter*/
-.site-counter.visible {
-    display:  inline-block;
-}
-.site-counter {
-    display: none;
-}
-.site-counter * {
-    color: black !important;
-    text-decoration: none;
-    cursor: default;
-}
-body.dark .site-counter a[href="http://www.scriptsocket.com/textcounter.php"] {
-    color: white !important;
-    text-decoration: none;
 }
 /*Menu*/
 .logo {
@@ -188,10 +177,6 @@ p[no-margin] {
     background-position: top center;
     background-attachment: fixed;
 }
-iframe, object {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        border: 0;
-    }
 
 /*Search bar and results*/
 div#___gcse_0 {
@@ -219,6 +204,10 @@ table#gs_id50 {
     border-color: transparent !important;
     padding: 0 !important;
     margin: 0 !important;
+}
+.cse .gsc-control-cse, .gsc-control-cse {
+    border: none !important
+    ;
 }
 .gsc-input-box {
     border-radius: 5px;
@@ -392,11 +381,11 @@ body.dark .gsc-control-cse, body.dark .gsc-resultsbox-visible, body.dark .gsc-we
 body.dark .category-gradient {
     background: linear-gradient(90deg, #313333 20%, #fff0 100%);
 }
-/*Lekre effectj's effecten*/
+/*Lekre effectj's effecten & Thema opties*/
 body.inverted {
     filter: invert(1);
 }
-body.inverted #invert, body.all-turned-1deg #all-turn-1deg, body.saturated #saturation, body.turned #turn, body.spinning #site-spin, body.slow-spinning #slow-site-spin, body.img-turned #img-turn, body.pinkgreen #pink-green, body.text-turned #text-turn, body.all-turned #all-turn, body.pink #pink, body.all-turned-36deg #all-turn-36deg, body.white #white, body.old #old, body.white-background #white-background, body.effect-spin #f-effect, body.spastic-background #spastic-background, body.lekrdraaitj #lekrdraaitj, body.lekrknippertj #lekrknippertj, body.shadow #lekrschaduwtj, body.shadow-inset #lekrschaduwtj-inset, body.zoomed #lekrzoompj, body.border #lekrrandj, body.fat-border #lekrdikrandj {
+body.inverted #invert, body.all-turned-1deg #all-turn-1deg, body.saturated #saturation, body.turned #turn, body.spinning #site-spin, body.slow-spinning #slow-site-spin, body.img-turned #img-turn, body.pinkgreen #pink-green, body.text-turned #text-turn, body.all-turned #all-turn, body.pink #pink, body.all-turned-36deg #all-turn-36deg, body.white #white, body.old #old, body.white-background #white-background, body.effect-spin #f-effect, body.spastic-background #spastic-background, body.lekrdraaitj #lekrdraaitj, body.lekrknippertj #lekrknippertj, body.shadow #lekrschaduwtj, body.shadow-inset #lekrschaduwtj-inset, body.zoomed #lekrzoompj, body.border #lekrrandj, body.fat-border #lekrdikrandj, body.lkg4background #lkg4bg {
     font-weight: bold;
     color: forestgreen;
 }
@@ -508,6 +497,22 @@ button#lekrdikrandj {
 @keyframes wrapper-spin {
         100% {transform:rotate(360deg)}
     }
+    body.lkg4background {
+        background-image: url(http://www.simpsite.nl/uploads/161/920/Home/achergrond976939.png);
+    animation: bg-scroll 500s infinite cubic-bezier(0, 0, 0, 0);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    }
+    @keyframes bg-scroll {
+        0% {
+          background-position: 0 0;
+        }
+        100% {
+          background-position: -8000px 0px;
+        }
+      }
 /*Homepage only*/
 .title {
     font-size: 29px;
@@ -808,8 +813,30 @@ div#___gcse_0 {
             color: white !important;
         }
 
+/*Game Pages*/
 
+button#fullscreen {
+    position: absolute;
+    border-radius: 0px 0px 5px 0px;
+}
 
+  @media only screen and (max-width: 930px) {
+    .blocked-game-overlay {
+        display: none;
+    }
+  }
+  @media only screen and (min-width: 930px) {
+  .game-mobile-message {
+      display: none;
+  }
+}
+iframe, object {
+    box-shadow: 0px 2px 7px 0px #0000001a;
+        border: 0;
+    }
+#container {
+    padding-top: 15px;
+}
 
 
 /*

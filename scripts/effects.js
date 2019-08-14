@@ -1,14 +1,4 @@
 /*geen effect maar dit scriptj staat op elke pagina dus ik makklijkr*/
-Element.prototype.remove = function() {
-    this.parentElement.removeChild(this);
-}
-NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
-    for(var i = this.length - 1; i >= 0; i--) {
-        if(this[i] && this[i].parentElement) {
-            this[i].parentElement.removeChild(this[i]);
-        }
-    }
-}
 function removeBlockedOverlay() {
     
     document.getElementById("blocked-game-overlay").remove();
@@ -21,7 +11,15 @@ localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark'
 function search() {
 localStorage.setItem('mode', (localStorage.getItem('mode') || 'search-open') === 'search-open' ? 'light' : 'search-open'); localStorage.getItem('mode') === 'search-open' ? document.querySelector('body').classList.add('search-open') : document.querySelector('body').classList.remove('search-open')
 }
-
+function showEffects() {
+    localStorage.setItem('mode', (localStorage.getItem('mode') || 'effects-visible') === 'effects-visible' ? 'light' : 'effects-visible'); localStorage.getItem('mode') === 'effects-visible' ? document.querySelector('body').classList.add('effects-visible') : document.querySelector('body').classList.remove('effects-visible')
+}
+function showEffects() {
+    localStorage.setItem('mode', (localStorage.getItem('mode') || 'effects-visible') === 'effects-visible' ? 'light' : 'effects-visible'); localStorage.getItem('mode') === 'effects-visible' ? document.querySelector('body').classList.add('effects-visible') : document.querySelector('body').classList.remove('effects-visible')
+}
+function showThemeOptions() {
+    localStorage.setItem('mode', (localStorage.getItem('mode') || 'themeoptions-visible') === 'themeoptions-visible' ? 'light' : 'themeoptions-visible'); localStorage.getItem('mode') === 'themeoptions-visible' ? document.querySelector('body').classList.add('themeoptions-visible') : document.querySelector('body').classList.remove('themeoptions-visible')
+}
 /*wow*/
 function deactivateAll() {
     document.querySelector('body').classList.remove('inverted');document.querySelector('body').classList.remove('saturated');
@@ -73,10 +71,6 @@ function activateAll() {
     toggleLekrschaduwtj();
     toggleLekrschaduwtjInset();
     toggleLekrzoompj();
-}
-
-function showEffects() {
-    localStorage.setItem('mode', (localStorage.getItem('mode') || 'effects-visible') === 'effects-visible' ? 'light' : 'effects-visible'); localStorage.getItem('mode') === 'effects-visible' ? document.querySelector('body').classList.add('effects-visible') : document.querySelector('body').classList.remove('effects-visible')
 }
 
 function toggleInvert() {
@@ -174,3 +168,7 @@ localStorage.setItem('mode', (localStorage.getItem('mode') || 'border') === 'bor
 function toggleLekrdikrandj() {
 localStorage.setItem('mode', (localStorage.getItem('mode') || 'fat-border') === 'fat-border' ? 'light' : 'fat-border'); localStorage.getItem('mode') === 'fat-border' ? document.querySelector('body').classList.add('fat-border') : document.querySelector('body').classList.remove('fat-border')
 }
+
+function toggleLKG4BG() {
+    localStorage.setItem('mode', (localStorage.getItem('mode') || 'lkg4background') === 'lkg4background' ? 'light' : 'lkg4background'); localStorage.getItem('mode') === 'lkg4background' ? document.querySelector('body').classList.add('lkg4background') : document.querySelector('body').classList.remove('lkg4background')
+    }
