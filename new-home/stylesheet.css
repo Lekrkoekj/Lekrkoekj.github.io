@@ -47,6 +47,10 @@ button.small, button.normal, button.big, button#fullscreen, button.gsc-search-bu
     box-shadow: 0px 2px 7px 0px #0000001a;
     background: #ffffffe3;
     cursor: pointer;
+    transition: 0.2s;
+}
+.game:hover, button.small:hover, button.normal:hover, button.big:hover, button#fullscreen:hover, button.gsc-search-button.gsc-search-button-v2:hover {
+    box-shadow: 0px 2px 7px 0px #00000024;
 }
 button.gsc-search-button.gsc-search-button-v2  {
     padding: 7px 7px;
