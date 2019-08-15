@@ -32,10 +32,26 @@ p, .site-container {
 body.effects-visible .effect-menu {
     display: block;
 }
-.effect-menu p {
+body.themeoptions-visible .theme-menu {
+    display: block;
+}
+.effect-menu p, .theme-menu p {
     color: white;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.effect-menu button, .theme-menu button {
+    margin-right: 5px; 
+    margin-top: 5px;
+}
+.effect-menu .last, .theme-menu .last {
+    margin-right: 0px;
 }
 .effect-menu {
+    display: none;
+}
+.theme-menu {
     display: none;
 }
 .effect-bar {
@@ -144,13 +160,17 @@ body.dark .dark-mode-text:after {
 ::-webkit-scrollbar {
     width: 10px;
 }
-::-webkit-scrollbar-thumb {
-    background: #5facead9;
-    box-shadow: 0px 2px 7px 0px #0000001a;
-}
 ::-webkit-scrollbar-track {
-    background: #f4f4f061;
-}
+    background: #f1f1f1; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    box-shadow: 0px 2px 7px 0px #0000001a;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+    box-shadow: 0px 2px 7px 0px #00000024;
+  }
 
 /*Tags for elements*/
 p[no-margin] {
@@ -385,7 +405,7 @@ body.dark .category-gradient {
 body.inverted {
     filter: invert(1);
 }
-body.inverted #invert, body.all-turned-1deg #all-turn-1deg, body.saturated #saturation, body.turned #turn, body.spinning #site-spin, body.slow-spinning #slow-site-spin, body.img-turned #img-turn, body.pinkgreen #pink-green, body.text-turned #text-turn, body.all-turned #all-turn, body.pink #pink, body.all-turned-36deg #all-turn-36deg, body.white #white, body.old #old, body.white-background #white-background, body.effect-spin #f-effect, body.spastic-background #spastic-background, body.lekrdraaitj #lekrdraaitj, body.lekrknippertj #lekrknippertj, body.shadow #lekrschaduwtj, body.shadow-inset #lekrschaduwtj-inset, body.zoomed #lekrzoompj, body.border #lekrrandj, body.fat-border #lekrdikrandj, body.lkg4background #lkg4bg {
+body.inverted #invert, body.all-turned-1deg #all-turn-1deg, body.saturated #saturation, body.turned #turn, body.spinning #site-spin, body.slow-spinning #slow-site-spin, body.img-turned #img-turn, body.pinkgreen #pink-green, body.text-turned #text-turn, body.all-turned #all-turn, body.pink #pink, body.all-turned-36deg #all-turn-36deg, body.white #white, body.old #old, body.white-background #white-background, body.effect-spin #f-effect, body.spastic-background #spastic-background, body.lekrdraaitj #lekrdraaitj, body.lekrknippertj #lekrknippertj, body.shadow #lekrschaduwtj, body.shadow-inset #lekrschaduwtj-inset, body.zoomed #lekrzoompj, body.border #lekrrandj, body.fat-border #lekrdikrandj, body.lkg4background #lkg4bg, body.green-theme #green-theme, body.turquoise-theme #turquoise-theme {
     font-weight: bold;
     color: forestgreen;
 }
@@ -470,6 +490,9 @@ animation: draai 10s infinite ease-in-out !important;
 body.lekrknippertj * {
 animation: knipper 0.1s infinite
 }
+@keyframes knipper {
+    50% {opacity:0;}
+    }
 body.shadow * {
 box-shadow: 0px 0px 20px 20px black !important;
     text-shadow: 0px 0px 20px black !important;
@@ -497,6 +520,11 @@ button#lekrdikrandj {
 @keyframes wrapper-spin {
         100% {transform:rotate(360deg)}
     }
+
+
+
+
+
     body.lkg4background {
         background-image: url(http://www.simpsite.nl/uploads/161/920/Home/achergrond976939.png);
     animation: bg-scroll 500s infinite cubic-bezier(0, 0, 0, 0);
@@ -513,6 +541,20 @@ button#lekrdikrandj {
           background-position: -8000px 0px;
         }
       }
+
+      body.green-theme .blue {
+          background: #64b752;
+      }
+      body.green-theme .category-gradient {
+        background: linear-gradient(90deg, #64b752 20%, #fff0 100%);
+      }
+
+      body.turquoise-theme .blue {
+        background: #43b6bb;
+    }
+    body.turquoise-theme .category-gradient {
+      background: linear-gradient(90deg, #43b6bb 20%, #fff0 100%);
+    }
 /*Homepage only*/
 .title {
     font-size: 29px;
@@ -819,7 +861,10 @@ button#fullscreen {
     position: absolute;
     border-radius: 0px 0px 5px 0px;
 }
-
+body.dark #fullscreen {
+    background: #1b2022a3;
+    color: white;
+}
   @media only screen and (max-width: 930px) {
     .blocked-game-overlay {
         display: none;

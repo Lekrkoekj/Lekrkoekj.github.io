@@ -6,21 +6,24 @@ function removeBlockedOverlay() {
 }  
 
 function darkModeSwitch() {
-localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')
-}
+    localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'off' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')
+    }
 function search() {
-localStorage.setItem('mode', (localStorage.getItem('mode') || 'search-open') === 'search-open' ? 'light' : 'search-open'); localStorage.getItem('mode') === 'search-open' ? document.querySelector('body').classList.add('search-open') : document.querySelector('body').classList.remove('search-open')
+localStorage.setItem('search', (localStorage.getItem('search') || 'search-open') === 'search-open' ? 'closed' : 'search-open'); localStorage.getItem('search') === 'search-open' ? document.querySelector('body').classList.add('search-open') : document.querySelector('body').classList.remove('search-open')
 }
 function showEffects() {
-    localStorage.setItem('mode', (localStorage.getItem('mode') || 'effects-visible') === 'effects-visible' ? 'light' : 'effects-visible'); localStorage.getItem('mode') === 'effects-visible' ? document.querySelector('body').classList.add('effects-visible') : document.querySelector('body').classList.remove('effects-visible')
+    localStorage.setItem('effect', (localStorage.getItem('effect') || 'effects-visible') === 'effects-visible' ? 'off' : 'effects-visible'); localStorage.getItem('effect') === 'effects-visible' ? document.querySelector('body').classList.add('effects-visible') : document.querySelector('body').classList.remove('effects-visible')
 }
 function showEffects() {
-    localStorage.setItem('mode', (localStorage.getItem('mode') || 'effects-visible') === 'effects-visible' ? 'light' : 'effects-visible'); localStorage.getItem('mode') === 'effects-visible' ? document.querySelector('body').classList.add('effects-visible') : document.querySelector('body').classList.remove('effects-visible')
+    document.querySelector('body').classList.remove('themeoptions-visible');
+    localStorage.setItem('effect', (localStorage.getItem('effect') || 'effects-visible') === 'effects-visible' ? 'off' : 'effects-visible'); localStorage.getItem('effect') === 'effects-visible' ? document.querySelector('body').classList.add('effects-visible') : document.querySelector('body').classList.remove('effects-visible')
 }
 function showThemeOptions() {
-    localStorage.setItem('mode', (localStorage.getItem('mode') || 'themeoptions-visible') === 'themeoptions-visible' ? 'light' : 'themeoptions-visible'); localStorage.getItem('mode') === 'themeoptions-visible' ? document.querySelector('body').classList.add('themeoptions-visible') : document.querySelector('body').classList.remove('themeoptions-visible')
+    document.querySelector('body').classList.remove('effects-visible');
+    localStorage.setItem('effect', (localStorage.getItem('effect') || 'themeoptions-visible') === 'themeoptions-visible' ? 'off' : 'themeoptions-visible'); localStorage.getItem('effect') === 'themeoptions-visible' ? document.querySelector('body').classList.add('themeoptions-visible') : document.querySelector('body').classList.remove('themeoptions-visible')
 }
-/*wow*/
+
+/*Effects*/
 function deactivateAll() {
     document.querySelector('body').classList.remove('inverted');document.querySelector('body').classList.remove('saturated');
     document.querySelector('body').classList.remove('turned');
@@ -74,101 +77,116 @@ function activateAll() {
 }
 
 function toggleInvert() {
-    localStorage.setItem('mode', (localStorage.getItem('mode') || 'inverted') === 'inverted' ? 'light' : 'inverted'); localStorage.getItem('mode') === 'inverted' ? document.querySelector('body').classList.add('inverted') : document.querySelector('body').classList.remove('inverted')
+    localStorage.setItem('effect', (localStorage.getItem('effect') || 'inverted') === 'inverted' ? 'off' : 'inverted'); localStorage.getItem('effect') === 'inverted' ? document.querySelector('body').classList.add('inverted') : document.querySelector('body').classList.remove('inverted')
 }
     
 function toggleSaturation() {
-localStorage.setItem('mode', (localStorage.getItem('mode') || 'saturated') === 'saturated' ? 'light' : 'saturated'); localStorage.getItem('mode') === 'saturated' ? document.querySelector('body').classList.add('saturated') : document.querySelector('body').classList.remove('saturated')
+localStorage.setItem('effect', (localStorage.getItem('effect') || 'saturated') === 'saturated' ? 'off' : 'saturated'); localStorage.getItem('effect') === 'saturated' ? document.querySelector('body').classList.add('saturated') : document.querySelector('body').classList.remove('saturated')
 }
 
 function toggleTurn() {
-localStorage.setItem('mode', (localStorage.getItem('mode') || 'turned') === 'turned' ? 'light' : 'turned'); localStorage.getItem('mode') === 'turned' ? document.querySelector('body').classList.add('turned') : document.querySelector('body').classList.remove('turned')
+localStorage.setItem('effect', (localStorage.getItem('effect') || 'turned') === 'turned' ? 'off' : 'turned'); localStorage.getItem('effect') === 'turned' ? document.querySelector('body').classList.add('turned') : document.querySelector('body').classList.remove('turned')
 }
 
 function toggleSiteSpin() {
-localStorage.setItem('mode', (localStorage.getItem('mode') || 'spinning') === 'spinning' ? 'light' : 'spinning'); localStorage.getItem('mode') === 'spinning' ? document.querySelector('body').classList.add('spinning') : document.querySelector('body').classList.remove('spinning')
+localStorage.setItem('effect', (localStorage.getItem('effect') || 'spinning') === 'spinning' ? 'off' : 'spinning'); localStorage.getItem('effect') === 'spinning' ? document.querySelector('body').classList.add('spinning') : document.querySelector('body').classList.remove('spinning')
 }
 
 function toggleSlowSiteSpin() {
-localStorage.setItem('mode', (localStorage.getItem('mode') || 'slow-spinning') === 'slow-spinning' ? 'light' : 'slow-spinning'); localStorage.getItem('mode') === 'slow-spinning' ? document.querySelector('body').classList.add('slow-spinning') : document.querySelector('body').classList.remove('slow-spinning')
+localStorage.setItem('effect', (localStorage.getItem('effect') || 'slow-spinning') === 'slow-spinning' ? 'off' : 'slow-spinning'); localStorage.getItem('effect') === 'slow-spinning' ? document.querySelector('body').classList.add('slow-spinning') : document.querySelector('body').classList.remove('slow-spinning')
 }
 
 function toggleTurnIMG() {
-localStorage.setItem('mode', (localStorage.getItem('mode') || 'img-turned') === 'img-turned' ? 'light' : 'img-turned'); localStorage.getItem('mode') === 'img-turned' ? document.querySelector('body').classList.add('img-turned') : document.querySelector('body').classList.remove('img-turned')
+localStorage.setItem('effect', (localStorage.getItem('effect') || 'img-turned') === 'img-turned' ? 'off' : 'img-turned'); localStorage.getItem('effect') === 'img-turned' ? document.querySelector('body').classList.add('img-turned') : document.querySelector('body').classList.remove('img-turned')
 }
 
 function togglePinkGreen() {
-localStorage.setItem('mode', (localStorage.getItem('mode') || 'pinkgreen') === 'pinkgreen' ? 'light' : 'pinkgreen'); localStorage.getItem('mode') === 'pinkgreen' ? document.querySelector('body').classList.add('pinkgreen') : document.querySelector('body').classList.remove('pinkgreen')
+localStorage.setItem('effect', (localStorage.getItem('effect') || 'pinkgreen') === 'pinkgreen' ? 'off' : 'pinkgreen'); localStorage.getItem('effect') === 'pinkgreen' ? document.querySelector('body').classList.add('pinkgreen') : document.querySelector('body').classList.remove('pinkgreen')
 }
 
 function toggleTurnText() {
-localStorage.setItem('mode', (localStorage.getItem('mode') || 'text-turned') === 'text-turned' ? 'light' : 'text-turned'); localStorage.getItem('mode') === 'text-turned' ? document.querySelector('body').classList.add('text-turned') : document.querySelector('body').classList.remove('text-turned')
+localStorage.setItem('effect', (localStorage.getItem('effect') || 'text-turned') === 'text-turned' ? 'off' : 'text-turned'); localStorage.getItem('effect') === 'text-turned' ? document.querySelector('body').classList.add('text-turned') : document.querySelector('body').classList.remove('text-turned')
 }
 
 function toggleTurnAll() {
-localStorage.setItem('mode', (localStorage.getItem('mode') || 'all-turned') === 'all-turned' ? 'light' : 'all-turned'); localStorage.getItem('mode') === 'all-turned' ? document.querySelector('body').classList.add('all-turned') : document.querySelector('body').classList.remove('all-turned')
+localStorage.setItem('effect', (localStorage.getItem('effect') || 'all-turned') === 'all-turned' ? 'off' : 'all-turned'); localStorage.getItem('effect') === 'all-turned' ? document.querySelector('body').classList.add('all-turned') : document.querySelector('body').classList.remove('all-turned')
 }
 
 function toggleTurnAll1deg() {
-localStorage.setItem('mode', (localStorage.getItem('mode') || 'all-turned-1deg') === 'all-turned-1deg' ? 'light' : 'all-turned-1deg'); localStorage.getItem('mode') === 'all-turned-1deg' ? document.querySelector('body').classList.add('all-turned-1deg') : document.querySelector('body').classList.remove('all-turned-1deg')
+localStorage.setItem('effect', (localStorage.getItem('effect') || 'all-turned-1deg') === 'all-turned-1deg' ? 'off' : 'all-turned-1deg'); localStorage.getItem('effect') === 'all-turned-1deg' ? document.querySelector('body').classList.add('all-turned-1deg') : document.querySelector('body').classList.remove('all-turned-1deg')
 }
 
 function toggleTurnAll36deg() {
-localStorage.setItem('mode', (localStorage.getItem('mode') || 'all-turned-36deg') === 'all-turned-36deg' ? 'light' : 'all-turned-36deg'); localStorage.getItem('mode') === 'all-turned-36deg' ? document.querySelector('body').classList.add('all-turned-36deg') : document.querySelector('body').classList.remove('all-turned-36deg')
+localStorage.setItem('effect', (localStorage.getItem('effect') || 'all-turned-36deg') === 'all-turned-36deg' ? 'off' : 'all-turned-36deg'); localStorage.getItem('effect') === 'all-turned-36deg' ? document.querySelector('body').classList.add('all-turned-36deg') : document.querySelector('body').classList.remove('all-turned-36deg')
 }
 
 function togglePink() {
-localStorage.setItem('mode', (localStorage.getItem('mode') || 'pink') === 'pink' ? 'light' : 'pink'); localStorage.getItem('mode') === 'pink' ? document.querySelector('body').classList.add('pink') : document.querySelector('body').classList.remove('pink')
+localStorage.setItem('effect', (localStorage.getItem('effect') || 'pink') === 'pink' ? 'off' : 'pink'); localStorage.getItem('effect') === 'pink' ? document.querySelector('body').classList.add('pink') : document.querySelector('body').classList.remove('pink')
 }
 
 function toggleWhite() {
-localStorage.setItem('mode', (localStorage.getItem('mode') || 'white') === 'white' ? 'light' : 'white'); localStorage.getItem('mode') === 'white' ? document.querySelector('body').classList.add('white') : document.querySelector('body').classList.remove('white')
-}
-
-function toggleOld() {
-localStorage.setItem('mode', (localStorage.getItem('mode') || 'old') === 'old' ? 'light' : 'old'); localStorage.getItem('mode') === 'old' ? document.querySelector('body').classList.add('old') : document.querySelector('body').classList.remove('old')
+localStorage.setItem('effect', (localStorage.getItem('effect') || 'white') === 'white' ? 'off' : 'white'); localStorage.getItem('effect') === 'white' ? document.querySelector('body').classList.add('white') : document.querySelector('body').classList.remove('white')
 }
 
 function toggleWhiteBackground() {
-localStorage.setItem('mode', (localStorage.getItem('mode') || 'white-background') === 'white-background' ? 'light' : 'white-background'); localStorage.getItem('mode') === 'white-background' ? document.querySelector('body').classList.add('white-background') : document.querySelector('body').classList.remove('white-background')
+localStorage.setItem('effect', (localStorage.getItem('effect') || 'white-background') === 'white-background' ? 'off' : 'white-background'); localStorage.getItem('effect') === 'white-background' ? document.querySelector('body').classList.add('white-background') : document.querySelector('body').classList.remove('white-background')
 }
 
 function toggleF() {
-localStorage.setItem('mode', (localStorage.getItem('mode') || 'effect-spin') === 'effect-spin' ? 'light' : 'effect-spin'); localStorage.getItem('mode') === 'effect-spin' ? document.querySelector('body').classList.add('effect-spin') : document.querySelector('body').classList.remove('effect-spin')
+localStorage.setItem('effect', (localStorage.getItem('effect') || 'effect-spin') === 'effect-spin' ? 'off' : 'effect-spin'); localStorage.getItem('effect') === 'effect-spin' ? document.querySelector('body').classList.add('effect-spin') : document.querySelector('body').classList.remove('effect-spin')
 }
 
 function toggleSpasticBackground() {
-localStorage.setItem('mode', (localStorage.getItem('mode') || 'spastic-background') === 'spastic-background' ? 'light' : 'spastic-background'); localStorage.getItem('mode') === 'spastic-background' ? document.querySelector('body').classList.add('spastic-background') : document.querySelector('body').classList.remove('spastic-background')
+localStorage.setItem('effect', (localStorage.getItem('effect') || 'spastic-background') === 'spastic-background' ? 'off' : 'spastic-background'); localStorage.getItem('effect') === 'spastic-background' ? document.querySelector('body').classList.add('spastic-background') : document.querySelector('body').classList.remove('spastic-background')
 }
 
 function toggleLekrdraaitj() {
-localStorage.setItem('mode', (localStorage.getItem('mode') || 'lekrdraaitj') === 'lekrdraaitj' ? 'light' : 'lekrdraaitj'); localStorage.getItem('mode') === 'lekrdraaitj' ? document.querySelector('body').classList.add('lekrdraaitj') : document.querySelector('body').classList.remove('lekrdraaitj')
+localStorage.setItem('effect', (localStorage.getItem('effect') || 'lekrdraaitj') === 'lekrdraaitj' ? 'off' : 'lekrdraaitj'); localStorage.getItem('effect') === 'lekrdraaitj' ? document.querySelector('body').classList.add('lekrdraaitj') : document.querySelector('body').classList.remove('lekrdraaitj')
 }
 
 function toggleLekrknippertj() {
-localStorage.setItem('mode', (localStorage.getItem('mode') || 'lekrknippertj') === 'lekrknippertj' ? 'light' : 'lekrknippertj'); localStorage.getItem('mode') === 'lekrknippertj' ? document.querySelector('body').classList.add('lekrknippertj') : document.querySelector('body').classList.remove('lekrknippertj')
+localStorage.setItem('effect', (localStorage.getItem('effect') || 'lekrknippertj') === 'lekrknippertj' ? 'off' : 'lekrknippertj'); localStorage.getItem('effect') === 'lekrknippertj' ? document.querySelector('body').classList.add('lekrknippertj') : document.querySelector('body').classList.remove('lekrknippertj')
 }
 
 function toggleLekrschaduwtj() {
-localStorage.setItem('mode', (localStorage.getItem('mode') || 'shadow') === 'shadow' ? 'light' : 'shadow'); localStorage.getItem('mode') === 'shadow' ? document.querySelector('body').classList.add('shadow') : document.querySelector('body').classList.remove('shadow')
+localStorage.setItem('effect', (localStorage.getItem('effect') || 'shadow') === 'shadow' ? 'off' : 'shadow'); localStorage.getItem('effect') === 'shadow' ? document.querySelector('body').classList.add('shadow') : document.querySelector('body').classList.remove('shadow')
 }
 
 function toggleLekrschaduwtjInset() {
-localStorage.setItem('mode', (localStorage.getItem('mode') || 'shadow-inset') === 'shadow-inset' ? 'light' : 'shadow-inset'); localStorage.getItem('mode') === 'shadow-inset' ? document.querySelector('body').classList.add('shadow-inset') : document.querySelector('body').classList.remove('shadow-inset')
+localStorage.setItem('effect', (localStorage.getItem('effect') || 'shadow-inset') === 'shadow-inset' ? 'off' : 'shadow-inset'); localStorage.getItem('effect') === 'shadow-inset' ? document.querySelector('body').classList.add('shadow-inset') : document.querySelector('body').classList.remove('shadow-inset')
 }
 
 function toggleLekrzoompj() {
-localStorage.setItem('mode', (localStorage.getItem('mode') || 'zoomed') === 'zoomed' ? 'light' : 'zoomed'); localStorage.getItem('mode') === 'zoomed' ? document.querySelector('body').classList.add('zoomed') : document.querySelector('body').classList.remove('zoomed')
+localStorage.setItem('effect', (localStorage.getItem('effect') || 'zoomed') === 'zoomed' ? 'off' : 'zoomed'); localStorage.getItem('effect') === 'zoomed' ? document.querySelector('body').classList.add('zoomed') : document.querySelector('body').classList.remove('zoomed')
 }
 
 function toggleLekrrandj() {
-localStorage.setItem('mode', (localStorage.getItem('mode') || 'border') === 'border' ? 'light' : 'border'); localStorage.getItem('mode') === 'border' ? document.querySelector('body').classList.add('border') : document.querySelector('body').classList.remove('border')
+localStorage.setItem('effect', (localStorage.getItem('effect') || 'border') === 'border' ? 'off' : 'border'); localStorage.getItem('effect') === 'border' ? document.querySelector('body').classList.add('border') : document.querySelector('body').classList.remove('border')
 }
 
 function toggleLekrdikrandj() {
-localStorage.setItem('mode', (localStorage.getItem('mode') || 'fat-border') === 'fat-border' ? 'light' : 'fat-border'); localStorage.getItem('mode') === 'fat-border' ? document.querySelector('body').classList.add('fat-border') : document.querySelector('body').classList.remove('fat-border')
+localStorage.setItem('effect', (localStorage.getItem('effect') || 'fat-border') === 'fat-border' ? 'off' : 'fat-border'); localStorage.getItem('effect') === 'fat-border' ? document.querySelector('body').classList.add('fat-border') : document.querySelector('body').classList.remove('fat-border')
 }
 
+/*Thema Instellingen*/
+
 function toggleLKG4BG() {
-    localStorage.setItem('mode', (localStorage.getItem('mode') || 'lkg4background') === 'lkg4background' ? 'light' : 'lkg4background'); localStorage.getItem('mode') === 'lkg4background' ? document.querySelector('body').classList.add('lkg4background') : document.querySelector('body').classList.remove('lkg4background')
+    document.querySelector('body').classList.remove('old');
+    localStorage.setItem('theme-background', (localStorage.getItem('theme-background') || 'lkg4background') === 'lkg4background' ? 'off' : 'lkg4background'); localStorage.getItem('theme-background') === 'lkg4background' ? document.querySelector('body').classList.add('lkg4background') : document.querySelector('body').classList.remove('lkg4background')
+}
+
+function toggleOld() {
+    document.querySelector('body').classList.remove('lkg4background');
+localStorage.setItem('theme-background', (localStorage.getItem('theme-background') || 'old') === 'old' ? 'off' : 'old'); localStorage.getItem('theme-background') === 'old' ? document.querySelector('body').classList.add('old') : document.querySelector('body').classList.remove('old')
+}
+
+    function toggleGreenTheme() {
+        document.querySelector('body').classList.remove('turquoise-theme');
+        document.querySelector('body').classList.remove('lkg4background');
+        localStorage.setItem('theme-color', (localStorage.getItem('theme-color') || 'green-theme') === 'green-theme' ? 'off' : 'green-theme'); localStorage.getItem('theme-color') === 'green-theme' ? document.querySelector('body').classList.add('green-theme') : document.querySelector('body').classList.remove('green-theme')
+    }
+
+    function toggleTurquoiseTheme() {
+        document.querySelector('body').classList.remove('green-theme');
+        localStorage.setItem('theme-color', (localStorage.getItem('theme-color') || 'turquoise-theme') === 'turquoise-theme' ? 'off' : 'turquoise-theme'); localStorage.getItem('theme-color') === 'turquoise-theme' ? document.querySelector('body').classList.add('turquoise-theme') : document.querySelector('body').classList.remove('turquoise-theme')
     }
