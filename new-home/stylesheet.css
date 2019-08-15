@@ -24,7 +24,6 @@ p, .site-container {
 .site-container {
     margin-bottom: 10px;
     position: relative;
-    top: -2px;
 }
 .site-container p {
     margin: 8px 0px;
@@ -361,7 +360,7 @@ body.dark .white {
     background: #131719;
 }
 body.dark .blue {
-    background: #313333;
+    background: #313333 !important;
 }
 body.dark .menu {
     background: #1b2022cc;
@@ -399,13 +398,13 @@ body.dark .gsc-control-cse, body.dark .gsc-resultsbox-visible, body.dark .gsc-we
     background: #131719;
 }
 body.dark .category-gradient {
-    background: linear-gradient(90deg, #313333 20%, #fff0 100%);
+    background: linear-gradient(90deg, #313333 20%, #fff0 100%) !important;
 }
 /*Lekre effectj's effecten & Thema opties*/
 body.inverted {
     filter: invert(1);
 }
-body.inverted #invert, body.all-turned-1deg #all-turn-1deg, body.saturated #saturation, body.turned #turn, body.spinning #site-spin, body.slow-spinning #slow-site-spin, body.img-turned #img-turn, body.pinkgreen #pink-green, body.text-turned #text-turn, body.all-turned #all-turn, body.pink #pink, body.all-turned-36deg #all-turn-36deg, body.white #white, body.old #old, body.white-background #white-background, body.effect-spin #f-effect, body.spastic-background #spastic-background, body.lekrdraaitj #lekrdraaitj, body.lekrknippertj #lekrknippertj, body.shadow #lekrschaduwtj, body.shadow-inset #lekrschaduwtj-inset, body.zoomed #lekrzoompj, body.border #lekrrandj, body.fat-border #lekrdikrandj, body.lkg4background #lkg4bg, body.green-theme #green-theme, body.turquoise-theme #turquoise-theme {
+body.inverted #invert, body.all-turned-1deg #all-turn-1deg, body.saturated #saturation, body.turned #turn, body.spinning #site-spin, body.slow-spinning #slow-site-spin, body.img-turned #img-turn, body.pinkgreen #pink-green, body.text-turned #text-turn, body.all-turned #all-turn, body.pink #pink, body.all-turned-36deg #all-turn-36deg, body.white #white, body.old #old, body.white-background #white-background, body.effect-spin #f-effect, body.spastic-background #spastic-background, body.lekrdraaitj #lekrdraaitj, body.lekrknippertj #lekrknippertj, body.shadow #lekrschaduwtj, body.shadow-inset #lekrschaduwtj-inset, body.zoomed #lekrzoompj, body.border #lekrrandj, body.fat-border #lekrdikrandj, body.lkg4background #lkg4bg, body.green-theme #green-theme, body.turquoise-theme #turquoise-theme, body.purple-theme #purple-theme {
     font-weight: bold;
     color: forestgreen;
 }
@@ -554,6 +553,13 @@ button#lekrdikrandj {
     }
     body.turquoise-theme .category-gradient {
       background: linear-gradient(90deg, #43b6bb 20%, #fff0 100%);
+    }
+
+    body.purple-theme .blue {
+        background: #9a95fd;
+    }
+    body.purple-theme .category-gradient {
+      background: linear-gradient(90deg, #9a95fd 20%, #fff0 100%);
     }
 /*Homepage only*/
 .title {
