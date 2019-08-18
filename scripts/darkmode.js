@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   document.addEventListener('DOMContentLoaded', (event) => {
     ((localStorage.getItem('theme-color') || 'off') === 'red-theme') ? document.querySelector('body').classList.add('red-theme') : document.querySelector('body').classList.remove('red-theme')
   })
+  
 /*Achtergronden*/
 
   document.addEventListener('DOMContentLoaded', (event) => {
