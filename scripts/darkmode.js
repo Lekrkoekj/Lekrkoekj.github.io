@@ -22,7 +22,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
     ((localStorage.getItem('theme-color') || 'off') === 'pink-theme') ? document.querySelector('body').classList.add('pink-theme') : document.querySelector('body').classList.remove('pink-theme')
   })
 
+  document.addEventListener('DOMContentLoaded', (event) => {
+    ((localStorage.getItem('theme-color') || 'off') === 'orange-theme') ? document.querySelector('body').classList.add('orange-theme') : document.querySelector('body').classList.remove('orange-theme')
+  })
 
+  document.addEventListener('DOMContentLoaded', (event) => {
+    ((localStorage.getItem('theme-color') || 'off') === 'red-theme') ? document.querySelector('body').classList.add('red-theme') : document.querySelector('body').classList.remove('red-theme')
+  })
 /*Achtergronden*/
 
   document.addEventListener('DOMContentLoaded', (event) => {
