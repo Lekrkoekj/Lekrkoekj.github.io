@@ -404,7 +404,7 @@ body.dark .category-gradient {
 body.inverted {
     filter: invert(1);
 }
-body.inverted #invert, body.all-turned-1deg #all-turn-1deg, body.saturated #saturation, body.turned #turn, body.spinning #site-spin, body.slow-spinning #slow-site-spin, body.img-turned #img-turn, body.pinkgreen #pink-green, body.text-turned #text-turn, body.all-turned #all-turn, body.pink #pink, body.all-turned-36deg #all-turn-36deg, body.white #white, body.old #old, body.white-background #white-background, body.effect-spin #f-effect, body.spastic-background #spastic-background, body.lekrdraaitj #lekrdraaitj, body.lekrknippertj #lekrknippertj, body.shadow #lekrschaduwtj, body.shadow-inset #lekrschaduwtj-inset, body.zoomed #lekrzoompj, body.border #lekrrandj, body.fat-border #lekrdikrandj, body.lkg4background #lkg4bg, body.green-theme #green-theme, body.turquoise-theme #turquoise-theme, body.purple-theme #purple-theme {
+body.inverted #invert, body.all-turned-1deg #all-turn-1deg, body.saturated #saturation, body.turned #turn, body.spinning #site-spin, body.slow-spinning #slow-site-spin, body.img-turned #img-turn, body.pinkgreen #pink-green, body.text-turned #text-turn, body.all-turned #all-turn, body.pink #pink, body.all-turned-36deg #all-turn-36deg, body.white #white, body.old #old, body.white-background #white-background, body.effect-spin #f-effect, body.spastic-background #spastic-background, body.lekrdraaitj #lekrdraaitj, body.lekrknippertj #lekrknippertj, body.shadow #lekrschaduwtj, body.shadow-inset #lekrschaduwtj-inset, body.zoomed #lekrzoompj, body.border #lekrrandj, body.fat-border #lekrdikrandj, body.lkg4background #lkg4bg, body.green-theme #green-theme, body.turquoise-theme #turquoise-theme, body.purple-theme #purple-theme, body.pink-theme #pink-theme, body.orange-theme #orange-theme, body.red-theme #red-theme {
     font-weight: bold;
     color: forestgreen;
 }
@@ -560,6 +560,27 @@ button#lekrdikrandj {
     }
     body.purple-theme .category-gradient {
       background: linear-gradient(90deg, #9a95fd 20%, #fff0 100%);
+    }
+
+    body.pink-theme .blue {
+        background: #f680c1;
+    }
+    body.pink-theme .category-gradient {
+      background: linear-gradient(90deg, #f680c1 20%, #fff0 100%);
+    }
+
+    body.orange-theme .blue {
+        background: #dd9257;
+    }
+    body.orange-theme .category-gradient {
+      background: linear-gradient(90deg, #dd9257 20%, #fff0 100%);
+    }
+
+    body.red-theme .blue {
+        background: #ea5f5f;
+    }
+    body.red-theme .category-gradient {
+      background: linear-gradient(90deg, #ea5f5f 20%, #fff0 100%);
     }
 /*Homepage only*/
 .title {

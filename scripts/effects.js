@@ -183,18 +183,53 @@ localStorage.setItem('theme-background', (localStorage.getItem('theme-background
     function toggleGreenTheme() {
         document.querySelector('body').classList.remove('turquoise-theme');
         document.querySelector('body').classList.remove('purple-theme');
-        document.querySelector('body').classList.remove('lkg4background');
+        document.querySelector('body').classList.remove('pink-theme');
+        document.querySelector('body').classList.remove('orange-theme');
+        document.querySelector('body').classList.remove('red-theme');
         localStorage.setItem('theme-color', (localStorage.getItem('theme-color') || 'green-theme') === 'green-theme' ? 'off' : 'green-theme'); localStorage.getItem('theme-color') === 'green-theme' ? document.querySelector('body').classList.add('green-theme') : document.querySelector('body').classList.remove('green-theme')
     }
 
     function toggleTurquoiseTheme() {
         document.querySelector('body').classList.remove('green-theme');
         document.querySelector('body').classList.remove('purple-theme');
+        document.querySelector('body').classList.remove('pink-theme');
+        document.querySelector('body').classList.remove('orange-theme');
+        document.querySelector('body').classList.remove('red-theme');
         localStorage.setItem('theme-color', (localStorage.getItem('theme-color') || 'turquoise-theme') === 'turquoise-theme' ? 'off' : 'turquoise-theme'); localStorage.getItem('theme-color') === 'turquoise-theme' ? document.querySelector('body').classList.add('turquoise-theme') : document.querySelector('body').classList.remove('turquoise-theme')
     }
 
     function togglePurpleTheme() {
         document.querySelector('body').classList.remove('green-theme');
         document.querySelector('body').classList.remove('turquoise-theme');
+        document.querySelector('body').classList.remove('pink-theme');
+        document.querySelector('body').classList.remove('orange-theme');
+        document.querySelector('body').classList.remove('red-theme');
         localStorage.setItem('theme-color', (localStorage.getItem('theme-color') || 'purple-theme') === 'purple-theme' ? 'off' : 'purple-theme'); localStorage.getItem('theme-color') === 'purple-theme' ? document.querySelector('body').classList.add('purple-theme') : document.querySelector('body').classList.remove('purple-theme')
+    }
+
+    function togglePinkTheme() {
+        document.querySelector('body').classList.remove('green-theme');
+        document.querySelector('body').classList.remove('turquoise-theme');
+        document.querySelector('body').classList.remove('purple-theme');
+        document.querySelector('body').classList.remove('orange-theme');
+        document.querySelector('body').classList.remove('red-theme');
+        localStorage.setItem('theme-color', (localStorage.getItem('theme-color') || 'pink-theme') === 'pink-theme' ? 'off' : 'pink-theme'); localStorage.getItem('theme-color') === 'pink-theme' ? document.querySelector('body').classList.add('pink-theme') : document.querySelector('body').classList.remove('pink-theme')
+    }
+
+    function toggleOrangeTheme() {
+        document.querySelector('body').classList.remove('green-theme');
+        document.querySelector('body').classList.remove('turquoise-theme');
+        document.querySelector('body').classList.remove('purple-theme');
+        document.querySelector('body').classList.remove('pink-theme');
+        document.querySelector('body').classList.remove('red-theme');
+        localStorage.setItem('theme-color', (localStorage.getItem('theme-color') || 'orange-theme') === 'orange-theme' ? 'off' : 'orange-theme'); localStorage.getItem('theme-color') === 'orange-theme' ? document.querySelector('body').classList.add('orange-theme') : document.querySelector('body').classList.remove('orange-theme')
+    }
+
+    function toggleRedTheme() {
+        document.querySelector('body').classList.remove('green-theme');
+        document.querySelector('body').classList.remove('turquoise-theme');
+        document.querySelector('body').classList.remove('purple-theme');
+        document.querySelector('body').classList.remove('pink-theme');
+        document.querySelector('body').classList.remove('orange-theme');
+        localStorage.setItem('theme-color', (localStorage.getItem('theme-color') || 'red-theme') === 'red-theme' ? 'off' : 'red-theme'); localStorage.getItem('theme-color') === 'red-theme' ? document.querySelector('body').classList.add('red-theme') : document.querySelector('body').classList.remove('red-theme')
     }

@@ -18,6 +18,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     ((localStorage.getItem('theme-color') || 'off') === 'purple-theme') ? document.querySelector('body').classList.add('purple-theme') : document.querySelector('body').classList.remove('purple-theme')
   })
 
+  document.addEventListener('DOMContentLoaded', (event) => {
+    ((localStorage.getItem('theme-color') || 'off') === 'pink-theme') ? document.querySelector('body').classList.add('pink-theme') : document.querySelector('body').classList.remove('pink-theme')
+  })
+
 
 /*Achtergronden*/
 
