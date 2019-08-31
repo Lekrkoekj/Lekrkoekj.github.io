@@ -320,6 +320,11 @@ td.gsc-orderby-container {
     margin: auto;
     color: white;
 }
+@media only screen and (min-width: 2560px) {
+        .mySlides {
+            height: 572px;
+        }
+}
   .dot {
     height: 15px;
     width: 15px;
@@ -348,9 +353,6 @@ td.gsc-orderby-container {
   .slideshow-container p {
       margin-top: 5px !important;
       font-family: Open Sans;
-  }
-  .mySlides {
-      height: 370px;
   }
 /*Dark mode styles*/
 body.dark {
