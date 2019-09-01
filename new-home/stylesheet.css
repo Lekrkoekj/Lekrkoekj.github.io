@@ -285,6 +285,37 @@ td.gsc-orderby-container {
 .category-title h1, .category-background h1 {
     margin: 0;
 }
+.category-grid {
+    display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+@media screen and (max-width: 1230px) {
+.category-grid {
+    grid-template-columns: auto auto auto auto auto auto !important;
+}
+}
+@media screen and (max-width: 1040px) {
+    .category-grid {
+        grid-template-columns: auto auto auto auto auto !important;
+    }
+    }
+    @media screen and (max-width: 880px) {
+        .category-grid {
+            grid-template-columns: auto auto auto auto !important;
+        }
+        }
+        @media screen and (max-width: 700px) {
+            .category-grid {
+                grid-template-columns: auto auto auto !important;
+            }
+            }
+.grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
 .game {
     box-shadow: 0px 2px 7px 0px #0000001a;
     border-radius: 5px;
@@ -294,7 +325,7 @@ td.gsc-orderby-container {
     overflow: hidden;
     cursor: pointer;
     margin-bottom: 10px;
-    max-width: 150px;
+    max-width: 162px;
     width: 100%;
 }
 @media screen and (max-width: 1236px) {
@@ -322,7 +353,7 @@ td.gsc-orderby-container {
 }
 @media only screen and (min-width: 2560px) {
         .mySlides, .mySlides td {
-            height: 572px;
+            height: 572px !important;
         }
 }
 @media only screen and (min-width: 1920px) {
@@ -738,37 +769,16 @@ div#___gcse_0 {
     .game-img {
         width: 100px;
     }
-    span.game-name {
+    /*span.game-name {
         font-size: 11px;
-    }
+    }*/
 }
 @media only screen and (min-width: 930px) {
 .home-mobile-message, div#myNav {
     display: none;
 }
 }
-@media only screen and (min-width: 930px) {
-.mobile-category {
-    display: none;
-}
-}
-@media only screen and (max-width: 930px) {
-.mobile-game {
-    box-shadow: 0px 2px 7px 0px #0000001a;
-    border-radius: 5px;
-    border: 0;
-    font-size: 16px;
-    padding: 0px 0px 10px 0px;
-    overflow: hidden;
-    cursor: pointer;
-    margin-bottom: 10px;
-    max-width: 150px;
-    width: 100%;
-}
-.category-table {
-    display: none;
-}
-}
+
 
 /*Mobile Menu*/
 @media only screen and (max-width: 930px) {
