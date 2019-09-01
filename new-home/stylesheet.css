@@ -269,6 +269,8 @@ td.gsc-orderby-container {
     display: inline-table;
     width: 50.1%;
     user-select: none;
+    background-size: cover;
+    background-position-y: center;
 }
 .category-background, .category-gradient, .category-title {
     height: 150px;
