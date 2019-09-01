@@ -325,6 +325,11 @@ td.gsc-orderby-container {
             height: 572px;
         }
 }
+@media only screen and (min-width: 1920px) {
+    .mySlides, .mySlides td {
+        height: 457px;
+    }
+}
   .dot {
     height: 15px;
     width: 15px;
