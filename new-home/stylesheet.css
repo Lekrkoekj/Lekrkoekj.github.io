@@ -321,7 +321,7 @@ td.gsc-orderby-container {
     color: white;
 }
 @media only screen and (min-width: 2560px) {
-        .mySlides {
+        .mySlides, .mySlides td {
             height: 572px;
         }
 }
