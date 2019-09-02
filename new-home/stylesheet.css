@@ -98,7 +98,7 @@ body.dark a:active {
     width:78px;
     cursor: pointer;
     height: 78px;
-    background-image: url(/images/lkg-logo-small.png);
+    background-image: url(/images/lkg-logo-small.webp);
     transition: 0.3s;
     background-size: cover;
     font-size: 0px;
@@ -190,7 +190,7 @@ p[no-margin] {
     background: #f0f0ebbf !important;
 }
 .use-background {
-    background-image: url(http://www.simpsite.nl/uploads/161/920/Home/achergrond976939.png);
+    background-image: url(/images/old-background.webp);
     background-repeat: repeat;
     background-size: cover;
     background-position: top center;
@@ -439,7 +439,7 @@ body.dark .hovereffect a.info, body.dark .hovereffect h2 {
 body.dark .menu-button:hover {
     background: #313333cc
 }
-body.dark img[src="/images/misc-icon.png"] {
+body.dark img[src="/images/misc-icon.webp"] {
     filter: invert(1);
 }
 body.dark h1, body.dark h2, body.dark h3, body.dark span, body.dark h4, body.dark h5, body.dark h6, body.dark p, body.dark .gs-bidi-start-align.gs-snippet, body.dark div#resInfo-0 {
@@ -519,7 +519,7 @@ body.white-background {
     background-image: none;
 }
 body.old {
-    background-image: url(/images/lekrkoekj-fast.gif) !important;
+    background-image: url(/images/gif/lekrkoekj-fast.gif) !important;
     background-repeat: repeat;
     background-size: auto;
     animation: none;
@@ -585,7 +585,7 @@ button#lekrdikrandj {
 
 
     body.lkg4background {
-        background-image: url(http://www.simpsite.nl/uploads/161/920/Home/achergrond976939.png);
+        background-image: url(/images/old-background.webp);
     animation: bg-scroll 500s infinite cubic-bezier(0, 0, 0, 0);
     background-repeat: repeat;
     background-size: cover;
