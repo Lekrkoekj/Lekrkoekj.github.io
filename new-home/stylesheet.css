@@ -317,7 +317,10 @@ td.gsc-orderby-container {
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
-  }
+}
+.grid-filler {
+    width: 162px; height: 206px;
+}
 .game {
     box-shadow: 0px 2px 7px 0px #0000001a;
     border-radius: 5px;
@@ -330,6 +333,17 @@ td.gsc-orderby-container {
     max-width: 162px;
     width: 100%;
 }
+.blocked-game .game-name {
+    color: #d20000;
+}
+.blocked-game:hover .game-name {
+    font-size: 0px;
+}
+.blocked-game:hover .game-name::after {
+    font-size: 16px;
+    content: 'Geblokkeerd! :('
+}
+
 @media screen and (max-width: 1236px) {
     .category-gradient, .category-background {
     display: none;
@@ -337,7 +351,13 @@ td.gsc-orderby-container {
   }
 .game-img {
     width:162px;
+    height: 167px;
     padding-bottom: 5px;
+}
+@media screen and (max-width: 930px) {
+    .grid-filler {
+        display: none;
+    }
 }
 .category-table td {
     vertical-align: top;
@@ -770,6 +790,7 @@ div#___gcse_0 {
     }
     .game-img {
         width: 100px;
+        height: 105px;
     }
     /*span.game-name {
         font-size: 11px;
