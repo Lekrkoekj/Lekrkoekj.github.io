@@ -950,6 +950,17 @@ iframe, object {
     padding-top: 15px;
 }
 
+/*Page specific*/
+.lkd-links {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+}
+@media only screen and (min-width: 930px) {
+    .lkd-links {
+        grid-template-columns: auto !important;
+    }
+  }
 
 /*
 .geem {
