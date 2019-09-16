@@ -953,10 +953,10 @@ iframe, object {
 /*Page specific*/
 .lkd-links {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 33.333% 33.333% 33.333%;
     grid-gap: 10px;
 }
-@media only screen and (min-width: 930px) {
+@media only screen and (max-width: 930px) {
     .lkd-links {
         grid-template-columns: auto !important;
     }
