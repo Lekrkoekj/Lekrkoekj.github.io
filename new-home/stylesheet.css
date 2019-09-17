@@ -759,7 +759,7 @@ img#gif {
     100% {transform: rotate(-360deg);}
 }
 /*Zoom fixes*/
-@media only screen and (max-width: 1281px) {
+@media only screen and (max-width: 1280px) {
     .hovereffect, .hovereffect img {
         width: 152px;
         height: 152px;
