@@ -344,7 +344,7 @@ td.gsc-orderby-container {
     content: 'Geblokkeerd! :('
 }
 
-@media screen and (max-width: 1236px) {
+@media screen and (max-width: 1279px) {
     .category-gradient, .category-background {
     display: none;
     }
