@@ -783,6 +783,11 @@ transition-delay:0s !important;
         font-size: 11px;
     }*/
 }
+@media only screen and (max-width: 1152px) {
+    #container iframe, .blocked-game-overlay {
+        width: 100% !important;
+    }
+}
 @media only screen and (min-width: 930px) {
 .home-mobile-message, div#myNav {
     display: none;
@@ -936,7 +941,18 @@ iframe, object {
 #container {
     padding-top: 15px;
 }
-
+.blocked-game-overlay {
+    width: 1152px;
+    height: 768px;
+    background-color: #fffffff0;
+    animation: fade 1s;
+}
+#blocked-game-overlay {
+    position: absolute;
+    width: 100%;
+    top: 15px;
+    z-index: 2;
+}
 /*Page specific*/
 .lkd-links {
     display: grid;

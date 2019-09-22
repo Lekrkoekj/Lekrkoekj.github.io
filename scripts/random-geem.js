@@ -1,4 +1,3 @@
-<!--
 /*
 Random link button- By JavaScript Kit (http://javascriptkit.com)
 Over 300+ free scripts!
@@ -88,7 +87,6 @@ randomlinks[79]="/geems/bloons-td-4"
 randomlinks[80]="/geems/bloons-td-5"
 randomlinks[81]="/geems/kingdom-rush"
 randomlinks[82]="/geems/hole-io"
-randomlinks[83]="/geems/drawbest.io"
 randomlinks[83]="/geems/cowaboom"
 randomlinks[84]="/geems/city-siege-3"
 randomlinks[85]="/geems/bowmaster-prelude"
@@ -114,7 +112,7 @@ randomlinks[104]="/geems/jack-smith"
 randomlinks[105]="/geems/helix-jump"
 randomlinks[106]="/geems/earn-to-die-1"
 randomlinks[107]="/geems/cut-the-rope"
-randomlinks[108]="/geems/cute-the-rope-2"
+randomlinks[108]="/geems/cut-the-rope-2"
 randomlinks[109]="/geems/cut-the-rope-time-travel"
 randomlinks[110]="/geems/cut-the-rope-magic"
 randomlinks[111]="/geems/cut-the-rope-experiments"
@@ -139,6 +137,7 @@ randomlinks[129]="/geems/whack-your-ex"
 randomlinks[130]="/geems/bouncing-balls"
 randomlinks[131]="/geems/poop-clicker"
 randomlinks[132]="/geems/tetris-2008"
+randomlinks[133]="/geems/earn-to-die-2012"
 function randomlink(){
 window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
 }
