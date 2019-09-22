@@ -1,0 +1,12 @@
+{
+"companyName": "Royale Gamers",
+"productName": "Color Tunnel",
+"dataUrl": "color_tunnel_silvergames.data.unityweb",
+"wasmCodeUrl": "color_tunnel_silvergames.wasm.code.unityweb",
+"wasmFrameworkUrl": "color_tunnel_silvergames.wasm.framework.unityweb",
+"TOTAL_MEMORY": 134217728,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#808080"
+}

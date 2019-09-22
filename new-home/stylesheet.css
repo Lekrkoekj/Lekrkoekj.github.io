@@ -751,38 +751,25 @@ transition-delay:0s !important;
 .hovereffect#rb {
     border-radius: 0px 5px 0px 0px;
 }
+.home-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
 
-img#gif {
-    animation: gif 2.1s linear infinite;
-}
-@keyframes gif {
-    100% {transform: rotate(-360deg);}
-}
 /*Zoom fixes*/
-@media only screen and (max-width: 1280px) {
-    .hovereffect, .hovereffect img {
-        width: 152px;
-        height: 152px;
-    }
+@media only screen and (max-width: 1350px) {
     div#___gcse_0 {
-        width: 291px;
+        width: 281px;
     }
-    .populaire-geems, .nieuwste-geems {
-        height: 530px;
 }
-.lekrkoekj-paginas {
-    height: 377px;
-}
-div#___gcse_0 {
-    width: 281px;
-}
-.hovereffect h2 {
-    width: 120px;
-}
+@media only screen and (max-width: 1296px) {
+    .home-grid {
+        grid-template-columns: auto;
+    }
 }
 /*Mobile styles*/
 @media only screen and (max-width: 930px) {
-    .announcement-td2, .populaire-geems, .lekrkoekj-paginas, .nieuwste-geems, .home-td {
+    .announcement-td2, .populaire-geems, .lekrkoekj-paginas, .nieuwste-geems {
         display: none;
     }
     .home-mobile-message {
@@ -953,7 +940,7 @@ iframe, object {
 /*Page specific*/
 .lkd-links {
     display: grid;
-    grid-template-columns: 33.333% 33.333% 33.333%;
+    grid-template-columns: auto auto auto;
     grid-gap: 10px;
 }
 @media only screen and (max-width: 930px) {
