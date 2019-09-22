@@ -256,13 +256,13 @@ td.gsc-orderby-container {
     color: #00aef1 !important;
 }
 /*Categorieën*/
-.category-title {
+.category-title, .update-version, .update-title {
     color: white;
     display: inline-block;
     width: 49.6%;
     transform: translateY(33%);
 }
-.category-title h1 {
+.category-title h1, .update-version h1, .update-title h1 {
     transform: scale(1.5);
 }
 .category-background {
@@ -272,7 +272,7 @@ td.gsc-orderby-container {
     background-size: cover;
     background-position-y: center;
 }
-.category-background, .category-gradient, .category-title {
+.category-background, .category-gradient, .category-title, .update-version, .update-title {
     height: 150px;
 }
 .category-gradient {
@@ -284,7 +284,7 @@ td.gsc-orderby-container {
     user-select: none;
     /*display: none;*/
 }
-.category-title h1, .category-background h1 {
+.category-title h1, .category-background h1, .update-version h1, .update-title h1 {
     margin: 0;
 }
 .category-grid {
@@ -303,16 +303,16 @@ td.gsc-orderby-container {
         grid-template-columns: auto auto auto auto auto !important;
     }
     }
-    @media screen and (max-width: 880px) {
-        .category-grid {
-            grid-template-columns: auto auto auto auto !important;
-        }
-        }
-        @media screen and (max-width: 700px) {
+@media screen and (max-width: 880px) {
             .category-grid {
+            grid-template-columns: auto auto auto auto !important;
+            }
+}
+@media screen and (max-width: 700px) {
+    .category-grid {
                 grid-template-columns: auto auto auto !important;
-            }
-            }
+    }
+}
 .grid-container > div {
     text-align: center;
     padding: 20px 0;
@@ -345,7 +345,7 @@ td.gsc-orderby-container {
 }
 
 @media screen and (max-width: 1280px) {
-    .category-gradient, .category-background {
+    .category-gradient, .category-background, .update-version {
     display: none;
     }
   }
@@ -357,6 +357,9 @@ td.gsc-orderby-container {
 @media screen and (max-width: 930px) {
     .grid-filler {
         display: none;
+    }
+    .update-title h1 {
+        font-size: 20px;
     }
 }
 .category-table td {
