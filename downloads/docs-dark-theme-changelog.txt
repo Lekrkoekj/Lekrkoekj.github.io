@@ -1,0 +1,253 @@
+Version 1.6.7
+Fixed multiple wierd colors in the file picker.
+Lots of small fixes in Classroom I forgot to add here.
+
+Version 1.6.6
+The Classroom classcode input box is now readable.
+Fixed a white box in de Classroom gradebook.
+Fixed an issue with discolored headers in Classroom.
+The YouTube video picker is dark again.
+The Drive file picker is dark again.
+Fixed lots of white borders in Classroom.
+Lots of fixes in Sites.
+The Edit history in Sheets is now dark.
+The data filter box in Sheets is now dark.
+
+Version 1.6.5
+Links in Docs are now dark.
+The No templates page is now fully dark.
+Fixed some hover effects.
+The Activity Dashboard is now fully dark.
+The Gradebook in Classroom is now dark.
+Fixed some white borders in Classroom.
+Calenders in Classroom are dark again.
+Some more text in Classroom is now white.
+Borders in the app launcher are now dark.
+The file picker inside of Docs is now dark.
+The profile picture picker is now dark.
+
+Version 1.6.4
+The homepage should now stay darker if the site gets updated.
+Header and footer settings in Docs are now dark.
+Some small text in Classroom is now white.
+The buttons in the File is in the trash modal nnow have white text.
+The File does not exist page is now fully dark. 
+The Format options in Slides are now dark.
+
+Version 1.6.3
+The sign-in/login screen is now dark.
+Searchbar and sidebar in homepages are dark again.
+
+Version 1.6.2
+The new sidebar in Classroom is now dark.
+The searchbar and sidebar on the homepage of Docs are now dark again.
+Disabled options in drop-down menus are now darker. (finally)
+Icons in drop-down menus are now lighter.
+The checkbox in the Owned by menu is now light.
+The file chooser in Docs is now also dark.
+The profile box is now dark again.
+The new Classroom overview page is now dark.
+
+Version 1.6.1
+Fixed an issue where all svg's and slides were black.
+(More fixes for especially Classroom coming soon.)
+
+Version 1.6
+The style is actually updated now. I forgot to add the new code last time.
+Fixed the background of some buttons in Classroom.
+The Class settings in Classroom are now fully dark.
+The Points box in Classroom is now dark.
+The Due date and time box in Classroom is now dark.
+The To-do page in Classroom now has light text.
+The Student work page in Classroom is now fully dark.
+And more fixes in Classroom.
+The profile box, top bar and searchbar on the homepages are fixed (yet again).
+The Turn in button text in docs is now white.
+The Voice typing box is now dark.
+The table making box is now visible again.
+And more small fixes in Docs.
+Small fixes in Sheets.
+The file chooser is now dark!
+The YouTube video picker is now dark!
+
+Version 1.5.3
+Lots of fixes in Classroom.
+The profile box and homepage searchbar are fixed (again).
+(More Classroom fixes + more coming later)
+
+Version 1.5.2
+The topbar on homepages and user profiles are now dark. (Fixed this for like the third time now.)
+Profiles in the profiles list now have a lighter background when hovered on.
+The ruler on the side is now fully dark.
+The white borders in the Word Count box are now gone.
+Fixed some wierd backgrounds on the Forms homepage.
+Text and icons in the Multiple choice raster in Forms are now light.
+Forms that have answers turned off are now fully dark. 
+The profile box in Forms is no longer transparent.
+More context menus in Forms are now dark.
+When pages are loading, the background will be dark now.
+
+
+Version 1.5.1
+More text in the Document Outline is now white.
+Some light backgrounds in Sheets are now dark.
+The background of people entered in the sharing box are dark again.
+The Only viewing icon is now light.
+Removed more light borders around image-related buttons.
+Updated style description.
+
+Version 1.5
+Lots of fixes in Forms.
+Improvements to the Search box.
+The app launcher is round again.
+And some fixes in Docs.
+Homepages and profiles are now dark again.
+The icons in the screenshot are now centered
+Google Classroom now supports the Dark Theme!
+
+
+Version 1.4.3
+The titlebox of a form is now rounded.
+More black text and icons in Forms are now white.
+The background of individual forms are now dark.
+There's no longer a box around the profile button in Forms.
+The text box when searching for words in a document is now dark.
+The Document outline is now fully dark.
+Copy to no longer has a white border.
+The Select a data range box is now dark. 
+
+Version 1.4.2
+Fixed some colors on the Forms homepage.
+The style's screenshot is actually updated now.
+Added a screenshot for Forms.
+The search box text is now fully white.
+The Recent documents text is now white.
+The Forms Settings modal now has the right colors.
+Context menu's in Sites are now dark.
+The New Page box in Sites is now dark.
+More icons in Sites are now light.
+Fonts in the Theme selector in Sites are now light.
+The sharing box in Sites is now dark.
+People entered in the sharing box now have a dark box.
+Add Logo box in Sites is now dark.
+Published Site Link box is now dark.
+
+Version 1.4.1
+Waiting for answers text on Forms is now white.
+Checkmarks on menu's in Forms are now white.
+Forms that you're viewing are now dark.
+When a window is small, the topbar is now dark again.
+Controls at the side on Sites are now white.
+
+Version 1.4
+You are now able to install the style again. I don't know what happened, but I fixed it.
+All problems caused by the last error should be fixed.
+When you're offline, the bar at the top should be dark now.
+Signed out accounts in the account list are now dark.
+Icons and pictures in the search bar no longer have nagative colors
+Google Sites now supports dark theme!
+
+Version 1.3.1
+Fixed a typo in the description.
+Dark icons in the sharing box are now light.
+The Account Managed box above your account is now dark.
+The Expiration Date box is now dark.
+List of people in the document now has white text.
+When editing a title it will actually be white now. (Didn't work last time apparently.)
+The sharing error message is now dark.
+Fixed the Share loading animation.
+(1.4 is coming later this week probably.)
+
+Version 1.3
+Forms now supports the dark theme!
+Changed description.
+Changed Style name.
+Fixed the Page Setup box in Drawings.
+Replace image button in Drawings now has white text.
+The Diagrams sidebar in Drawings is now dark.
+More image-related button no longer have a white border.
+The font size picker is now dark.
+When renaming a file, the text is now white.
+The Select an object text in the sidebar is now white.
+The Lock Aspect Ratio button text is now white.
+Search results on managed accounts are now dark.
+The Reload Document button is now dark.
+More fixes to homepages of managed accounts.
+And some more fixes in Docs. (I forgot what they were)
+
+Version 1.2
+Dark theme support for Google Drawings added!
+Dark theme support for the Google Forms homepage added! 
+Improvements to Docs on managed accounts.
+The app launcher is now always round.
+Buttons related to tables no longer have a white border.
+The dimensions under the table maker are now white.
+The table maker is now visible.
+More improvements to the homepages.
+The homepage settings text is now white.
+The Equation toolbar is now dark.
+The Special Characters menu is now dark.
+The Preferences menu is now fully dark.
+The Suggesting box now has a light icon.
+The Word Count box no longer has white border in it.
+The top of a comment is now dark.
+The textbox of a comment is now dark.
+The Add to Theme button in Slides no longer has a white border.
+Theme colors in Slides is now dark.
+Insert placeholder button no longer has a white border.
+Search results in Help no longer have a white border when hovered on.
+Added new additional screenshots.
+Added new main screenshot.
+Start a new document text is now white.
+Templates are no longer getting cut off at the top.
+
+Version 1.1
+The name of the product in the top left on the homepage is now white.
+The settings and help icons in the sidemenu on the homepage are now white.
+The homepage is now fully dark when the window is small.
+Check marks are now white.
+More text on the homepage is white.
+The background of some buttons is less light when hovered on.
+The rename document box no longer has a white line at the top
+More modal titles have normal backgrounds.
+The application launcher no longer has black text and white backgrounds.
+The account pop-up no longer has a white background at the bottom.
+Spreadsheet and Slides icons on the homepages are now white.
+The search bar on the homepage is now dark.
+List view items on the homepage are now dark.
+The 'Comment History' pop-up doesn't have a white border anymore.
+The clipboard icon is now white. 
+
+Version 1.0
+Google Slides now supports the dark theme!
+The message on the homepage telling you that you don't have any documents is now dark. 
+The name of an untitled document doesn't look wierd anymore.
+Submenu arrows in context and dropdown menus are now white.
+Dates in the Version History should now be white.
+Text in the Explore box is now white.
+
+Version 0.3
+Google Sheets now has dark theme!
+Added Suite in the style's name.
+Email collaborators is now fully dark.
+
+Version 0.2.1
+The Share UI is now fully dark.
+The button to open the sidebar is now dark.
+The text and buttons in Explore now fit the dark theme.
+Line under the main account in the accounts list is now dark.
+Google Sheets and Slides homepages are now dark.
+
+Version 0.2
+Document Details is now fully dark.
+Page settings is now fully dark.
+Custom color picker is now fully dark.
+Google Images sidebar is now fully dark.
+All text in the View menu should now be white.
+Discover sidebar is now fully dark.
+Numbers on the rulers are now white.
+Spellingsuggestions popup is now dark.
+All of the Docs dark stuff is no longer in other products.
+
+Version 0.1
+Initial release.
