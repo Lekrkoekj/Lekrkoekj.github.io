@@ -418,6 +418,7 @@ td.gsc-orderby-container {
 /*Dark mode styles*/
 body.dark {
     background: #131719;
+    color: white;
 }
 body.dark .white {
     background: #131719;
