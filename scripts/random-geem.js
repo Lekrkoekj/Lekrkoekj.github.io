@@ -6,7 +6,7 @@ This credit MUST stay intact for use
 //specify random links below. You can have as many as you want
 var randomlinks=new Array()
 randomlinks[0]="/geems/papa-s-pancakeria"
-randomlinks[1]="/geems/papa-s-pizzaria"
+randomlinks[1]="/geems/papa-s-pizzeria"
 randomlinks[2]="/geems/papa-s-bakeria"
 randomlinks[3]="/geems/papa-s-taco-mia"
 randomlinks[4]="/geems/papa-s-wingeria"
