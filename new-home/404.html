@@ -27,6 +27,9 @@ body {
     color: white;
     transition: 0s;
 }
+body.dark {
+    background: #131719 !important;
+}
 body.green-theme {
           background: #64b752;
       }
@@ -49,16 +52,21 @@ body.green-theme {
 h1 {
     font-size: 55px;
 }
+p, h1 {
+    transition: none;
+}
 div#myNav p, div#myNav h2 {
     color: #444444;
 }
-@media only screen and (max-width: 930px) {
-    .table-links {
-        display: none;
-    }    
+.error-page-links {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
 }
-.table-links {
-    width: 100%;
+@media only screen and (max-width: 420px) {
+    .error-page-links {
+        grid-template-columns: auto;
+    }
 }
 </style>
 
@@ -86,9 +94,8 @@ div#myNav p, div#myNav h2 {
 
         <!-- Site Container -->
 
-<div class="site-container" id="wrapper"><table height="100%" width="100%"><tr><td><center><h1>404 - Niet gevonden</h1><p>Deze pagina bestaat helaas niet. Misschien heb je de link verkeerd getypt.</p>
-    <table class="table-links"><tr><td></td></tr></table>
-    <p>Denk je dat deze pagina wel zou moeten werken? Stuur dan een bugreport in via <a href="/lekrkoekj/lekrkoekj-bugs.html">Lekrkoekj Bugs</a> of de <a href="/lkg-discord.html">Discord server</a>.</p></center></td></tr></table></div>
+<div class="site-container" id="wrapper"><center><h1>404 - Niet gevonden</h1><p>Deze pagina bestaat helaas niet. Misschien heb je de link verkeerd getypt.</p>
+    <p>Denk je dat deze pagina wel zou moeten werken? Stuur dan een bugreport in via <a href="/lekrkoekj/lekrkoekj-bugs.html">Lekrkoekj Bugs</a> of de <a href="/lkg-discord.html">Discord server</a>.</p></center><div class="error-page-links"><div class="grid-item"><center><a href="/"><button class="game on-white"><img src="/images/lekrkoekj134.png" class="game-img" alt="Tetris Marathon"><br><span class="game-name">Lekrkoekj Home</span></button></a></center></div><div class="grid-item"><center><a href="/random"><button class="game on-white"><img src="/images/lekrkoekj134.png" class="game-img" alt="Tetris Marathon"><br><span class="game-name">Random Geem</span></button></a></center></div></div></div>
 
           <!-- Lekre Effectj's-->
           <div class="effect-bar blue"><center><table width="100%"><tr><td width="50%"><center><a href="#bottom"><button class="normal" onclick="showEffects()">Lekre Effectj's</button></a></center></td><td width="50%"><center><a href="#bottom"><button class="normal" onclick="showThemeOptions()">Thema Instellingen</button></a></center></td></tr></table>
