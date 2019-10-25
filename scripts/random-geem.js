@@ -1,9 +1,4 @@
-/*
-Random link button- By JavaScript Kit (http://javascriptkit.com)
-Over 300+ free scripts!
-This credit MUST stay intact for use
-*/
-//specify random links below. You can have as many as you want
+
 var randomlinks=new Array()
 randomlinks[0]="/geems/papa-s-pancakeria"
 randomlinks[1]="/geems/papa-s-pizzeria"
@@ -138,7 +133,7 @@ randomlinks[130]="/geems/bouncing-balls"
 randomlinks[131]="/geems/poop-clicker"
 randomlinks[132]="/geems/tetris-2008"
 randomlinks[133]="/geems/earn-to-die-2012"
+
 function randomlink(){
 window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
 }
-//-->
