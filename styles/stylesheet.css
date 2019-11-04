@@ -98,14 +98,14 @@ body.dark a:active {
     width:78px;
     cursor: pointer;
     height: 78px;
-    background-image: url(/images/lkg-logo-small-text.png);
+    background-image: url(/images/lkg-logo-small.webp);
     transition: 0.3s;
     background-size: cover;
     font-size: 0px;
 }
-/*.logo:hover {
-    background-image: url();
-}*/
+.logo:hover {
+    background-image: url(/images/lkg-logo-small-text.png);
+}
 .menu, .mobile-menu {
     max-height: 78px;
     width: 100%;
