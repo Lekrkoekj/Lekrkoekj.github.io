@@ -98,7 +98,7 @@ body.dark a:active {
     width:78px;
     cursor: pointer;
     height: 78px;
-    background-image: url(/images/lkg-logo-small.webp);
+    background-image: url(/images/lkg-logo-small-text.png);
     transition: 0.3s;
     background-size: cover;
     font-size: 0px;
