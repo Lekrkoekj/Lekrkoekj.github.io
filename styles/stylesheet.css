@@ -4,6 +4,7 @@ body {
     background-size: cover;
     background-position: top center;
     background-attachment: fixed;
+    background-color: #f0f0eb;
     margin:0 !important;
     font-family: Open Sans;
     color: #444444;
@@ -22,7 +23,7 @@ p, .site-container {
     font-family: Open Sans;
 }
 .site-container {
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     position: relative;
 }
 .site-container p {
@@ -184,10 +185,7 @@ p[no-margin] {
     background: #5facea;
 }
 .white {
-    background: #ffffffa3;
-}
-.on-white {
-    background: #f0f0ebbf !important;
+    background: #f0f0eba3;
 }
 .use-background {
     background-image: url(/images/old-background.webp);
@@ -217,7 +215,7 @@ table#gs_id50 {
 .search-results {
     top: 77px;
     z-index: 1;
-    background: #ffffffa3;
+    background: #f0f0eba3;
 }
 .gsc-control-cse {
     border-color: transparent !important;
@@ -429,7 +427,7 @@ body.dark .white {
     background: #131719;
 }
 body.dark .blue {
-    background: #313333 !important;
+    background: #323639 !important;
 }
 body.dark .menu {
     background: #1b2022cc;
@@ -446,7 +444,7 @@ body.dark .hovereffect a.info, body.dark .hovereffect h2 {
         color: white !important;
 }
 body.dark .menu-button:hover {
-    background: #313333cc
+    background: #323639cc
 }
 body.dark img[src="/images/misc-icon.webp"] {
     filter: invert(1);
@@ -455,7 +453,7 @@ body.dark h1, body.dark h2, body.dark h3, body.dark span, body.dark h4, body.dar
     color: white;
 }
 body.dark .gsc-input-box, body.dark button.gsc-search-button.gsc-search-button-v2 {
-    background: #313333cc !important;
+    background: #323639cc !important;
 }
 body.dark .gsc-input-box input {
     color: white !important;
@@ -467,7 +465,7 @@ body.dark .gsc-control-cse, body.dark .gsc-resultsbox-visible, body.dark .gsc-we
     background: #131719;
 }
 body.dark .category-gradient {
-    background: linear-gradient(90deg, #313333 20%, #fff0 100%) !important;
+    background: linear-gradient(90deg, #323639 20%, #fff0 100%) !important;
 }
 /*Lekre effectj's effecten & Thema opties*/
 body.inverted {
@@ -660,7 +658,7 @@ button#lekrdikrandj {
     width: 100%;
     height: 560px;
     transition: 0.3s;
-    background-color: #f0f0ebbf;
+    background-color: #ffffffbf;
     max-width: 648px;
     border-radius: 5px;
     box-shadow: 0px 2px 7px 0px #0000001a;
