@@ -57,45 +57,95 @@
 <div class="search-results"><div class="gcse-searchresults"></div></div>
     <div class="site-container" id="wrapper"><div class="slideshow-container blue">
         <div class="mySlides fade">
-          <div class="slide-content"><table width="100%"><tr><td width="50%" height="370px"><center><h2>Lekrkoekj Dash v2.3 is uit!</h2>
-        <p style="margin-bottom: 12px;">Statestieken zijn toegevoegd! Volgende update wordt groot, met oneindige levels, nieuwe menu's en meer!</p><a href="https://github.com/Lekrkoekj/lekrkoekj-dash/releases/tag/v2.3"><button class="normal" style="margin-right: 5px;">Bekijk de changelog!</button></a><a href="/geems/lekrkoekj-dash"><button class="normal">Speel de geem!</button></a></center></td><td width="50%" height=" 370px"class="announcement-td2"><center><img src="/images/LKDsitepromo.png" style="max-height: 350px; height: 100%;"></center></td></tr></table></div>
+          <div class="slide-content"><table width="100%"><tr><td width="50%" height="370px"><center><h2>Lekrkoekj Geems is nu 2 jaar oud!</h2>
+        <p style="margin-bottom: 12px;">In deze 2 jaar is de site heel erg veranderd. De site heeft verschillende design updates gehad, is geswitcht van host, en heb ik zelfs 2 geems gemaakt! Heel erg bedankt voor het gebruiken van de site, hopelijk wordt volgend jaar nog beter!</p><a href="/lekrkoekj/lekrkoekj-home-1-0"><button class="normal" style="margin-right: 5px;">Lekrkoekj Home 1.0</button></a><a href="/lekrkoekj/lekrkoekj-home-4-0"><button class="normal" style="margin-right: 5px;">Lekrkoekj Home 4.0</button></a><a href="/geems/lekrkoekj-dash"><button class="normal">Speel Lekrkoekj Dash!</button></a></center></td><td width="50%" height=" 370px"class="announcement-td2"><center><img src="/images/lekrkoekj-slow.gif"><img src="/images/lekrkoekj-slow.gif"><img src="/images/lekrkoekj-slow.gif"><img src="/images/lekrkoekj-slow.gif"><img src="/images/lekrkoekj-slow.gif"><img src="/images/lekrkoekj-slow.gif"><img src="/images/lekrkoekj-slow.gif"><img src="/images/lekrkoekj-slow.gif"><img src="/images/lekrkoekj-slow.gif"><img src="/images/lekrkoekj-slow.gif"></center></td></tr></table></div>
         </div>
         <div class="mySlides fade">
+            <div class="slide-content"><table width="100%"><tr><td width="50%" height="370px"><center><h2>Lekrkoekj Dash v2.3 is uit!</h2>
+          <p style="margin-bottom: 12px;">Statestieken zijn toegevoegd! Volgende update wordt groot, met oneindige levels, nieuwe menu's en meer!</p><a href="https://github.com/Lekrkoekj/lekrkoekj-dash/releases/tag/v2.3"><button class="normal" style="margin-right: 5px;">Bekijk de changelog!</button></a><a href="/geems/lekrkoekj-dash"><button class="normal">Speel de geem!</button></a></center></td><td width="50%" height=" 370px"class="announcement-td2"><center><img src="/images/LKDsitepromo.png" style="max-height: 350px; height: 100%;"></center></td></tr></table></div>
+          </div>
+          <div class="mySlides fade">
             <div class="slide-content"><table><tr><td width="50%" height="370px"><center><h2>Lekrkoekj Geems 4.3.0 is uit!</h2>
           <p style="margin-bottom: 12px;">Na een tijdje is er eindelijk weer een nieuwe update uit! Zoals je waarschijnlijk al hebt gemerkt, wordt de site nu gehost door GitHub. Veel geems zijn gedeblokkeerd op de schoolwifi en er zijn heel veel dingen veranderd of toegevoegd.</p><a href="/updates/versie-4-3-0"><button class="normal">Bekijk de volledige changelog!</button></a></center></td><td width="50%" height=" 370px"class="announcement-td2"><center><img src="https://i.imgur.com/LA8wXUD.png" style="max-width: 677px; width: 100%;">
           <p>De vernieuwde menubalk.</p><img src="https://i.imgur.com/Y65huct.png" width="40%"><p>Vernieuwde animaties op Lekrkoekj Home.</p><img src="https://i.imgur.com/NBdjppt.png" width="40%"><p>De vernieuwde Lekre Effectj's.</p></center></td></tr></table></div>
           </div>
-        <div class="mySlides fade">
-            <div class="slide-content"><table height="100%" width="100%"><tr><td width="50%" height="370px"><center><h2>Lekrkoekj Clicker v0.2 is uit!</h2>
-                <p style="margin-bottom: 12px;">De geem is nu in Unity gemaakt! Ik weet alleen niet echt meer wat ik er aan toe kan voegen maar dat zie ik later wel.</p><a href="/geems/lekrkoekj-clicker"><button class="normal">Speel Lekrkoekj Clicker!</button></a></center></td><td width="50%" height="370px" class="announcement-td2"><center><img src="https://i.imgur.com/cBYYSZs.png" style="max-width: 677px; width: 100%;"></center></td></tr></table></div>
-        </div>
         
         <div style="text-align:center; padding: 5px 0px;">
-            <span class="dot"></span> 
-            <span class="dot"></span> 
-            <span class="dot"></span> 
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
           </div><div id="slide"></div>
         </div>
         <div class="white">
-            <script>var slideIndex = 0;
-                showSlides();
-                
-                function showSlides() {
-                  var i;
-                  var slides = document.getElementsByClassName("mySlides");
-                  var dots = document.getElementsByClassName("dot");
-                  for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
-                  }
-                  slideIndex++;
-                  if (slideIndex > slides.length) {slideIndex = 1}    
-                  for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                  }
-                  slides[slideIndex-1].style.display = "block";  
-                  dots[slideIndex-1].className += " active";
-                  setTimeout(showSlides, 15000);
-                }</script>       
+            <script>var slideIndex = 1;
+
+var myTimer;
+
+var slideshowContainer;
+
+window.addEventListener("load",function() {
+    showSlides(slideIndex);
+    myTimer = setInterval(function(){plusSlides(1)}, 10000);
+  
+    //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+    slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+  
+    //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+    // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
+  
+    slideshowContainer.addEventListener('mouseenter', pause)
+    slideshowContainer.addEventListener('mouseleave', resume)
+})
+
+// NEXT AND PREVIOUS CONTROL
+function plusSlides(n){
+  clearInterval(myTimer);
+  if (n < 0){
+    showSlides(slideIndex -= 1);
+  } else {
+   showSlides(slideIndex += 1); 
+  }
+  
+  //COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+  
+  if (n === -1){
+    myTimer = setInterval(function(){plusSlides(n + 2)}, 10000);
+  } else {
+    myTimer = setInterval(function(){plusSlides(n + 1)}, 10000);
+  }
+}
+
+//Controls the current slide and resets interval if needed
+function currentSlide(n){
+  clearInterval(myTimer);
+  myTimer = setInterval(function(){plusSlides(n + 1)}, 10000);
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n){
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+pause = () => {
+  clearInterval(myTimer);
+}
+
+resume = () =>{
+  clearInterval(myTimer);
+  myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
+}</script>       
     <div class="home-grid"><div class="grid-item"><center><div class="nieuwste-geems"><center><h1 class="title" id="1">Nieuwste Geems</h1></center>
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
         <div class="hovereffect" id="lb">
@@ -148,7 +198,7 @@
         </div>
     </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
         <div class="hovereffect">
-            <img class="img-responsive" src="https://i.imgur.com/iFDWAq4.png" height="162" width="162" alt="Color Tunnel">
+            <img class="img-responsive" src="https://i.imgur.com/3X93kRV.png" height="162" width="162" alt="Color Tunnel">
             <div class="overlay">
                <h2>Earn To Die 2012</h2>
                <a class="info" href="/geems/earn-to-die-2012">Speel</a>
@@ -156,7 +206,7 @@
         </div>
     </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
         <div class="hovereffect">
-            <img class="img-responsive" src="https://i3.silvergames.com/p/b/super-hot.png" height="162" width="162" alt="Super Hot">
+            <img class="img-responsive" src="https://i.imgur.com/mPXRnK9.png" height="162" width="162" alt="Super Hot">
             <div class="overlay">
                <h2>Super Hot</h2>
                <a class="info" href="/geems/super-hot">Speel</a>
@@ -164,7 +214,7 @@
         </div>
     </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
         <div class="hovereffect" id="lo">
-            <img class="img-responsive" src="https://i1.silvergames.com/p/b/connect-4.png" height="162" width="162" alt="Connect 4">
+            <img class="img-responsive" src="https://i.imgur.com/3rc9sd7.png" height="162" width="162" alt="Connect 4">
             <div class="overlay">
                <h2>Connect 4</h2>
                <a class="info" href="/geems/connect-4">Speel</a>
