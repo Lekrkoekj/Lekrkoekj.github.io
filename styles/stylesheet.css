@@ -967,8 +967,13 @@ iframe, object {
     grid-template-columns: auto auto auto;
     grid-gap: 10px;
 }
+.lkd-links-wt {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
 @media only screen and (max-width: 930px) {
-    .lkd-links {
+    .lkd-links, .lkd-links-wt {
         grid-template-columns: auto !important;
     }
   }
