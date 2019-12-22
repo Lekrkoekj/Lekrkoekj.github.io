@@ -8,7 +8,7 @@ body {
     margin:0 !important;
     font-family: Open Sans;
     color: #444444;
-    transition: 0.5s ease-in-out;
+    /*transition: 0.5s ease-in-out;*/
 }
 html {
     scroll-behavior: smooth;
@@ -434,7 +434,7 @@ body.dark .blue {
 body.dark .menu {
     background: #1b2022cc;
 }
-body.dark button.small, body.dark button.normal, body.dark button.big, body.dark .lekrkoekj-paginas, body.dark .populaire-geems, body.dark .nieuwste-geems, body.dark .on-white {
+body.dark button.small, body.dark button.normal, body.dark button.big, body.dark .lekrkoekj-paginas, body.dark .populaire-geems, body.dark .nieuwste-geems, body.dark .on-white, body.dark .game {
     background: #1b2022 !important;
     color: white;
 }
