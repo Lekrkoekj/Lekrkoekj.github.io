@@ -156,6 +156,10 @@ body.dark .dark-mode-text:after {
 .menu-button img {
     max-height: 35px;
     height: 100%;
+    transition: transform 0.2s;
+}
+.menu-button:hover img {
+    transform: rotate(360deg);
 }
 ::-webkit-scrollbar {
     width: 10px;
@@ -281,6 +285,11 @@ td.gsc-orderby-container {
     width: 203px;
     user-select: none;
     /*display: none;*/
+}
+.category-description {
+    position: absolute;
+    right: calc(50% - 69.81px);
+    top: 30px;
 }
 .category-title h1, .category-background h1, .update-version h1, .update-title h1 {
     margin: 0;
@@ -977,3 +986,8 @@ iframe, object {
         grid-template-columns: auto !important;
     }
   }
+  @media only screen and (max-width: 1050px) {
+      #container object {
+          width: 100%;
+      }
+    }
