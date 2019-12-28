@@ -334,7 +334,8 @@ td.gsc-orderby-container {
     font-size: 30px;
 }
 .grid-filler {
-    width: 162px; height: 206px;
+    width: 162px; 
+    height: 144px;
 }
 .display-block {
     display: block !important;
