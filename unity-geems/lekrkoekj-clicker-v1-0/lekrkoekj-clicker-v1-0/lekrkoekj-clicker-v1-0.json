@@ -1,0 +1,16 @@
+{
+"companyName": "Lekrkoekj Geems",
+"productName": "Lekrkoekj Clicker",
+"productVersion": "1.0",
+"dataUrl": "lekrkoekj-clicker-v1-0.data.unityweb",
+"wasmCodeUrl": "lekrkoekj-clicker-v1-0.wasm.code.unityweb",
+"wasmFrameworkUrl": "lekrkoekj-clicker-v1-0.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Light",
+"backgroundColor": "#FFFFFF",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.2.1f1"
+}
