@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #333333;
 }
 .lkd-home {
-    background-image: urL(/images/lkd-home-background.png);
+    background-image: urL(/images/lkd-home-background-2.png);
     height: 1219px;
     background-size: cover;
     background-position: center;
@@ -156,10 +156,11 @@ h1, h2, h3, h4, h5, h6 {
 footer {
     background: var(--lkg-blue);
     padding: 10px;
+    color: white;
 }
 div#footer-inside {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
 }
 img#footer-img {
     width: 138px;
@@ -278,6 +279,6 @@ img#footer-img {
             right: 35px;
             }
           }
-          body.dark a.closebtn {
+          body.dark a.closebtn, footer a {
             color: white !important;
         }
