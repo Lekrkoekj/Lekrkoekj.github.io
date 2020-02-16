@@ -44,6 +44,10 @@
       <!-- Site Container-->
     <div class="site-container">
         <div class="empty-top"></div>
+        <div class="category-background" style="background-image: url(/images/lekrkoekj-fast.gif); background-color: white; background-size: auto; background-position: unset;"><div class="category-background-overlay"><h1>Lekrkoekj</h1></div>
+        <div class="category-buttons"><button class="category-button"><img src="/images/lekrkoekj-slow.gif"><span>Suggesties</span></button></div>
+    </div>
+        
     </div>
     <footer><div id="footer-inside"><div><center><img id="footer-img" src="/images/lkg-logo-small-text.png" alt="LKG Logo"><p>2017-2020 - Lekrkoekj Geems</p></center></div><hr><div><center><h2>Contact</h2><p><a href="mailto:lekrkoekjgeems@gmail.com">lekrkoekjgeems@gmail.com</a></p><p><a href="/lkg-discord">Discord</a></p></center></div><hr><div><center><h2>LKG Links</h2><p><a href="/updates">Site Updates</a></p><p><a href="/suggesties">Stuur suggesties in</a></p><a href="/bugs">Stuur bugreports in</a></p></center></div></footer>
 </body>
@@ -54,6 +58,9 @@
     margin: 0;
     font-family: Lato;
     height: 100vh;
+}
+img {
+    user-select: none;
 }
 nav a {
     color: #333333;
@@ -130,9 +137,10 @@ h1, h2, h3, h4, h5, h6 {
     transition: 0.3s;
     padding: 10px 6px;
     height: 78px;
-   min-width: 78px;
+    min-width: 78px;
     cursor: pointer;
     color: #333333;
+    user-select: none;
 }
 .lkd-home {
     background-image: urL(/images/lkd-home-background-2.png);
@@ -215,10 +223,69 @@ div#footer-inside {
 img#footer-img {
     width: 138px;
 }
-.empty-top{ 
+.empty-top { 
     background: transparent;
     height: 78px;
 }
+
+/* Categories */
+.category-background {
+    height: calc(70vh + 150px);
+    user-select: none;
+    background-size: cover;
+    background-position-y: center;
+    width: 100%;
+
+}
+.category-background-overlay {
+    height: 150px;
+    width: 100%;
+    background: #00000057;
+    backdrop-filter: blur(4.6px);
+    -webkit-backdrop-filter: blur(4.6px);
+    display: flex;
+    align-items: center;
+}
+.category-background h1 {
+    margin: 0px;
+    margin: 0;
+    width: 100vw;
+    text-align: center;
+    font-size: 60px;
+}
+.category-button {
+    font-family: Nexa;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+    margin: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 162px;
+    padding: 0;
+    height: 237px;
+}
+.category-button:hover {
+    background: white;
+    color: #333333;
+}
+.category-button img {
+    width: 162px;
+    height: 162px;
+}
+.category-button span {
+    padding: 20px;
+}
+.category-buttons {
+    background: #00000057;
+    backdrop-filter: blur(4.6px);
+    -webkit-backdrop-filter: blur(4.6px);
+    height: 70vh;
+}
+
 
 /* Mobile Stuff */
 @media only screen and (max-width: 930px) {
@@ -358,5 +425,6 @@ div#footer-inside hr {
           body.dark a.closebtn, footer a {
             color: white !important;
         }
+
 </style>
 </html>
