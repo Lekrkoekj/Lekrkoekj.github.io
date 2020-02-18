@@ -1,80 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
     <head>
-        <link rel="stylesheet" type="text/css" href="/stylesheet.css">
-        <link rel="stylesheet" type="text/css" href="/home-category.css">
-        <script>document.addEventListener('DOMContentLoaded', (event) => {
-  ((localStorage.getItem('mode') || 'dark') === 'dark') ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')
-})</script>
-    <title>Super Mario 63 - Lekrkoekj Geems</title><meta name="description" content="Speel Super Mario 63 nu op Lekrkoekj Geems!"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Open Sans&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <title>Super Mario 63 - Lekrkoekj Geems</title>
+        <meta name="description" content="Speel Super Mario 63 nu op Lekrkoekj Geems."/>
         <meta property="og:image" content="https://lekrkoekj.github.io/images/lkg-logo-small.png"/>
-        <meta property="og:image:secure_url" content="https://lekrkoekj.github.io/images/lkg-logo-small.png" /></head>
+        <meta property="og:image:secure_url" content="https://lekrkoekj.github.io/images/lkg-logo-small.png" />
+        <link rel="preconnect" href="https://www.google.com">
+        <link rel="preconnect" href="https://cse.google.com">
+        <link rel="preload" href="https://www.google.com">
+        <link rel="preload" href="https://cse.google.com">
+
+        <!-- Scripts-->
+        
+        <script src="/scripts/darkmode.js"></script>
+        <script src="/scripts/mobile.js"></script>
+        <script src="/scripts/remove.js"></script>
+        <script src="/scripts/random-geem.js"></script>
+        <script src="/scripts/effects.js"></script>
+
+<!-- Styles -->
+
+<link rel="stylesheet" type="text/css" href="/styles/stylesheet.css">
+<style>
+  body.dark .dark-mode-text:after {
+    font-size: 16px;
+    content: 'Light' !important;
+}
+.site-container {
+  top: 0;
+}
+</style>
+    </head>
 <body id="view-usersite">
-<div class="full-topbar"><div class="topbar"><center><a target="_blank" href="https://reddit.com/r/lekrkoekjgeems"><img class="reddit" src="/images/reddit-logo.png"></a><a target="_blank" href="https://www.youtube.com/channel/UCVlNgXxnGCM70vkYRMZ8hTw"><img class="youtube" src="/images/yt-logo.png"></a><a target="_blank" href="https://instagram.com/010204hoi"><img class="instagram" src="/images/ig-logo.png"></a><a href="/"><div class="lkg-logo"><img height="107px" src="/images/lkg-logo.png" style="opacity:0;"></div></a><a target="_blank" href="https://discord.gg/cfXHyKt"><img class="discord" src="/images/lkg-discord-logo.png"></a><a target="_blank" href="https://discord.gg/WgCGNNj"><img class="discordtech" src="/images/new-dct-logo.png"></a><a target="_blank" href="https://discord.gg/k2XPF3a"><img class="adswakos" src="/images/adswakos-logo.png"></a></center></div>
 
-    <div class="menu"><a href="/"><button class="mbtnS"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948624771/menubalk/unnamed.png" class="menuimg" style="transition-delay: 0.025s"><span class="menutext">Home</span></button></a><a href="/lekrkoekj"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948624771/menubalk/unnamed.png" class="menuimg" style="transition-delay: 0.05s"><span class="menutext">Lekrkoekj</span></button></a><a href="/lekre-pagina-s"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948624771/menubalk/unnamed.png" class="menuimg" style="transition-delay: 0.075s"><span class="menutext">Lekre Pagina's</span></button></a><a href="/retro-geems"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948591742/menubalk/unnamed%20%281%29.png" class="menuimg" style="transition-delay: 0.1s"><span class="menutext">Retro</span></button></a><a href="/papa-louie-geems"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948595808/menubalk/unnamed%20%282%29.png" class="menuimg" style="transition-delay: 0.125s"><span class="menutext">Papa Louie</span></button></a><a href="/puzzel-geems"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948605083/menubalk/unnamed%20%284%29.png" class="menuimg" style="transition-delay: 0.15s"><span class="menutext">Puzzel</span></button></a><a href="/clicker-geems"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948600212/menubalk/unnamed%20%283%29.png" class="menuimg" style="transition-delay: 0.175s"><span class="menutext">Clickers</span></button></a><a href="/tower-defense-geems"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948609998/menubalk/unnamed%20%285%29.png" class="menuimg" style="transition-delay: 0.2s"><span class="menutext">Tower Defense</span></button></a><a href="/io-geems"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948614086/menubalk/unnamed%20%286%29.png" class="menuimg" style="transition-delay: 0.225s"><span class="menutext">IO's</span></button></a><a href="javascript:randomlink()"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948617398/menubalk/unnamed%20%287%29.png" class="menuimg" style="transition-delay: 0.25s"><span class="menutext">Random</span></button></a><a href="/andere-geems"><button class="mbtnM"><img src="https://sites.google.com/site/lekrkoekjflash/_/rsrc/1555948621016/menubalk/unnamed%20%288%29.png" class="menuimg" style="transition-delay: 0.275s"><span class="menutext">Overig</span></button></a><button class="mbtnM" onclick="search()"><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/left-pointing-magnifying-glass_1f50d.png" class="menuimg" style="transition-delay: 0.3s"><span class="menutext">Zoeken</span></button><a href="#"><button class="mbtnE" style="height: 71px;" onclick="darkModeSwitch()" title="Wissel tussen een donker en licht thema"><span class="theme-switcher-emoji" style="height: 58px;">🌙</span></button></a></div></div>
-<script src="/random-geem.js"></script>
-    
-<div class="site-container" id="wrapper">
-    <div class="search-box" style="display:none"><center><p>Je kan nog niet naar alle pagina's zoeken hiermee. Zodra mensen de site meer gaan gebruiken komen er langzaam meer pagina's bij.</p></center><script async src="https://cse.google.com/cse.js?cx=017866478519957740827:suj422r5i_w"></script>
-        <div class="gcse-search"></div></div>
-    <div id="container"><center><button class="button" id="fullscreen">Fullscreen</button>
-  <object type="application/x-shockwave-flash" allowscriptaccess="always" data="/geems/super-mario-63.swf" width="1152" height="768" id="contentFlash"></object></center>
-</div>
+    <!-- Mobile Menu-->
 
-<script>
-var button = document.querySelector('#fullscreen');
-button.addEventListener('click', fullscreen);
-document.addEventListener('keydown', function (e) {
-  console.log('key press' + e.keyCode);
-});
-document.addEventListener('webkitfullscreenchange', fullscreenChange);
-document.addEventListener('mozfullscreenchange', fullscreenChange);
-document.addEventListener('fullscreenchange', fullscreenChange);
-document.addEventListener('MSFullscreenChange', fullscreenChange);
-
-function fullscreen() {
-  if (document.fullscreenEnabled || 
-    document.webkitFullscreenEnabled || 
-    document.mozFullScreenEnabled ||
-    document.msFullscreenEnabled) {
-    var iframe = document.querySelector('#container object');
-    // Do fullscreen
-    if (iframe.requestFullscreen) {
-      iframe.requestFullscreen();
-    } else if (iframe.webkitRequestFullscreen) {
-      iframe.webkitRequestFullscreen();
-    } else if (iframe.mozRequestFullScreen) {
-      iframe.mozRequestFullScreen();
-    } else if (iframe.msRequestFullscreen) {
-      iframe.msRequestFullscreen();
-    }
-  }
-  else {
-    document.querySelector('.error').innerHTML = 'Your browser is not supported';
-  }
-}
-
-function fullscreenChange() {
-  if (document.fullscreenEnabled ||
-       document.webkitIsFullScreen || 
-       document.mozFullScreen ||
-       document.msFullscreenElement) {
-    console.log('enter fullscreen');
-  }
-  else {
-    console.log('exit fullscreen');
-  }
-}
-</script>
+    <div class="mobile-menu sticky"><button class="hamburger" type="button" onclick="openNav()">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button></div><div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+          <a href="/"><button class="menu-button"><img src="/images/lekrkoekj.webp" alt="Lekrkoekj Home"><br><span>Home</span></button></a>
+              <a href="/lekrkoekj"><button class="menu-button"><img src="/images/lekrkoekj.webp" alt="Lekrkoekj"><br><span>Lekrkoekj</span></button></a>
+              <a href="/lekre-pagina-s"><button class="menu-button"><img src="/images/lekrkoekj.webp" alt="Lekre Pagina's"><br><span>Lekre Pagina's</span></button></a>
+              <button class="menu-button" onclick="darkModeSwitch()"><img src="/images/moon-icon.webp" class="moon" alt="Donker"><img src="/images/sun-icon.webp" class="sun" alt="Licht"><br><span class="dark-mode-text">Donker</span></button>
+              <h2>Niet op een telefoon?</h2>
+              <p>Zoom dan de pagina uit of maak het venster groter om het hele menu te zien. Als dat niet werkt is je scherm gwn tresj en dan is t jamr.</p>
+      </div>
     </div>
+
+  <!-- Menubalk -->
+
+<div class="menu"><table width="100%" class="menu-table"><tr><td><a href="/"><div class="logo" alt="LKG Logo">&nbsp;</div></a></td><td><center><a href="/lekrkoekj"><button class="menu-button"><img src="/images/lekrkoekj.webp" alt="Lekrkoekj"><br><span>Lekrkoekj</span></button></a><a href="/retro-geems"><button class="menu-button"><img src="/images/mario-icon.webp" alt="Retro Geems"><br><span>Retro</span></button></a><a href="/papa-louie-geems"><button class="menu-button"><img src="/images/papa-louie-icon.webp" alt="Papa Louie Geems"><br><span>Papa Louie</span></button></a><a href="/puzzel-geems"><button class="menu-button"><img src="/images/puzzle-icon.webp" alt="Puzzel Geems"><br><span>Puzzel</span></button></a><a href="/clicker-geems"><button class="menu-button"><img src="/images/clickers-icon.webp" alt="Clicker Geems"><br><span>Clickers</span></button></a><a href="/tower-defense-geems"><button class="menu-button"><img src="/images/tower-defense-icon.webp" alt="Tower Defense Geems"><br><span>Tower Defense</span></button></a><a href="/io-geems"><button class="menu-button"><img src="/images/io-s-icon.webp" alt="IO Geems"><br><span>IO's</span></button></a><a href="/andere-geems"><button class="menu-button"><img src="/images/misc-icon.webp" alt="Overige Geems"><br><span>Overig</span></button></a><button class="menu-button" onclick="randomlink()"><img src="/images/random-icon.webp" alt="Random Geem"><br><span>Random</span></button><button class="menu-button" onclick="darkModeSwitch()"><img src="/images/moon-icon.webp" class="moon" alt="Donker"><img src="/images/sun-icon.webp" class="sun" alt="Licht"><br><span class="dark-mode-text">Donker</span></button><script async src="https://cse.google.com/cse.js?cx=017866478519957740827:d4wpis2c9wm"></script>
+  <div class="gcse-searchbox" style="display: inline-block;"></div></center></td></tr></table></div>
+
+        <!-- Site Container -->
+
+<div class="search-results"><div class="gcse-searchresults"></div></div>
+    <div class="site-container" id="wrapper">
+      <div class="blue" style="overflow: hidden; max-height:150px">
+        <center><div class="category-title"><center><h1>Super Mario 63</h1><a style="color: white !important;" href="/retro-geems"> <h2 class="category-description">Retro Geems</h2></a></center></div>
+        <div class="category-gradient"></div>
+        <div class="category-background" style="background-image: url(/images/bg/mario-bg.webp); background-color: white;"><h1>&nbsp;</h1></div></center>
+        </div>
+        <div class="white game-grid">
+          <div class="game-mobile-message"><center><h2>Omdat je op een telefoon zit werkt deze geem mogelijk niet. Gebruik een laptop of computer om de geem te spelen.</h2><br><h2>Niet op een telefoon?</h2>
+            <p>Zoom dan de pagina uit of maak het venster groter om het hele menu te zien. Als dat niet werkt is je scherm gwn tresj en dan is t jamr.</p></center></div>
+            <div id="container">
+              <center><button class="button" id="fullscreen">Fullscreen</button>
+              <object type="application/x-shockwave-flash" allowscriptaccess="always" data="/geems/super-mario-63.swf" width="1042" height="768"></object></center>
+        </div>
+        <script src="/scripts/fullscreen-object.js"></script>
+        </div>
+            </div>
     
-        <script src="/effects.js"></script>
-<div class="effect-bar"><center><a href="#invert"><button class="normal" onclick="showEffects()">Lekre effectj's</button></a>
+            <!-- Lekre Effectj's-->
+    
+<div class="effect-bar blue"><center><table width="100%"><tr><td width="50%"><center><a href="#bottom"><button class="normal" onclick="showEffects()">Lekre Effectj's</button></a></center></td><td width="50%"><center><a href="#bottom"><button class="normal" onclick="showThemeOptions()">Thema Instellingen</button></a></center></td></tr></table>
     <div class="effect-menu">
-        <p style="margin-top: 8px; margin-bottom: 5px; font-size: 20px;">Filters, effecten en animaties</p>
-    <button class="normal" id="invert" onclick="toggleInvert()" style="margin-right: 5px; margin-top: 5px;">Draai kleuren om</button><button class="normal" id="saturation" onclick="toggleSaturation()" style="margin-right: 5px;">10000% Saturation</button><button class="normal" id="turn" onclick="toggleTurn()" style="margin-right: 5px;">Ondersteboven</button><button class="normal" id="site-spin" onclick="toggleSiteSpin()" style="margin-right: 5px;">Site draaien</button><button class="normal" id="slow-site-spin" onclick="toggleSlowSiteSpin()" style="margin-right: 5px;">Sloom site draaien</button><button class="normal" id="img-turn" onclick="toggleTurnIMG()" style="margin-right: 5px;">Draai plaatj's</button><button class="normal" id="text-turn" onclick="toggleTurnText()" style="margin-right: 5px;">Draai tekst</button><button class="normal" id="all-turn" onclick="toggleTurnAll()"style="margin-right: 5px;">Draai alles</button><button class="normal" id="all-turn-1deg" onclick="toggleTurnAll1deg()" style="margin-right: 5px;">Draai alles 1°</button><button class="normal" id="all-turn-36deg" onclick="toggleTurnAll36deg()" style=" margin-top: 5px;">Draai alles 36°</button><p style="margin-top: 8px; margin-bottom: 5px; font-size: 20px;">Kleuren en achtergronden</p><button class="normal" id="pink-green" onclick="togglePinkGreen()" style="margin-right: 5px; margin-top: 5px;">Deeppink Tekst + Lime Achtergrond</button><button class="normal" id="pink" onclick="togglePink()" style="margin-right: 5px; margin-top: 5px;">Roze Tekst</button><button class="normal" id="white" onclick="toggleWhite()" style="margin-right: 5px; margin-top: 5px;">Witte Tekst</button><button class="normal" id="old" onclick="toggleOld()" style="margin-right: 5px; margin-top: 5px;">Lekrkoekj Achtergrond</button><button class="normal" id="white-background" onclick="toggleWhiteBackground()" "margin-right: 5px; margin-top: 5px;">Witte Achtergrond</button><p style="margin-top: 8px; margin-bottom: 5px; font-size: 20px;">Random Dingen</p><button class="normal" id="f-effect" onclick="toggleF()" style="margin-right: 5px; margin-top: 5px;">F</button><button class="normal" id="spastic-background" onclick="toggleSpasticBackground()" style="margin-right: 5px; margin-top: 5px;">Lekrachtergrondj</button><button class="normal" id="lekrdraaitj" onclick="toggleLekrdraaitj()" style="margin-right: 5px; margin-top: 5px;">Lekrdraaitj</button><button class="normal" id="lekrknippertj" onclick="toggleLekrknippertj()" style="margin-right: 5px; margin-top: 5px;">Lekrknippertj</button><button class="normal" id="lekrschaduwtj" onclick="toggleLekrschaduwtj()" style="margin-right: 5px; margin-top: 5px;">Lekrschaduwtj</button><button class="normal" id="lekrschaduwtj-inset" onclick="toggleLekrschaduwtjInset()" style="margin-right: 5px; margin-top: 5px;">Lekrschaduwtj Inset</button><button class="normal" id="lekrzoompj" onclick="toggleLekrzoompj()" style="margin-right: 5px; margin-top: 5px;">Lekrzoompj</button><button class="normal" id="lekrrandj" onclick="toggleLekrrandj()" style="margin-right: 5px; margin-top: 5px;">Lekrrandj</button><button class="normal" id="lekrdikrandj" onclick="toggleLekrdikrandj()" style="margin-right: 5px; margin-top: 5px;">Lekrdikrandj</button></div>
+    <p>Filters, effecten en animaties</p>
+    <button class="normal" id="invert" onclick="toggleInvert()">Draai kleuren om</button><button class="normal" id="saturation" onclick="toggleSaturation()" >10000% Saturation</button><button class="normal" id="turn" onclick="toggleTurn()" >Ondersteboven</button><button class="normal" id="site-spin" onclick="toggleSiteSpin()" >Site draaien</button><button class="normal" id="slow-site-spin" onclick="toggleSlowSiteSpin()" >Sloom site draaien</button><button class="normal" id="img-turn" onclick="toggleTurnIMG()" >Draai plaatj's</button><button class="normal" id="text-turn" onclick="toggleTurnText()" >Draai tekst</button><button class="normal" id="all-turn" onclick="toggleTurnAll()">Draai alles</button><button class="normal" id="all-turn-1deg" onclick="toggleTurnAll1deg()" >Draai alles 1°</button><button class="normal last last" id="all-turn-36deg" onclick="toggleTurnAll36deg()">Draai alles 36°</button><p>Kleuren en achtergronden</p><button class="normal" id="pink-green" onclick="togglePinkGreen()">Deeppink Tekst + Lime Achtergrond</button><button class="normal" id="pink" onclick="togglePink()">Roze Tekst</button><button class="normal" id="white" onclick="toggleWhite()">Witte Tekst</button><button class="normal last" id="white-background" onclick="toggleWhiteBackground()">Witte Achtergrond</button><p>Random Dingen</p><button class="normal" id="f-effect" onclick="toggleF()">F</button><button class="normal" id="spastic-background" onclick="toggleSpasticBackground()">Lekrachtergrondj</button><button class="normal" id="lekrdraaitj" onclick="toggleLekrdraaitj()">Lekrdraaitj</button><button class="normal" id="lekrknippertj" onclick="toggleLekrknippertj()">Lekrknippertj</button><button class="normal" id="lekrschaduwtj" onclick="toggleLekrschaduwtj()">Lekrschaduwtj</button><button class="normal" id="lekrschaduwtj-inset" onclick="toggleLekrschaduwtjInset()">Lekrschaduwtj Inset</button><button class="normal" id="lekrzoompj" onclick="toggleLekrzoompj()">Lekrzoompj</button><button class="normal" id="lekrrandj" onclick="toggleLekrrandj()">Lekrrandj</button><button class="normal last" id="lekrdikrandj" onclick="toggleLekrdikrandj()">Lekrdikrandj</button><p>Andere Dingen</p><button class="normal" id="activate-all" onclick="activateAll()">Activeer alles</button><button class="normal last" id="deactivate-all" onclick="deactivateAll()">Deactiveer alles</button></div>
+    <div class="theme-menu"><p>Achtergronden</p><button class="normal" id="old" onclick="toggleOld()">Lekrkoekj Achtergrond</button><button class="normal last" id="lkg4bg" onclick="toggleLKG4BG()">LKG 4.0.0 Achtergrond</button><p>Kleuren</p><button class="normal" id="green-theme" onclick="toggleGreenTheme()">Groen</button><button class="normal" id="turquoise-theme" onclick="toggleTurquoiseTheme()">Turquoise</button><button class="normal" id="purple-theme" onclick="togglePurpleTheme()">Paars</button><button class="normal" id="pink-theme" onclick="togglePinkTheme()">Roze</button><button class="normal" id="orange-theme" onclick="toggleOrangeTheme()">Oranje</button><button class="normal" id="red-theme" onclick="toggleRedTheme()">Rood</button></div>
  </center></div>
-    
+<div id="bottom"></div>
     </body>
 </html>

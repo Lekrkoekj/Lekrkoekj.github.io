@@ -971,7 +971,7 @@ iframe, object {
 #blocked-game-overlay {
     position: absolute;
     width: 100%;
-    top: 15px;
+    top: 165px;
     z-index: 2;
 }
 /*Page specific*/
