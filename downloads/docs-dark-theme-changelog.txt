@@ -1,3 +1,240 @@
+Version 1.8.1
+The Calandar sidebar is now fully dark.
+The Tasks sidebar is now dark.
+The Keep sidebar is now dark.
+
+Version 1.8
+Classroom is dark again.
+Homepages are fully dark again.
+Timestamps on files on the homepage are a bit lighter now.
+Calendar support has been added back!
+Fixed and updated style description.
+
+Version 1.7.10
+The homepages are fully dark again.
+The file picker is fully dark again.
+Text in the Reuse post box in Classroom is now readable.
+The Post box in Classroom is fully dark again.
+The No students text in Classroom is now readable.
+The Gradebook in Classroom is dark again.
+The Student answers page in Classroom is fully dark again.
+
+Version 1.7.9
+The app launcher is dark again.
+
+Version 1.7.8
+The search box in the homepages has white text again.
+
+Version 1.7.7
+Slide numbers in the left sidebar in Slides are now readable.
+The buttons at the bottom of the left sidebar in Slides no longer have a white border.
+The You can only view this document text is now readable.
+The Waiting for responses box in Forms is now dark.
+The Unlink form box is now fully dark.
+More close buttons in Forms are now light.
+More links in Forms are now lighter.
+The image chooser in Forms is now fully dark.
+
+Version 1.7.6
+Minor fixes to Classroom because of the new separate style.
+Changed style description.
+
+Version 1.7.5
+Comment boxes in Classroom now look normal.
+The input placeholder for Classroom answers is readable again.
+More text in modals is now readable.
+Text in the Themes sidebar in Sheets is now readable.
+The counter at the bottom in Sheets is now readable.
+Names in the history in Sheets are readable again.
+Toolbar buttons now have a different background when hovered on.
+The file uploader is fully dark again.
+Input boxes in Filter settings in Sheets are now dark.
+The Slicer in Sheets is fully dark again.
+The Named Ranges sidebar in Sheets is now fully dark.
+The Protected Sheets and Ranges sidebar in Sheets is now fully dark.
+Buttons in the sidebar of the Sheets homepage no longer become blue when hovered over.
+Fixed some butons in Slides.
+The Diagrams sidebar in Slides is now fully dark.
+The Word art modal in SLides is now dark.
+
+Version 1.7.4
+The selected options in the Overview box are readable again.
+The Preferences box inside of documents is now fully dark.
+Fixed some borders and text colors in menus.
+The Accessibility box in documents is now dark.
+Dates in the history sidebar are dark again.
+The profile picker looks right again.
+The homepage is fully dark again.
+Disabled menus in the top bar now have darker text and won't be highlighted!
+The You're currently signed in as box is now dark.
+The Named ranges sidebar in Sheets is now dark.
+The Protected sheets and ranges sidebar in Sheets is now fully dark.
+
+Version 1.7.3
+Long document titles are now displayed correctly.
+Text inside of Classroom buttons are now white.
+Text inside of the posting box in Classroom is now always dark.
+The posting box in Classroom now has a dark background when focused on.
+Topics on the side of a class in Classroom now have a dark background when hovered on.
+More headings in Classroom are now dark.
+The new image options bar in Docs is now fully dark.
+The Image settings sidebar in Docs is now fully dark.
+The Search and replace box is now fully dark.
+More icons in the Activity Dashboard are now white.
+Separators in old context menus are now dark.
+Removed some weird borders in in the Share box.
+The Fonts box is fully dark again.
+The Spellcheck box is fully dark again.
+The Insert link box in Docs is fully dark again.
+More sidebar titles are now dark.
+
+Version 1.7.2
+(Classroom and Calendar accidentally got removed again, so in the next couple of releases I will focus on re-adding them.)
+The sidebar and top bar of the homepage are dark again.
+The account picker is dark again.
+The new app launcher is now fully dark.
+Lots of Classroom fixes to make it usable again.
+
+Version 1.7.1
+(Thanks for 2k downloads!)
+Highlighted things in the Document overview are now dark.
+Sidebar extension loading screens are now darker.
+Added credits to account picker.
+Completely remade the account picker and app launcher.
+The Idle text is now readable.
+The Comment history box is fully dark again.
+More sidebar titles are now dark.
+The Explore sidebar is fully dark again.
+The homepages are fully dark again.
+Modal titles are white again.
+The Transition sidebar in Slides is now fully dark.
+The Add comment box in Slides is now fully dark.
+The Format Options sidebar in Slides and Drawings is now dark.
+The Responses page in Forms is now fully dark.
+Added warnings for responses that don't support the Dark Theme in Forms.
+
+Version 1.7
+The user account box is fully dark again.
+The corners of items on the homepage are no longer white.
+Google Calendar now supports the Dark Theme!
+The Calendar extension in Docs is now dark.
+The Reauthenticate page is now dark.
+The Keep extension in Docs is now dark.
+The Tasks extension in Docs is now dark.
+
+Version 1.6.18
+The word count box no longer has white borders in it.
+The Overview sidebar in Docs is fully dark again.
+
+Version 1.6.17
+The New Document button is now dark again.
+More icons in Classroom is now lighter.
+The paperclip icons in Classroom no longer black.
+The days in the Classroom Calendar are light again.
+Fixed small hover effect issues in Classroom.
+Removed some white borders in Classroom.
+Small fixes in the account picker.
+Dialog overlays are now darker.
+Background fixes in the avatar picker.
+
+Version 1.6.16
+The account picker is dark again.
+The app launcher is dark again.
+
+Version 1.6.15
+The Managed Account message is now dark.
+The Sign-In screen is dark again.
+All custom light gray-ish backgrounds are now different to match with Chrome's dark theme.
+Items in the homepage sidebar now have a different background when hovered on.
+The email collection message in Forms is now white.
+Some icons in the old Forms are now white again.
+Question mark icons in the old Forms are now white.
+Locked mode text in the old Forms is now white.
+The premade image selector is now fully dark.
+The Theme options sidebar in the new Forms is now dark.
+The file picker is dark again.
+The YouTube video picker is dark again.
+Removed a wierd red border from context menus in the new Forms.
+
+Version 1.6.14
+Collaborator names are now readable.
+The Image Options sidebar is now dark.
+The (finally) new account switcher is now fully dark.
+The public link text in the Share box is now white.
+Removed some white borders from the Share box.
+Dark blue link text in the Share box is now lighter.
+Line types are now white.
+Link suggestion borders are now dark.
+
+Version 1.6.13
+Answers in Classroom are now readable.
+The title of an assignment in Classroom is now readable.
+Fixed some white borders in Classroom.
+Classes in Classroom no longer move slightly when hovering over them.
+Classes in Classroom now have a dark shadow when hovering over them.
+
+Version 1.6.12
+The name of the service on the homepages is white again.
+The sidebar on the homepages is dark again.
+The app launcher is dark again.
+Modals in the old Forms are now dark.
+A lot of wierd white borders in the new Forms are now dark.
+The new Forms is mostly dark again.
+File upload text in Forms is now white.
+Linear scale questions in Forms are now dark.
+The Upload box is a little bit more usable.
+You can now use the dark theme when filling in Forms again.
+
+Version 1.6.11
+Sidebars from addons in Docs now have a dark title bar.
+The Copy Reaction box in Docs is now dark.
+The border of the title changer in Docs, Sheets, Slides & Drawings is now dark if you hover over it.
+The stored location of files are now readable.
+Separators in context menus are now dark.
+The integrated Google Images sidebar is now dark again.
+Removed a white border around the mini sidebar button.
+The mini file picker is fully dark again.
+The file picker sidebar is now fully dark.
+The font library is now fuly dark.
+The scrollbar in Docs and Slides is now darker.
+Tooltips are rounder and no longer have white borders.
+Small fixes in the Version history.
+The Slicer in Sheets is now fully dark.
+The Theme selector in Sheets is now dark.
+Removed a white border at the bottom in Sheets.
+The Alternating colors sidebar in Sheets is now fully dark.
+The Conditional format rules sidebar in Sheets is now fully dark.
+The Create pivot table box in Sheets is now fully dark.
+The Create macro box in Sheets is now dark.
+The Protected sheets & ranges sidebar in Sheets is now fully dark.
+The Named ranges sidebar in Sheets is now fully dark.
+
+Version 1.6.10
+The new word counter in Docs is now dark.
+Changed border colors of Overview title and between tools.
+The custom hex code box is now dark.
+The accounts list is fully dark again.
+Sites on the homepage of Sites no longer have a white border to the left.
+Sites made with Google Sites no longer have a dark body.
+The old version of Sites no longer has a dark body.
+The Go back to classic Sites button is now dark.
+Items in context menus in Sites are now dark.
+Some wierd background fixes in Sites.
+More icons in Sites are now light again.
+Part of the Upload box is dark again.
+
+Version 1.6.9
+Classroom is mostly dark again.
+(For some reason Stylish removed the Classroom section in the code, so I had to use an older version of the style to get most of it back.)
+
+Version 1.6.8
+The sidebar on the homepage is fully dark again.
+Settings text on the homepage is now lighter.
+Border icons in Docs are now light.
+The Special characters box is now dark again.
+The Live edits box is now dark.
+Settings in Docs are now dark.
+
 Version 1.6.7
 Fixed multiple wierd colors in the file picker.
 Lots of small fixes in Classroom I forgot to add here.
