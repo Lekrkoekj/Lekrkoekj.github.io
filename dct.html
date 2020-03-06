@@ -45,7 +45,7 @@
                     <center><img src="/images/dct-bot-icon.png" class="dct-home-img"></center>
                 <h1>DiscordTech</h1>
                 <p>Interested in technology? Join DiscordTech! DiscordTech is a tech server with a nice tech community with over 400 members!</p>
-                <center><a href="/discordtech"><button>Join now!</button></a><a href="#whatwehave"><button>What do we have?</button></a><a href="#dctb"><button>DiscordTechBot</button></a></center>
+                <center><a href="/discordtech"><button>Join now!</button></a><a href="#whatwehave"><button>What do we have?</button></a></center>
                 </div>
             </div>
         </div>
@@ -53,12 +53,12 @@
             <div class="home-grid">
                 <center><h1>What do we have?</h1></center>
                 <div class="grid-div">
-                    <div class="grid-item"><center><img src="https://discordapp.com/assets/54b027c5a0fdb9c92545820e12544ab4.svg"><p>All kinds of channels to talk about tech!</p></center></div>
-                    <div class="grid-item"><center><img src="https://discordapp.com/assets/df8b5c1e4abb97e748071aeb28f1ba38.svg"><p>A place to ask for tech support!</p></center></div>
-                    <div class="grid-item"><center><img src="https://discordapp.com/assets/7be2358758e81e1ab253eb071a9527c7.svg"><p>Community events!</p></center></div>
-                    <div class="grid-item"><center><img src="https://discordapp.com/assets/3e531d8e171629e9433db0bb431b2e12.svg"><p>Weekly tech questions with server prizes!</p></center></div>
-                    <div class="grid-item"><center><img src="https://discordapp.com/assets/8db9972dd015f679c16544ac3e29e6b1.svg"><p>Other fun channels like counting & one-word story channels!</p></center></div>
-                    <div class="grid-item"><center><img src="https://discordapp.com/assets/3c717b0d164f2435d4c46ec2fbdd7363.svg"><p>Server partnerships!</p></center></div>
+                    <center><div class="grid-item"><center><img src="https://discordapp.com/assets/54b027c5a0fdb9c92545820e12544ab4.svg"><p>All kinds of channels to talk about tech!</p></center></div></center>
+                    <center><div class="grid-item"><center><img src="https://discordapp.com/assets/df8b5c1e4abb97e748071aeb28f1ba38.svg"><p>A place to ask for tech support!</p></center></div></center>
+                    <center><div class="grid-item"><center><img src="https://discordapp.com/assets/7be2358758e81e1ab253eb071a9527c7.svg"><p>Community events!</p></center></div></center>
+                    <center><div class="grid-item"><center><img src="https://discordapp.com/assets/3e531d8e171629e9433db0bb431b2e12.svg"><p>Weekly tech questions with server prizes!</p></center></div></center>
+                    <center><div class="grid-item"><center><img src="https://discordapp.com/assets/8db9972dd015f679c16544ac3e29e6b1.svg"><p>Other fun channels like counting & one-word story channels!</p></center></div></center>
+                    <center><div class="grid-item"><center><img src="https://discordapp.com/assets/3c717b0d164f2435d4c46ec2fbdd7363.svg"><p>Server partnerships!</p></center></div></center>
                 </div>
             </div>
             <center><div class="whatwehave-container"></center></div>
@@ -76,6 +76,11 @@
         grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
     }
     div#whatwehave {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+    }
+    div#dctb {
         display: grid;
         grid-template-columns: 50% 50%;
         align-items: center;
@@ -127,6 +132,22 @@
         66% {background-image: url(https://i.imgur.com/rFfckbA.png);}
         67% {background-image: url(https://i.imgur.com/jJJdr8h.png);}
         100% {background-image: url(https://i.imgur.com/jJJdr8h.png);}
+    }
+    @media only screen and (max-width: 1862px) {
+    div#whatwehave {
+            grid-template-columns: auto;
+        }
+        .whatwehave-container {
+            display: none;
+        }
+        .grid-item {
+            width: 250px;
+        }
+    }
+    @media only screen and (max-width: 1012px) {
+        .grid-div {
+            grid-template-columns: auto;
+        }
     }
 </style>
 </html>

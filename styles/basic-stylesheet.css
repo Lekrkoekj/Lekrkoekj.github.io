@@ -152,7 +152,7 @@ footer h2, .home-section h1 {
 }
 .home-section button:hover {
     background: white;
-    color: #333333;
+    color: #5facea;
 }
 .home-section h1 {
     text-align: center; 
@@ -161,6 +161,11 @@ footer h2, .home-section h1 {
     animation-delay: 0.3s;
     animation-fill-mode: forwards;
     opacity: 0;
+}
+@media only screen and (max-width: 930px) {
+    .home-section h1 {
+        font-size: 50px;
+    }
 }
 @keyframes text-fade-in {
     0% {transform: translateY(+10px); opacity: 0;}
