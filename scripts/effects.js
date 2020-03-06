@@ -7,7 +7,7 @@ function removeBlockedOverlay() {
 
 function darkModeSwitch() {
     localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'off' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')
-    }
+}
 function search() {
 localStorage.setItem('search', (localStorage.getItem('search') || 'search-open') === 'search-open' ? 'closed' : 'search-open'); localStorage.getItem('search') === 'search-open' ? document.querySelector('body').classList.add('search-open') : document.querySelector('body').classList.remove('search-open')
 }
