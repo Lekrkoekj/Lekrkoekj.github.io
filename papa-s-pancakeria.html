@@ -5,18 +5,18 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|PT+Sans&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-    <title>LKG - Lekrkoekj Geems</title>
-    <meta name="description" content="LKG pagina's op Lekrkoekj Geems."/>
+    <title>Papa's Pancakeria - Lekrkoekj Geems</title>
+    <meta name="description" content="Speel Papa's Pancakeria nu gratis op Lekrkoekj Geems!"/>
         <meta property="og:image" content="https://lekrkoekj.github.io/images/lkg-logo-small.png"/>
         <meta property="og:image:secure_url" content="https://lekrkoekj.github.io/images/lkg-logo-small.png" />
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="/styles/basic-stylesheet.css">
-    <style>.category-button img { transform: scale(0.9); }</style>
     <!-- Scripts -->
     <script src="/scripts/mobile.js"></script>
     <script src="/scripts/remove.js"></script>
     <script src="/scripts/effects.js"></script>
     <script src="/scripts/darkmode.js"></script>
+    <script src="/scripts/random-geem.js"></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -24,9 +24,14 @@
         <ul class="nav-ul">
             <li id="logo"><a href="/"><img src="/images/lkg-logo-small.webp" width="78px" alt="Lekrkoekj Geems" id="site-logo"></a></li>
             <li><button class="menu-button" aria-label="Dark Mode Switch" onclick="darkModeSwitch()"><img src="/images/moon-icon.webp" alt="Donker" id="moon"><img src="/images/sun-icon.webp" id="sun" alt="Licht"><br><span id="darkModeText">Donker</span></button></li>
-            <li><a href="/lkg-discord" aria-label="LKG Discord"><button class="menu-button"><img src="/images/lkg-discord-logo.png" alt="Social Media"><br><span>Discord</span></button></a></li>
-            <li><a href="/social-media" aria-label="Social Media"><button class="menu-button"><img src="/images/mc-skin.png" alt="Social Media"><br><span>Social Media</span></button></a></li>
-            <li><a href="/geems" aria-label="Games"><button class="menu-button"><img src="/images/lkd-icon-3.png" alt="Games"><br><span>Geems</span></button></a></li>
+            <li><button class="menu-button" onclick="randomlink()"><img src="/images/random-icon.webp" alt="Random Geem"><br><span>Random</span></button></li>
+            <li><a href="/andere-geems" aria-label="Andere Geems"><button class="menu-button"><img src="/images/misc-icon.webp" alt="Andere Geems"><br><span>Overig</span></button></a></li>
+            <li><a href="/io-geems" aria-label="IO Geems"><button class="menu-button"><img src="/images/io-s-icon.webp" alt="IO Geems"><br><span>IO's</span></button></a></li>
+            <li><a href="/tower-defense-geems" aria-label="Tower Defense Geems"><button class="menu-button"><img src="/images/tower-defense-icon.webp" alt="Tower Defense Geems"><br><span>Tower Defense</span></button></a></li>
+            <li><a href="/clicker-geems" aria-label="Clickers Geems"><button class="menu-button"><img src="/images/clickers-icon.webp" alt="Clicker Geems"><br><span>Clickers</span></button></a></li>
+            <li><a href="/puzzel-geems" aria-label="Puzzel Geems"><button class="menu-button"><img src="/images/puzzle-icon.webp" alt="Puzzel Geems"><br><span>Puzzel</span></button></a></li>
+            <li><a href="/papa-louie-geems" aria-label="Papa Louie Geems"><button class="menu-button"><img src="/images/papa-louie-icon.webp" alt="Papa Louie Geems"><br><span>Papa Louie</span></button></a></li>
+            <li><a href="/retro-geems" aria-label="Retro Games"><button class="menu-button"><img src="/images/mario-icon.webp" alt="Retro Geems"><br><span>Retro</span></button></a></li>
             <li><a href="/lekrkoekj" aria-label="Lekrkoekj"><button class="menu-button"><img src="/images/lekrkoekj-hd.png" alt="Lekrkoekj"><br><span>LKG</span></button></a></li>
             <li><a href="/" aria-label="Home"><button class="menu-button"><img src="/images/lekrkoekj-hd.png" alt="Home"><br><span>Home</span></button></a></li>
             <li><button class="hamburger" type="button" onclick="openNav()" aria-label="Mobile Menu"><span class="hamburger-box"><span class="hamburger-inner"></span></span>
@@ -47,18 +52,14 @@
       </div>
       <!-- Site Container-->
     <div class="site-container" id="under-menu">
-        <div class="category-header-container" id="lkg"><div class="category-header-overlay"><div class="category-header-title-container"><center><h1>LKG</h1></center></div></div></div>
-        <div class="category-grid">
-            <center><a href="/suggesties"><button class="category-button"><img src="/images/lekrkoekj-hd-square.png"><br><span>Suggesties</span></button></a></center>
-            <center><a href="/bugs"><button class="category-button"><img src="/images/lekrkoekj-hd-square.png"><br><span>Bugreports</span></button></a></center>
-            <center><a href="/lekrkoekj-updates"><button class="category-button"><img src="/images/lekrkoekj-hd-square.png"><br><span>Updates</span></button></a></center>
-            <center><a href="/random-dingen"><button class="category-button"><img src="/images/lekrkoekj-hd-square.png"><br><span>Random Dingen</span></button></a></center>
-            <center><a href="/info"><button class="category-button"><img src="/images/lekrkoekj-hd-square.png"><br><span>Info</span></button></a></center>
-            <center><a href="/lekrkoekj/social-media"><button class="category-button"><img src="/images/lekrkoekj-hd-square.png"><br><span>Social Media</span></button></a></center>
-            <center><a href="/lekrkoekj/lekrkoekj-home-1-0"><button class="category-button"><img src="/images/lekrkoekj-hd-square.png"><br><span>Lekrkoekj Home 1.0</span></button></a></center>
-            <center><a href="/lekrkoekj/lekrkoekj-home-2-0"><button class="category-button"><img src="/images/lekrkoekj-hd-square.png"><br><span>Lekrkoekj Home 2.0</span></button></a></center>
-            <center><a href="/lekrkoekj/lekrkoekj-home-3-0"><button class="category-button"><img src="/images/lekrkoekj-hd-square.png"><br><span>Lekrkoekj Home 3.0</span></button></a></center>
-            <center><a href="/lekrkoekj/lekrkoekj-home-4-0"><button class="category-button"><img src="/images/lekrkoekj-hd-square.png"><br><span>Lekrkoekj Home 4.0</span></button></a></center></div>
+        <div class="category-header-container" style="background-image: url(https://i.imgur.com/cbzGGL9.jpg);"><div class="category-header-overlay"><div class="category-header-title-container"><center><h1>Papa's Pancakeria</h1></center></div></div></div>
+        <div id="container">
+            <center>
+                <button class="button" id="fullscreen">Fullscreen</button>
+                <object type="application/x-shockwave-flash" allowscriptaccess="always" data="/geems/papa-s-pancakeria.swf" width="1152" height="768"></object>
+            </center>
+        </div>
+        <script src="/scripts/fullscreen-object.js"></script>
     </div>
     </div>
     <!-- Site Footer -->
