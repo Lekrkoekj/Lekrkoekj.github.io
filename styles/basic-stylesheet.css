@@ -41,6 +41,9 @@ body {
     background: #ffffff7d;
     z-index: 10;
 }
+.nav-ul#not-sticky {
+    position: absolute;
+}
 .nav-ul li#logo {
      float: left;
 }
@@ -216,6 +219,8 @@ img#footer-img {
     height: 150px;
     width: 100%;
     overflow: hidden;
+    background-position-y: center;
+    background-size: cover;
 }
 .category-header-container#lkg {
     background-image: url(/images/lekrkoekj-fast.gif);
@@ -320,6 +325,10 @@ div#container {
 }
 body.dark img[alt="Andere Geems"] {
     filter: invert(1);
+}
+div#container object {
+    width: 85vw;
+    height: 100vh;
 }
 /* Dark Mode */
 body.dark img#moon, img#sun {
