@@ -1,13 +1,137 @@
-<html>
-    <head><title>Lekrkoekj Home</title>
-    <script type="text/javascript">
+<!DOCTYPE html>
+<html lang="nl">
 
-window.location = "/"
-
-</script><meta name="description" content="Een redirect naar Lekrkoekj Home"/>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Lato|PT+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <title>Geems - Lekrkoekj Geems</title>
+    <meta name="description" content="Alle geems op Lekrkoekj Geems."/>
         <meta property="og:image" content="https://lekrkoekj.github.io/images/lkg-logo-small.png"/>
-        <meta property="og:image:secure_url" content="https://lekrkoekj.github.io/images/lkg-logo-small.png" /></head>
+        <meta property="og:image:secure_url" content="https://lekrkoekj.github.io/images/lkg-logo-small.png" />
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="/styles/basic-stylesheet.css">
+    <!-- Scripts -->
+    <script src="/scripts/mobile.js"></script>
+    <script src="/scripts/remove.js"></script>
+    <script src="/scripts/effects.js"></script>
+    <script src="/scripts/darkmode.js"></script>
+</head>
 <body>
-    
-    </body>
+    <!-- Navbar -->
+    <nav>
+        <ul class="nav-ul">
+            <li id="logo"><a href="/"><img src="/images/lkg-logo-small.webp" width="78px" alt="Lekrkoekj Geems" id="site-logo"></a></li>
+            <li><button class="menu-button" aria-label="Dark Mode Switch" onclick="darkModeSwitch()"><img src="/images/moon-icon.webp" alt="Donker" id="moon"><img src="/images/sun-icon.webp" id="sun" alt="Licht"><br><span id="darkModeText">Donker</span></button></li>
+            <li><a href="/lkg-discord" aria-label="LKG Discord"><button class="menu-button"><img src="/images/lkg-discord-logo.png" alt="Social Media"><br><span>Discord</span></button></a></li>
+            <li><a href="/social-media" aria-label="Social Media"><button class="menu-button"><img src="/images/mc-skin.png" alt="Social Media"><br><span>Social Media</span></button></a></li>
+            <li><a href="/geems" aria-label="Games"><button class="menu-button"><img src="/images/lkd-icon-3.png" alt="Games"><br><span>Geems</span></button></a></li>
+            <li><a href="/lkg" aria-label="LKG"><button class="menu-button"><img src="/images/lekrkoekj-hd.png" alt="LKG"><br><span>LKG</span></button></a></li>
+            <li><a href="/" aria-label="Home"><button class="menu-button"><img src="/images/lekrkoekj-hd.png" alt="Home"><br><span>Home</span></button></a></li>
+            <li><button class="hamburger" type="button" onclick="openNav()" aria-label="Mobile Menu"><span class="hamburger-box"><span class="hamburger-inner"></span></span>
+              </button></li>
+        </ul>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <button class="menu-button" aria-label="Dark Mode Switch" onclick="darkModeSwitch()"><img src="/images/moon-icon.webp" alt="Donker" id="moon"><img src="/images/sun-icon.webp" id="sun" alt="Licht"><br><span id="darkModeText">Donker</span></button>
+            <a href="/lkg-discord"><button class="menu-button"><img src="/images/lkg-discord-logo.png" alt="Social Media"><br><span>Discord</span></button></a>
+           <a href="/social-media"><button class="menu-button"><img src="/images/mc-skin.png" alt="Social Media"><br><span>Social Media</span></button></a>
+            <a href="/games"><button class="menu-button"><img src="/images/lkd-icon-3.png" alt="Games"><br><span>Geems</span></button></a>
+            <a href="/lkg"><button class="menu-button"><img src="/images/lekrkoekj-hd.png" alt="LKG"><br><span>LKG</span></button></a>
+            <a href="/"><button class="menu-button"><img src="/images/lekrkoekj-hd.png" alt="Home"><br><span>Home</span></button></a>
+        </div>
+      </div>
+      <!-- Site Container-->
+    <div class="site-container" id="under-menu">
+        <div class="category-header-container" id="lkg"><div class="category-header-overlay"><div class="category-header-title-container"><center><h1>Geems van Lekrkoekj</h1></center></div></div></div>
+        <div class="category-grid">
+            <center><a href="/lkd"><button class="category-button"><img src="/images/lkd-icon-3.png"><br><span>Lekrkoekj Dash</span></button></a></center>
+            <center><a href="/lkc"><button class="category-button"><img src="/images/lkc-icon.png"><br><span>Lekrkoekj Clicker</span></button></a></center>
+        </div>
+
+        <div class="category-header-container" style="background-image: url(/images/bg/mario-bg.webp); background-position-y: bottom;"><div class="category-header-overlay"><div class="category-header-title-container"><center><h1>Retro</h1></center></div></div></div>
+        <div class="category-grid">
+            <center><a href="/geems/tetr-js"><button class="category-button"><img src="/images/thumb/tetr-js.webp"><br><span>Tetr.js</span></button></a></center>
+            <center><a href="/geems/super-mario-bros"><button class="category-button"><img src="/images/thumb/super-mario-bros.webp"><br><span>Super Mario Bros.</span></button></a></center>
+        </div>
+
+        <div class="category-header-container" style="background-image: url(https://i.imgur.com/FjIiaAM.png);"><div class="category-header-overlay"><div class="category-header-title-container"><center><h1>Adam and Eve</h1></center></div></div></div>
+        <div class="category-grid">
+            <center><a href="/geems/adam-and-eve-1"><button class="category-button" id="blocked"><img src="https://i.imgur.com/bomv57M.png"><br><span>Adam and Eve 1</span></button></a></center>
+            <center><a href="/geems/adam-and-eve-2"><button class="category-button" id="blocked"><img src="https://i.imgur.com/Rv5sIWz.png"><br><span>Adam and Eve 2</span></button></a></center>
+            <center><a href="/geems/adam-and-eve-3"><button class="category-button" id="blocked"><img src="https://i.imgur.com/di3baa1.png"><br><span>Adam and Eve 3</span></button></a></center>
+            <center><a href="/geems/adam-and-eve-4"><button class="category-button" id="blocked"><img src="https://i.imgur.com/NpYKvSa.png"><br><span>Adam and Eve 4</span></button></a></center>
+            <center><a href="/geems/adam-and-eve-zombies"><button class="category-button" id="blocked"><img src="https://i.imgur.com/mJCDN9g.png"><br><span>Adam and Eve: Zombies</span></button></a></center>
+            <center><a href="/geems/adam-and-eve-sleepwalker"><button class="category-button" id="blocked"><img src="https://i.imgur.com/o3vnXTn.png"><br><span>Adam and Eve: Sleepwalker</span></button></a></center>
+            <center><a href="/geems/adam-and-eve-adam-the-ghost"><button class="category-button" id="blocked"><img src="https://i.imgur.com/iOBGyVb.jpg"><br><span>Adam and Eve: Adam the Ghost</span></button></a></center>
+            <center><a href="/geems/adam-and-eve-love-quest"><button class="category-button" id="blocked"><img src="https://i.imgur.com/1FeS17G.jpg"><br><span>Adam and Eve: Love Quest</span></button></a></center>
+            <center><a href="/geems/adam-and-eve-golf"><button class="category-button" id="blocked"><img src="https://i.imgur.com/iOBGyVb.jpg"><br><span>Adam and Eve: Golf</span></button></a></center>
+        </div>
+
+        <div class="category-header-container" style="background-image: url(https://i.imgur.com/TP58Ck5.jpg); background-position-y: -130px;"><div class="category-header-overlay"><div class="category-header-title-container"><center><h1>Cut the Rope</h1></center></div></div></div>
+        <div class="category-grid">
+            <center><a href="/geems/cut-the-rope"><button class="category-button" id="blocked"><img src="https://i.imgur.com/mhn7BLn.png"><br><span>Cut the Rope</span></button></a></center>
+            <center><a href="/geems/cut-the-rope-2"><button class="category-button" id="blocked"><img src="https://i.imgur.com/1hXtAFF.png"><br><span>Cut the Rope 2</span></button></a></center>
+            <center><a href="/geems/cut-the-rope-experiments"><button class="category-button" id="blocked"><img src="https://i.imgur.com/WDnWchY.png"><br><span>Cut the Rope: Experiments</span></button></a></center>
+            <center><a href="/geems/cut-the-rope-time-travel"><button class="category-button" id="blocked"><img src="https://i.imgur.com/U947K7g.png"><br><span>Cut the Rope: Experiments</span></button></a></center>
+            <center><a href="/geems/cut-the-rope-magic"><button class="category-button" id="blocked"><img src="https://i.imgur.com/QE5Cw3x.png"><br><span>Cut the Rope: Magic</span></button></a></center>
+        </div>
+
+        <div class="category-header-container" style="background-image: url(https://i.imgur.com/xzHq4nG.jpg); background-position-y: -250px;"><div class="category-header-overlay"><div class="category-header-title-container"><center><h1>Bob de Slak</h1></center></div></div></div>
+        <div class="category-grid">
+            <center><a href="/geems/bob-de-slak-1"><button class="category-button" id="blocked"><img src="https://i.imgur.com/MNiqMfs.png"><br><span>Bob de Slak 1</span></button></a></center>
+            <center><a href="/geems/bob-de-slak-2"><button class="category-button" id="blocked"><img src="https://i.imgur.com/aN9Rh57.png"><br><span>Bob de Slak 2</span></button></a></center>
+            <center><a href="/geems/bob-de-slak-3"><button class="category-button" id="blocked"><img src="https://i.imgur.com/TkLx5UT.png"><br><span>Bob de Slak 3</span></button></a></center>
+            <center><a href="/geems/bob-de-slak-4"><button class="category-button" id="blocked"><img src="https://i.imgur.com/cm7Ewa0.png"><br><span>Bob de Slak 4</span></button></a></center>
+            <center><a href="/geems/bob-de-slak-5"><button class="category-button" id="blocked"><img src="https://i.imgur.com/OMxCkd0.png"><br><span>Bob de Slak 5</span></button></a></center>
+            <center><a href="/geems/bob-de-slak-6"><button class="category-button" id="blocked"><img src="https://i.imgur.com/zLQxYIW.png"><br><span>Bob de Slak 6</span></button></a></center>
+            <center><a href="/geems/bob-de-slak-7"><button class="category-button" id="blocked"><img src="https://i.imgur.com/OUmTuwY.png"><br><span>Bob de Slak 7</span></button></a></center>
+        </div>
+
+        <div class="category-header-container" style="background-image: url(https://i.imgur.com/NwwpbvU.jpg); background-position-y: -220px;"><div class="category-header-overlay"><div class="category-header-title-container"><center><h1>Clickers</h1></center></div></div></div>
+        <div class="category-grid">
+            <center><a href="/geems/cookie-clicker"><button class="category-button" id="blocked"><img src="https://i.imgur.com/jg4m7LT.png"><br><span>Cookie Clicker</span></button></a></center>
+            <center><a href="/geems/doge-miner-1"><button class="category-button" id="blocked"><img src="https://i.imgur.com/DdWV8Gz.png"><br><span>Doge Miner 1</span></button></a></center>
+            <center><a href="/geems/doge-miner-2"><button class="category-button" id="blocked"><img src="https://i.imgur.com/o0pOs95.png"><br><span>Doge Miner 2</span></button></a></center>
+            <center><a href="/geems/kitty-clicker"><button class="category-button" id="blocked"><img src="https://i.imgur.com/WiLn8oO.png"><br><span>Kitty Clicker</span></button></a></center>
+            <center><a href="/lkc"><button class="category-button"><img src="https://lekrkoekj.github.io/images/lkc-icon.png"><br><span>Lekrkoekj Clicker</span></button></a></center>
+        </div>
+
+        <div class="category-header-container" style="background-image: url(https://i.imgur.com/E7qmNql.png); background-position-y: -220px;"><div class="category-header-overlay"><div class="category-header-title-container"><center><h1>IO's</h1></center></div></div></div>
+        <div class="category-grid">
+            <center><a href="/geems/hole-io"><button class="category-button" id="blocked"><img src="https://i.imgur.com/Cn6zjvf.png"><br><span>Hole.io</span></button></a></center>
+            <center><a href="/geems/classicsnake-io"><button class="category-button" id="blocked"><img src="https://i.imgur.com/V9LYY86.jpg"><br><span>ClassicSnake.io</span></button></a></center>
+            <center><a href="/geems/agar-io"><button class="category-button" id="blocked"><img src="https://i.imgur.com/4bxLL3v.png"><br><span>Agar.io</span></button></a></center>
+            <center><a href="/geems/superhex-io"><button class="category-button" id="blocked"><img src="https://i.imgur.com/JpvLccH.png"><br><span>Superhex.io</span></button></a></center>
+            <center><a href="/geems/mope-io"><button class="category-button" id="blocked"><img src="https://i.imgur.com/T4ZyxSB.png"><br><span>Mope.io</span></button></a></center>
+            <center><a href="/geems/splix-io"><button class="category-button" id="blocked"><img src="https://i.imgur.com/gvxuxeB.png"><br><span>Splix.io</span></button></a></center>
+            <center><a href="/geems/spinz-io"><button class="category-button" id="blocked"><img src="https://i.imgur.com/hnuZ4ad.png"><br><span>Spinz.io</span></button></a></center>
+            <center><a href="/geems/slither-io"><button class="category-button" id="blocked"><img src="https://i.imgur.com/kd76I3B.png"><br><span>Slither.io</span></button></a></center>
+            <center><a href="/geems/skribbl-io"><button class="category-button" id="blocked"><img src="https://i.imgur.com/D4xHr3M.png"><br><span>Skribbl.io</span></button></a></center>
+        </div>
+
+        <div class="category-header-container" style="background-image: url(https://i.imgur.com/vvjy36W.jpg); background-position-y: top;"><div class="category-header-overlay"><div class="category-header-title-container"><center><h1>Overige Geems</h1></center></div></div></div>
+        <div class="category-grid">
+            <center><a href="/geems/bubble-shooter"><button class="category-button" id="blocked"><img src="https://i.imgur.com/istvw0R.png"><br><span>Bubble Shooter</span></button></a></center>
+            <center><a href="/geems/basketball-line"><button class="category-button" id="blocked"><img src="https://i.imgur.com/S8VM7iq.png"><br><span>Basketball Line</span></button></a></center>
+            <center><a href="/geems/bubble-shooter-classic"><button class="category-button" id="blocked"><img src="https://i.imgur.com/ztucbFg.png"><br><span>Bubble Shooter Classic</span></button></a></center>
+            <center><a href="/geems/knife-hit"><button class="category-button" id="blocked"><img src="https://i.imgur.com/cUDG0um.png"><br><span>Knife Hit</span></button></a></center>
+            <center><a href="/geems/knife-hit-2"><button class="category-button" id="blocked"><img src="https://i.imgur.com/CMqCutC.png"><br><span>Knife Hit 2</span></button></a></center>
+            <center><a href="/geems/helix-jump"><button class="category-button" id="blocked"><img src="https://i.imgur.com/mKAYPdj.png"><br><span>Helix Jump</span></button></a></center>
+            <center><a href="/geems/spinz-io"><button class="category-button" id="blocked"><img src="https://i.imgur.com/LfE2IHm.png"><br><span>Tentrix</span></button></a></center>
+            <center><a href="/geems/color-tunnel"><button class="category-button" id="blocked"><img src="https://i.imgur.com/z06wLnH.png"><br><span>Color Tunnel</span></button></a></center>
+            <center><a href="/geems/apple-shooter"><button class="category-button" id="blocked"><img src="https://i.imgur.com/n29kKRp.png"><br><span>Apple Shooter</span></button></a></center>
+            <center><a href="/geems/super-hot"><button class="category-button" id="blocked"><img src="https://i.imgur.com/Oz5In5S.png"><br><span>Super Hot</span></button></a></center>
+            <center><a href="/geems/connect-4"><button class="category-button" id="blocked"><img src="https://i.imgur.com/ereHYGT.png"><br><span>Connect 4</span></button></a></center>
+            <center><a href="/geems/bouncing-balls"><button class="category-button" id="blocked"><img src="https://i.imgur.com/AGqZear.png"><br><span>Bouncing Balls</span></button></a></center>
+        </div>
+    </div>
+    </div>
+    <!-- Site Footer -->
+    <footer><div id="footer-inside"><div><center><img id="footer-img" src="/images/lkg-logo-small-text.png" alt="LKG Logo"><p id="footer-copyright">2017-2020 - Lekrkoekj Geems</p></center></div><hr><div><center><h2>Contact</h2><p><a href="mailto:lekrkoekjgeems@gmail.com">lekrkoekjgeems@gmail.com</a></p><p><a href="/lkg-discord">Discord</a></p></center></div><hr><div><center><h2>LKG Links</h2><p><a href="/lkg-discord">LKG Discord</a></p><p><a href="/suggesties">Stuur suggesties in</a></p><a href="/bugs">Stuur bugreports in</a></p></center></div></footer>
+</body>
+
 </html>

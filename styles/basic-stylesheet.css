@@ -225,6 +225,8 @@ img#footer-img {
 .category-header-container#lkg {
     background-image: url(/images/lekrkoekj-fast.gif);
     background-color: white;
+    background-repeat: repeat;
+    background-size: contain;
 }
 .category-header-overlay {
     height: 150px;
@@ -237,6 +239,14 @@ img#footer-img {
     color: white;
     margin: 0;
     font-size: 80px;
+}
+@media only screen and (max-width: 930px) {
+    .category-header-overlay h1 {
+        font-size: 45px !important;
+    }
+    .category-header-title-container {
+        transform: translateY(42px) !important;
+    }
 }
 .category-header-title-container {
     transform: translateY(15px);
@@ -261,7 +271,20 @@ img#footer-img {
     transition: 0.3s;
     box-shadow: 0px 4px 30px 0px rgba(34,56,101,0.1);   
 }
-.category-button:hover {
+.category-button span {
+    padding: 5px;
+}
+.category-button#blocked {
+    color: #ea5f5f;
+}
+.category-button#blocked:hover span {
+    font-size: 0px;
+}
+.category-button#blocked:hover span::after {
+    font-size: 16px;
+    content: 'Geblokkeerd!';
+}
+.category-button:hover, .category-button#blocked:hover {
     box-shadow: 0px 4px 30px 0px rgba(34, 56, 101, 0.18);
     color: #5facea;
 }
