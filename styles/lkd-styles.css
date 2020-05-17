@@ -1,7 +1,7 @@
 
 body {
     color: white;
-    background-image: urL(https://lekrkoekj.github.io/images/lkd-home-background-2.png);
+    background-image: urL(/images/lkd-home-background-2.png);
     backdrop-filter: blur(10px);
     background-size: cover;
     background-position: center;
@@ -133,6 +133,11 @@ nav li {
     align-items: center;
     display: flex;
 }
+.newest-update {
+    background-color: #43b6bb;
+    color: white;
+    padding: 50px;
+}
 .part1 {
     background-color: #5facea;
     color: white;
@@ -168,5 +173,14 @@ nav li {
     }
     .header-grid {
         grid-template-columns: 100%;
+    }
+    .part-grid {
+        grid-template-columns: 100%;
+    }
+    .part-grid img {
+        display: none;
+    }
+    div[style="display: flex; align-items: center;"] {
+        display: block !important;
     }
 }

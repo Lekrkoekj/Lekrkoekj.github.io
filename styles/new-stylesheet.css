@@ -54,7 +54,7 @@ nav {
 }
 @font-face {
     font-family: Nexa;
-    src: url("/fonts/NexaDemo-Bold.woff2") format("woff2"), url("/fonts/NexaDemo-Bold.woff") format("woff"), url("/fonts/NexaDemo-Light.woff2") format("woff2"), url("/fonts/NexaDemo-Light.woff") format("woff")
+    src: url("/fonts/NexaBold.otf") format("opentype"), url("/fonts/NexaRegular.otf") format("opentype"), url("/fonts/NexaLight.otf") format("opentype")
 }
 
 /* Categories */
