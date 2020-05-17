@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    color: #595959;
+    font-family: Lato;
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Nexa;
+}
+button.normal {
+    background: #5facea;
+    color: white;
+    border: 0;
+    box-shadow: 0px 2px 7px 0px #0000001a;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Lato;
+    padding: 20px;
+    margin: 0px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+button.normal:hover {
+    box-shadow: 0px 2px 7px 0px #0000004a;
+    transform: translate(0px, -5px);
+}
+nav li {
+    float: right;
+    border-top: 3px solid transparent;
+    transition: 0.2s;
+    font-family: Lato;
+    padding: 20px;
+    color: #363647;
+}
+nav .logo {
+    float: left;
+    padding: 0;
+    border: 0;
+}
+nav .logo img {
+    height: 62px;
+}
+nav li:hover {
+    border-top-color: #5facea
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    display: flow-root;
+    height: 62px;
+}
+@font-face {
+    font-family: Nexa;
+    src: url("/fonts/NexaDemo-Bold.woff2") format("woff2"), url("/fonts/NexaDemo-Bold.woff") format("woff"), url("/fonts/NexaDemo-Light.woff2") format("woff2"), url("/fonts/NexaDemo-Light.woff") format("woff")
+}
+
+/* Categories */
+.category-header-container {
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+    background-position-y: center;
+    background-size: cover;
+}
+.category-header-container#lkg {
+    background-image: url(/images/lekrkoekj-fast.gif);
+    background-color: white;
+    background-repeat: repeat;
+    background-size: contain;
+}
+.category-header-overlay {
+    height: 150px;
+    width: 100%;
+    background: #1317198c;
+    vertical-align: middle;
+    backdrop-filter: blur(4px);
+}
+.category-header-overlay h1 {
+    color: white;
+    margin: 0;
+    font-size: 80px;
+}
+@media only screen and (max-width: 930px) {
+    .category-header-overlay h1 {
+        font-size: 45px !important;
+    }
+    .category-header-title-container {
+        transform: translateY(42px) !important;
+    }
+}
+.category-header-title-container {
+    transform: translateY(15px);
+}
+.category-grid {
+    display: grid;
+    grid-template-columns: calc(100% / 7) calc(100% / 7) calc(100% / 7) calc(100% / 7) calc(100% / 7) calc(100% / 7) calc(100% / 7);
+    padding: 10px;
+}
+.category-button {
+    border-radius: 5px;
+    font-size: 16px;
+    border: 0;
+    padding: 0px 0px 10px 0px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 10px;
+    max-width: 162px;
+    width: 100%;
+    background: white;
+    font-family: Nexa;
+    transition: 0.3s;
+    box-shadow: 0px 4px 30px 0px rgba(34,56,101,0.1);   
+}
+.category-button span {
+    padding: 5px;
+}
+.category-button#blocked {
+    color: #ea5f5f;
+}
+.category-button#blocked:hover span {
+    font-size: 0px;
+}
+.category-button#blocked:hover span::after {
+    font-size: 16px;
+    content: 'Geblokkeerd!';
+}
+.category-button:hover, .category-button#blocked:hover {
+    box-shadow: 0px 4px 30px 0px rgba(34, 56, 101, 0.18);
+    color: #5facea;
+}
+.category-button img {
+    width: 162px;
+    height: 162px;
+    padding-bottom: 5px;
+}
+@media only screen and (max-width: 1279px) {
+    .category-grid {
+        grid-template-columns: calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6);
+    }
+}
+@media only screen and (max-width: 1060px) {
+    .category-grid {
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+}
+@media only screen and (max-width: 875px) {
+    .category-grid {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
+@media only screen and (max-width: 720px) {
+    .category-grid {
+        grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+    }
+}
+@media only screen and (max-width:  540px) {
+    .category-grid {
+        grid-template-columns: 50% 50%;
+    }
+}
+@media only screen and (max-width:  345px) {
+    .category-grid {
+        grid-template-columns: 100%;
+    }
+}
+
+/* Game pages */
+button#fullscreen {
+    position: absolute;
+    border-radius: 0px 0px 5px 0px;
+    background: #ffffffe3;
+    font-family: Nexa;
+    font-size: 16px;
+    padding: 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 30px 0px rgba(34,56,101,0.1);
+    border: 0;
+    transition: 0.3s;
+}
+button#fullscreen:hover {
+    box-shadow: 0px 4px 30px 0px rgba(34, 56, 101, 0.18);
+    background: white;
+}
+div#container object {
+    box-shadow: 0px 4px 30px 0px rgba(34,56,101,0.1);
+}
+div#container {
+    margin: 25px;
+}
+body.dark img[alt="Andere Geems"] {
+    filter: invert(1);
+}
+div#container object, div#container iframe {
+    width: 85vw;
+    height: 100vh;
+    border: 0;
+}
+.lkd-links {
+    display: grid;
+    grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+}
