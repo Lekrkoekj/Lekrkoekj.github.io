@@ -84,15 +84,15 @@ nav li {
     width: 251.17px;
 }
 .android-download-button span::after {
-    content: "      Latest version (2.6)";
+    content: "      Latest version (2.6.1)";
     font-size: 13px;
 }
 .lkg-play-button span::after {
-    content: "      Latest version (2.6)";
+    content: "      Latest version (2.6.1)";
     font-size: 13px;
 }
 .windows-download-button span::after {
-    content: "      Latest version (2.6)";
+    content: "      Latest version (2.6.1)";
     font-size: 13px;
 }
 .github-button span::after {
@@ -111,7 +111,7 @@ nav li {
 }
 .github-button img {
     width: 40px;
-    height: 22.53px;
+    height: 40px;
     margin-right: 15px;
     filter: invert(1);
 }
