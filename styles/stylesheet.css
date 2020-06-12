@@ -166,15 +166,15 @@ body.dark .dark-mode-text:after {
 }
 ::-webkit-scrollbar-track {
     background: #f1f1f1; 
-  }
-  ::-webkit-scrollbar-thumb {
+}
+::-webkit-scrollbar-thumb {
     background: #888;
     box-shadow: 0px 2px 7px 0px #0000001a;
-  }
-  ::-webkit-scrollbar-thumb:hover {
+}
+::-webkit-scrollbar-thumb:hover {
     background: #555; 
     box-shadow: 0px 2px 7px 0px #00000024;
-  }
+}
 
 /*Tags for elements*/
 p[no-margin] {
@@ -814,9 +814,9 @@ transition-delay:0s !important;
     }
 }
 @media only screen and (min-width: 930px) {
-.home-mobile-message, div#myNav {
-    display: none;
-}
+    .home-mobile-message, div#myNav {
+        display: none;
+    }
 }
 
 
