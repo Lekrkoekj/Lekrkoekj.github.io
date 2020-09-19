@@ -66,7 +66,7 @@ nav li {
 }
 
 .windows-download-button span::after {
-    content: "      Latest version (1.0)";
+    content: "      Latest version (1.1)";
     font-size: 13px;
 }
 
