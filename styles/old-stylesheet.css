@@ -49,12 +49,12 @@ border-radius: 12px;
 }
     .lkg-logo {
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-max-width:372px;
+max-width:574px;
         width: 100%;
 border-radius: 20px;
 transition: 0.3s;
-margin-left: 207px;
-margin-right: 207px;
+margin-left: 87px;
+margin-right: 87px;
 background-image: url(/images/lkg-logo.png);
 max-height: 107px;
 height: 100%;
