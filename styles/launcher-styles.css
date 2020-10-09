@@ -9,7 +9,10 @@ body {
 nav {
     background: #00000040;
 }
-nav li {
+nav .menu-button {
+    color: white;
+}
+h1  {
     color: white;
 }
 .header {
@@ -153,4 +156,10 @@ nav li {
     div[style="display: flex; align-items: center;"] {
         display: block !important;
     }
+}
+body.dark .part1 {
+    background: #1b2022;
+}
+body.dark .newest-update {
+    background: #323639;
 }

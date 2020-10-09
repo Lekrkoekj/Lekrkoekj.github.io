@@ -6,7 +6,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato|PT+Sans&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-    <meta name="description" content="Download or play Lekrkoekj Dash!"/>
+    <meta name="description" content="Play browser games for free on Lekrkoekj Geems!"/>
         <meta property="og:image" content="https://lekrkoekj.github.io/images/lkg-logo-small.png"/>
         <meta property="og:image:secure_url" content="https://lekrkoekj.github.io/images/lkg-logo-small.png" />
         <!-- Styles -->
@@ -14,19 +14,20 @@
         <!-- Scripts -->
         <script src="/scripts/darkmode.js"></script>
     </head>
-    <body>
+    <body id="sticky-menu">
+        <!-- Nav bar-->
         <nav>
-            <ul>
-                <a href="/"><li class="logo"><img src="/images/lkg-logo-small-text.png"></li></a>
-                <a href="javascript:darkModeSwitch()"><li>Donker</li></a>
-                <a href="/lkg-discord"><li>Discord</li></a>
-                <a href="/geems"><li>Geems</li></a>
-                <a href="/lkg"><li>LKG</li></a>
-                <a href="/"><li>Home</li></a>
+            <ul class="nav-ul">
+                <li id="logo"><a href="/"><img src="/images/lkg-logo-small.webp" width="78px" alt="Lekrkoekj Geems" id="site-logo"></a></li>
+                <li><button class="menu-button" aria-label="Dark Mode Switch" onclick="darkModeSwitch()"><img src="/images/moon-icon.webp" alt="Donker" id="moon"><img src="/images/sun-icon.webp" id="sun" alt="Licht"><br><span id="darkModeText">Donker</span></button></li>
+                <li><a href="https://lekr.ml" aria-label="Lekr.ml"><button class="menu-button"><img src="https://lekr.ml/images/me.png" alt="Lekr.ml"><br><span>Lekr.ml</span></button></a></li>
+                <li><a href="/geems" aria-label="Games"><button class="menu-button"><img src="/images/lkd-icon-3.png" alt="Games"><br><span>Geems</span></button></a></li>
+                <li><a href="/lkg" aria-label="LKG"><button class="menu-button"><img src="/images/lkg-logo-small-text.png" alt="LKG"><br><span>LKG</span></button></a></li>
+                <li><a href="/" aria-label="Home"><button class="menu-button"><img src="/images/lekrkoekj-hd.png" alt="Home"><br><span>Home</span></button></a></li>
             </ul>
         </nav>
 
-        <div class="slideshow-container blue">
+        <div class="slideshow-container">
             <div class="mySlides fade" style="display: block;">
                 <div class="slide-content"><table width="100%"><tr><td width="50%" height="370px"><center><h2>Lekrkoekj Geems heeft een nieuwe look!</h2>
                 <p style="margin-bottom: 12px;">Omdat Flash aan het einde van het jaar weggaat, worden veel geems verwijderd. Omdat de site een stuk simpeler wordt, wilde ik ook 1 nieuw design houden dat focust op mijn eigen geems.</p></center></td><td width="50%" height=" 370px"class="announcement-td2"><center><img style="max-width: 600px;" src="/images/logo.png"></center></td></tr></table></div>
@@ -37,11 +38,11 @@
             </div>
             <div class="mySlides fade" style="display: none;">
                 <div class="slide-content"><table width="100%"><tr><td width="50%" height="370px"><center><h2>Lekrkoekj Dash v2.6.2 is uit!</h2>
-                <p style="margin-bottom: 12px;">Engelse vertaling, een nieuw bonus level, en controller support toegevoegd! Er zijn ook heel veel bugs gefixt!</p><a href="https://github.com/Lekrkoekj/lekrkoekj-dash/releases/tag/v2.5.1"><button class="normal" style="margin-right: 5px;">Bekijk de changelog!</button></a><a href="/lkd"><button class="normal">Download of speel de geem!</button></a></center></td><td width="50%" height=" 370px"class="announcement-td2"><center><img src="/images/LKDsitepromo.png" style="max-height: 350px; height: 100%;"></center></td></tr></table></div>
+                <p style="margin-bottom: 12px;">Engelse vertaling, een nieuw bonus level, en controller support toegevoegd! Er zijn ook heel veel bugs gefixt!</p><a href="https://github.com/Lekrkoekj/lekrkoekj-dash/releases/tag/v2.6.2"><button class="normal" style="margin-right: 5px;">Bekijk de changelog!</button></a><a href="/lkd"><button class="normal">Download of speel de geem!</button></a></center></td><td width="50%" height=" 370px"class="announcement-td2"><center><img src="/images/LKDsitepromo.png" style="max-height: 350px; height: 100%;"></center></td></tr></table></div>
             </div>
             <div class="mySlides fade" style="display: none;">
                 <div class="slide-content"><table width="100%"><tr><td width="50%" height="370px"><center><h2>Lekrkoekj Clicker v1.3 is uit!</h2>
-                <p style="margin-bottom: 12px;">Na 6 maanden is er weer een nieuwe update ! Engelse vertaling, meer uitgebreide instellingen, en bugfixes!</p><a href="/lkc"><button class="normal">Speel de geem!</button></a></center></td><td width="50%" height=" 370px"class="announcement-td2"><center><img src="https://i.imgur.com/4JgnUOS.png" style="max-height: 350px; height: 100%;"></center></td></tr></table></div>
+                <p style="margin-bottom: 12px;">Na 6 maanden is er weer een nieuwe update! Engelse vertaling, meer uitgebreide instellingen, en bugfixes!</p><a href="/lkc"><button class="normal">Speel de geem!</button></a></center></td><td width="50%" height=" 370px"class="announcement-td2"><center><img src="https://i.imgur.com/4JgnUOS.png" style="max-height: 350px; height: 100%;"></center></td></tr></table></div>
             </div>
              
             
@@ -124,67 +125,65 @@
     }</script>   
   <div class="home-grid">
     <div class="grid-item"><center><div class="nieuwste-geems"><center><h1 class="title" id="1">Nieuwste Geems</h1></center>
-        <div class="hovereffect">
-            <img class="img-responsive" src="/images/lks-icon-transparent.png" height="162" width="162" alt="Lekrkoekj Solitaire">
-            <div class="overlay">
-               <h2>Lekrkoekj Solitaire</h2>
-               <a class="info" href="/lks">Speel</a>
-            </div>
-        </div>
     <div class="hovereffect">
-        <img class="img-responsive" src="/images/lkc-icon.png" height="162" width="162" alt="Lekrkoekj Clicker">
+        <img class="img-responsive" src="/images/lks-icon-transparent.png" height="162" width="162" alt="Lekrkoekj Solitaire">
         <div class="overlay">
-           <h2>Lekrkoekj Clicker</h2>
-           <a class="info" href="/geems/lekrkoekj-clicker">Speel</a>
+           <h2>Lekrkoekj Solitaire</h2>
+           <a class="info" href="/lks">Speel</a>
         </div>
     </div>
-    <div class="hovereffect">
-        <img class="img-responsive" src="/images/lkd-icon.png" height="162" width="162" alt="Lekrkoekj Dash">
-        <div class="overlay">
-           <h2>Lekrkoekj Dash</h2>
-           <a class="info" href="/geems/lekrkoekj-dash">Speel</a>
-        </div>
+<div class="hovereffect">
+    <img class="img-responsive" src="/images/lkc-icon.png" height="162" width="162" alt="Lekrkoekj Clicker">
+    <div class="overlay">
+       <h2>Lekrkoekj Clicker</h2>
+       <a class="info" href="/geems/lekrkoekj-clicker">Speel</a>
     </div>
-  <div class="hovereffect">
-      <img class="img-responsive" src="https://i.imgur.com/NE55L9T.png" height="162" width="162" alt="Cookie Clicker">
-      <div class="overlay">
-         <h2>Cookie Clicker</h2>
-         <a class="info" href="/geems/cookie-clicker">Speel</a>
-      </div>
-  </div>
-    <div class="hovereffect">
-        <img class="img-responsive" src="https://i.imgur.com/mPXRnK9.png" height="162" width="162" alt="Super Hot">
-        <div class="overlay">
-           <h2>Super Hot</h2>
-           <a class="info" href="/geems/super-hot">Speel</a>
-        </div>
-    </div>
-    <div class="hovereffect" id="lo">
-        <img class="img-responsive" src="https://i.imgur.com/3rc9sd7.png" height="162" width="162" alt="Connect 4">
-        <div class="overlay">
-           <h2>Connect 4</h2>
-           <a class="info" href="/geems/connect-4">Speel</a>
-        </div>
-    </div>
-    <div class="hovereffect">
-        <img class="img-responsive" src="https://i2.silvergames.com/p/b/bouncing-balls.png" height="162" width="162" alt="Bouncing Balls">
-        <div class="overlay">
-           <h2>Bouncing Balls</h2>
-           <a class="info" href="/geems/bouncing-balls">Speel</a>
-        </div>
-    </div>
-    <div class="hovereffect">
-        <img class="img-responsive" src="https://i3.silvergames.com/p/b/whack-your-ex.png" height="162px" width="162" alt="Whack Your Ex">
-        <div class="overlay">
-           <h2>Whack Your Ex</h2>
-           <a class="info" href="/geems/whack-your-ex">Speel</a>
-        </div>
-    </div>
-  </div>
-</center>
 </div>
-<div class="grid-item">
-  <center>
+<div class="hovereffect">
+    <img class="img-responsive" src="/images/lkd-icon.png" height="162" width="162" alt="Lekrkoekj Dash">
+    <div class="overlay">
+       <h2>Lekrkoekj Dash</h2>
+       <a class="info" href="/geems/lekrkoekj-dash">Speel</a>
+    </div>
+</div>
+<div class="hovereffect">
+  <img class="img-responsive" src="https://i.imgur.com/NE55L9T.png" height="162" width="162" alt="Cookie Clicker">
+  <div class="overlay">
+     <h2>Cookie Clicker</h2>
+     <a class="info" href="/geems/cookie-clicker">Speel</a>
+  </div>
+</div>
+<div class="hovereffect">
+    <img class="img-responsive" src="https://i.imgur.com/mPXRnK9.png" height="162" width="162" alt="Super Hot">
+    <div class="overlay">
+       <h2>Super Hot</h2>
+       <a class="info" href="/geems/super-hot">Speel</a>
+    </div>
+</div>
+<div class="hovereffect" id="lo">
+    <img class="img-responsive" src="https://i.imgur.com/3rc9sd7.png" height="162" width="162" alt="Connect 4">
+    <div class="overlay">
+       <h2>Connect 4</h2>
+       <a class="info" href="/geems/connect-4">Speel</a>
+    </div>
+</div>
+<div class="hovereffect">
+    <img class="img-responsive" src="https://i2.silvergames.com/p/b/bouncing-balls.png" height="162" width="162" alt="Bouncing Balls">
+    <div class="overlay">
+       <h2>Bouncing Balls</h2>
+       <a class="info" href="/geems/bouncing-balls">Speel</a>
+    </div>
+</div>
+<div class="hovereffect">
+    <img class="img-responsive" src="https://i3.silvergames.com/p/b/whack-your-ex.png" height="162px" width="162" alt="Whack Your Ex">
+    <div class="overlay">
+       <h2>Whack Your Ex</h2>
+       <a class="info" href="/geems/whack-your-ex">Speel</a>
+    </div>
+</div>
+</div>
+</center>
+<center>
     <div class="lekrkoekj-paginas">
       <center><h1 class="title" id="1">Lekrkoekj Pagina's</h1></center>
         <div class="hovereffect" id="lb">
@@ -245,99 +244,131 @@
         </div>
       </div>
     </center>
-  </div>
-  <div class="grid-item">
-    <center>
-      <div class="populaire-geems">
-        <center><h1 class="title" id="1">Populaire Geems</h1></center>
-            <div class="hovereffect" id="lb">
-                <img class="img-responsive" src="https://i.imgur.com/O0mFzXb.jpg" height="162" width="162" alt="Snake Trouble">
-                <div class="overlay">
-                   <h2>Snake Trouble</h2>
-                   <a class="info" href="/geems/snake-trouble">Speel</a>
-                </div>
-            </div>
-            <div class="hovereffect">
-                <img class="img-responsive" src="https://i.imgur.com/NE55L9T.png" height="162" width="162" alt="Cookie Clicker">
-                <div class="overlay">
-                   <h2>Cookie Clicker</h2>
-                   <a class="info" href="/geems/cookie-clicker">Speel</a>
-                </div>
-            </div>
-            <div class="hovereffect">
-                <img class="img-responsive" src="https://i.imgur.com/YXfde52.jpg" height="162" width="162" alt="Pac-Xon">
-                <div class="overlay">
-                   <h2>Pac-Xon</h2>
-                   <a class="info" href="/geems/pac-xon">Speel</a>
-                </div>
-            </div>
-            <div class="hovereffect" id="rb">
-                <img class="img-responsive" src="https://i.imgur.com/e44NXQp.jpg" height="162" width="162" alt="Papa's Pancakeria">
-                <div class="overlay">
-                   <h2>Papa's Pancakeria</h2>
-                   <a class="info" href="/geems/papa-s-pancakeria">Speel</a>
-                </div>
-            </div>
-            <div class="hovereffect">
-                <img class="img-responsive" src="https://i.imgur.com/0I5NHOk.png" height="162" width="162" alt="Tetris Marathon">
-                <div class="overlay">
-                   <h2>Tetris Marathon</h2>
-                   <a class="info" href="/geems/tetris-marathon">Speel</a>
-                </div>
-            </div>
-            <div class="hovereffect">
-                <img class="img-responsive" src="https://i.imgur.com/6BhVqsv.png" height="162" width="162" alt="Snail Bob 1">
-                <div class="overlay">
-                   <h2>Bob de Slak 1</h2>
-                   <a class="info" href="/geems/bob-de-slak-1">Speel</a>
-                </div>
-            </div>
-            <div class="hovereffect">
-                <img class="img-responsive" src="https://i.imgur.com/EshgW3d.jpg" height="162" width="162" alt="Atari Breakout">
-                <div class="overlay">
-                   <h2>Atari Breakout</h2>
-                   <a class="info" href="/geems/atari-breakout">Speel</a>
-                </div>
-            </div>
-            <div class="hovereffect">
-                <img class="img-responsive" src="https://i.imgur.com/7V18VhG.png" height="162" width="162" alt=" Pokémon Tower Defense 2">
-                <div class="overlay">
-                   <h2>Pokémon Tower Defense 2</h2>
-                   <a class="info" href="/geems/pokemon-tower-defense-2">Speel</a>
-                </div>
-            </div>
-            <div class="hovereffect" id="lo">
-                <img class="img-responsive" src="https://i.imgur.com/MBmP0sZ.png" height="162" width="162" alt="Run 3">
-                <div class="overlay">
-                   <h2>Run 3</h2>
-                   <a class="info" href="/geems/run-3">Speel</a>
-                </div>
-            </div>
-            <div class="hovereffect">
-                <img class="img-responsive" src="https://i.imgur.com/IMPJjYB.jpg" height="162" width="162" alt="Snail Bob 7">
-                <div class="overlay">
-                   <h2>Bob de Slak 7</h2>
-                   <a class="info" href="/geems/bob-de-slak-7">Speel</a>
-                </div>
-            </div>
-            <div class="hovereffect">
-                <img class="img-responsive" src="https://i.imgur.com/jsF3jjK.jpg" height="162px" width="162" alt="Papa's Cheeseria">
-                <div class="overlay">
-                   <h2>Papa's Cheeseria</h2>
-                   <a class="info" href="/geems/papa-s-cheeseria">Speel</a>
-                </div>
-            </div>
-            <div class="hovereffect" id="ro">
-                <img class="img-responsive" src="https://i.imgur.com/kkAy61Q.jpg" height="162" width="162" alt="Pac-Man">
-                <div class="overlay">
-                   <h2>Pac-Man</h2>
-                   <a class="info" href="/geems/pac-man">Speel</a>
-                </div>
-            </div>
-            </div></center></div><div class="grid-item"><center>
-                    <div class="home-mobile-message"><h2>LKG op je telefoon</h2><p>Lekrkoekj Geems werkt niet volledig op telefoons. Geems zijn verborgen, omdat telefoons geen Flash ondersteunen. Normale Lekrkoekj Pagina's en Lekre Pagina's kan je wel bekijken.</p>
-                    <p>Binnenkort worden telefoons misschien meer ondersteund.</p></div>
-                </center></div></div>
+</div>
+<div class="grid-item"><center><div class="lekrkoekj-geems"><center><h1 class="title" id="1">Geems van Lekrkoekj</h1></center>
+    <div class="hovereffect">
+        <img class="img-responsive" src="/images/roller-icon.png" height="162" width="162" alt="Roller">
+        <div class="overlay">
+           <h2>Roller</h2>
+           <a class="info" href="/geems/roller">Speel</a>
+        </div>
+      </div>
+    <div class="hovereffect">
+        <img class="img-responsive" src="/images/lks-icon-transparent.png" height="162" width="162" alt="Lekrkoekj Solitaire">
+        <div class="overlay">
+           <h2>Lekrkoekj Solitaire</h2>
+           <a class="info" href="/lks">Speel</a>
+        </div>
+    </div>
+<div class="hovereffect">
+    <img class="img-responsive" src="/images/lkc-icon.png" height="162" width="162" alt="Lekrkoekj Clicker">
+    <div class="overlay">
+       <h2>Lekrkoekj Clicker</h2>
+       <a class="info" href="/geems/lekrkoekj-clicker">Speel</a>
+    </div>
+</div>
+<div class="hovereffect">
+    <img class="img-responsive" src="/images/lkd-icon.png" height="162" width="162" alt="Lekrkoekj Dash">
+    <div class="overlay">
+       <h2>Lekrkoekj Dash</h2>
+       <a class="info" href="/geems/lekrkoekj-dash">Speel</a>
+    </div>
+</div>
+
+</div>
+</center>
+<center>
+    <div class="populaire-geems">
+      <center><h1 class="title" id="1">Populaire Geems</h1></center>
+          <div class="hovereffect" id="lb">
+              <img class="img-responsive" src="https://i.imgur.com/O0mFzXb.jpg" height="162" width="162" alt="Snake Trouble">
+              <div class="overlay">
+                 <h2>Snake Trouble</h2>
+                 <a class="info" href="/geems/snake-trouble">Speel</a>
+              </div>
+          </div>
+          <div class="hovereffect">
+              <img class="img-responsive" src="https://i.imgur.com/NE55L9T.png" height="162" width="162" alt="Cookie Clicker">
+              <div class="overlay">
+                 <h2>Cookie Clicker</h2>
+                 <a class="info" href="/geems/cookie-clicker">Speel</a>
+              </div>
+          </div>
+          <div class="hovereffect">
+              <img class="img-responsive" src="https://i.imgur.com/YXfde52.jpg" height="162" width="162" alt="Pac-Xon">
+              <div class="overlay">
+                 <h2>Pac-Xon</h2>
+                 <a class="info" href="/geems/pac-xon">Speel</a>
+              </div>
+          </div>
+          <div class="hovereffect" id="rb">
+              <img class="img-responsive" src="https://i.imgur.com/e44NXQp.jpg" height="162" width="162" alt="Papa's Pancakeria">
+              <div class="overlay">
+                 <h2>Papa's Pancakeria</h2>
+                 <a class="info" href="/geems/papa-s-pancakeria">Speel</a>
+              </div>
+          </div>
+          <div class="hovereffect">
+              <img class="img-responsive" src="https://i.imgur.com/0I5NHOk.png" height="162" width="162" alt="Tetris Marathon">
+              <div class="overlay">
+                 <h2>Tetris Marathon</h2>
+                 <a class="info" href="/geems/tetris-marathon">Speel</a>
+              </div>
+          </div>
+          <div class="hovereffect">
+              <img class="img-responsive" src="https://i.imgur.com/6BhVqsv.png" height="162" width="162" alt="Snail Bob 1">
+              <div class="overlay">
+                 <h2>Bob de Slak 1</h2>
+                 <a class="info" href="/geems/bob-de-slak-1">Speel</a>
+              </div>
+          </div>
+          <div class="hovereffect">
+              <img class="img-responsive" src="https://i.imgur.com/EshgW3d.jpg" height="162" width="162" alt="Atari Breakout">
+              <div class="overlay">
+                 <h2>Atari Breakout</h2>
+                 <a class="info" href="/geems/atari-breakout">Speel</a>
+              </div>
+          </div>
+          <div class="hovereffect">
+              <img class="img-responsive" src="https://i.imgur.com/7V18VhG.png" height="162" width="162" alt=" Pokémon Tower Defense 2">
+              <div class="overlay">
+                 <h2>Pokémon Tower Defense 2</h2>
+                 <a class="info" href="/geems/pokemon-tower-defense-2">Speel</a>
+              </div>
+          </div>
+          <div class="hovereffect" id="lo">
+              <img class="img-responsive" src="https://i.imgur.com/MBmP0sZ.png" height="162" width="162" alt="Run 3">
+              <div class="overlay">
+                 <h2>Run 3</h2>
+                 <a class="info" href="/geems/run-3">Speel</a>
+              </div>
+          </div>
+          <div class="hovereffect">
+              <img class="img-responsive" src="https://i.imgur.com/IMPJjYB.jpg" height="162" width="162" alt="Snail Bob 7">
+              <div class="overlay">
+                 <h2>Bob de Slak 7</h2>
+                 <a class="info" href="/geems/bob-de-slak-7">Speel</a>
+              </div>
+          </div>
+          <div class="hovereffect">
+              <img class="img-responsive" src="https://i.imgur.com/jsF3jjK.jpg" height="162px" width="162" alt="Papa's Cheeseria">
+              <div class="overlay">
+                 <h2>Papa's Cheeseria</h2>
+                 <a class="info" href="/geems/papa-s-cheeseria">Speel</a>
+              </div>
+          </div>
+          <div class="hovereffect" id="ro">
+              <img class="img-responsive" src="https://i.imgur.com/kkAy61Q.jpg" height="162" width="162" alt="Pac-Man">
+              <div class="overlay">
+                 <h2>Pac-Man</h2>
+                 <a class="info" href="/geems/pac-man">Speel</a>
+              </div>
+          </div>
+          </div>
+      </center>
+</div>
+
+        </div>
 
         <footer>
             <div id="footer-inside">

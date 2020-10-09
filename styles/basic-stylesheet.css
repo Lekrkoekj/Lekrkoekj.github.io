@@ -12,12 +12,6 @@ body {
 img {
     user-select: none;
 }
-nav a {
-    color: #333333;
-    text-decoration: none;
-    font-family: PT Sans;
-    font-weight: bold;
-}
 body {
     --lkg-blue: #5facea;
     --lkg-green: #64b752;
@@ -27,6 +21,12 @@ body {
     --lkg-orange: #dd9257;
     --lkg-red: #ea5f5f;
     --lkg-yellow: #ddcc57;
+}
+nav a {
+    color: #333333;
+    text-decoration: none;
+    font-family: PT Sans;
+    font-weight: bold;
 }
 .nav-ul {
     list-style-type: none;

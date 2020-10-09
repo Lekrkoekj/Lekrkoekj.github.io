@@ -12,24 +12,28 @@
 
         <link rel="stylesheet" href="/styles/new-stylesheet.css">
         <link rel="stylesheet" href="/styles/lkd-styles.css">
+
+        <script src="/scripts/darkmode.js"></script>
     </head>
     <body>
         <nav>
-            <ul>
-                <a href="/"><li class="logo"><img src="https://lekrkoekj.github.io/images/lkg-logo-small.png"></li></a>
-                <a href="/launcher"><li>Lekrkoekj Launcher</li></a>
-                <a href="/lkc"><li>Lekrkoekj Clicker</li></a>
-                <a href="/"><li>Back to LKG</li></a>
+            <ul class="nav-ul">
+                <li id="logo"><a href="/"><img src="/images/lkg-logo-small.webp" width="78px" alt="Lekrkoekj Geems" id="site-logo"></a></li>
+                <li><button class="menu-button" aria-label="Dark Mode Switch" onclick="darkModeSwitch()"><img src="/images/moon-icon.webp" alt="Donker" id="moon"><img src="/images/sun-icon.webp" id="sun" alt="Licht"><br><span id="darkModeText">Dark</span></button></li>
+                <li><a href="https://lekr.ml" aria-label="Lekr.ml"><button class="menu-button"><img src="https://lekr.ml/images/me.png" alt="Lekr.ml"><br><span>Lekr.ml</span></button></a></li>
+                <li><a href="/geems" aria-label="Games"><button class="menu-button"><img src="/images/lkd-icon-3.png" alt="Games"><br><span>Games</span></button></a></li>
+                <li><a href="/lkg" aria-label="LKG"><button class="menu-button"><img src="/images/lkg-logo-small-text.png" alt="LKG"><br><span>LKG</span></button></a></li>
+                <li><a href="/" aria-label="Home"><button class="menu-button"><img src="/images/lekrkoekj-hd.png" alt="Home"><br><span>Home</span></button></a></li>
             </ul>
         </nav>
         <center style="background: #00000040">
             <div class="header">
                 <div class="header-grid">
                     <center>
-                        <h1>Lekrkoekj Dash</h1>
+                        <img src="/images/lkd-logo.png" width="50%">
                         <p>Move your cube from side to side to avoid the obstacles!</p>
                         <p>There are more than 70 premade levels, infinite levels, quests and more!</p>
-                        <a href="https://github.com/Lekrkoekj/lekrkoekj-dash/releases/download/v2.6/Lekrkoekj.Dash.v2.6.apk" style="text-decoration: none;">
+                        <a href="https://github.com/Lekrkoekj/lekrkoekj-dash/releases/download/v2.6.2/Lekrkoekj.Dash.v2.6.2.apk" style="text-decoration: none;">
                             <button class="android-download-button">
                                 <img src="/images/android.webp">
                                 <span>Download for Android</span>
@@ -37,12 +41,12 @@
                         </a>
                         <br>
                         <a href="/play-lkd" style="text-decoration: none;">
-                            <button class="lkg-play-button"><img src="https://lekrkoekj.github.io/images/lekrkoekj-hd-square.png">
-                                <span>Play on Lekrkoekj Geems</span>
+                            <button class="lkg-play-button"><img src="/images/lkg-logo-small-text.png">
+                                <span>Play in Browser (LKG)</span>
                             </button>
                         </a>
                         <br>
-                        <a href="https://github.com/Lekrkoekj/lekrkoekj-dash/releases/download/v2.6.1/lkd-2-6-1.zip" style="text-decoration: none;">
+                        <a href="/launcher" style="text-decoration: none;">
                             <button class="windows-download-button">
                                 <img src="https://i.ya-webdesign.com/images/windows-logo-white-png.png">
                                 <span>Download for Windows</span>
@@ -71,6 +75,9 @@
             <p>Added partial Controller support: Move with the left joystick, Jump with A, Slow down with B, Pause with the start button.</p>
             <p>Splash screen is now dark and shorter.</p>
             <p>Bugfixes.</p>
+            <h1 style="text-align: center;">v2.6.2:</h1>
+            <p>13 bugfixes!</p>
+            <p>Android support added back for this version.</p>
         </div>
         <div class="part1">
             <div class="part-grid">

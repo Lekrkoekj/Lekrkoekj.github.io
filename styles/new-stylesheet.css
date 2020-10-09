@@ -15,8 +15,15 @@ body {
     --lkg-red: #ea5f5f;
     --lkg-yellow: #ddcc57;
 }
+body#sticky-menu {
+    padding-top: 78px;
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: Nexa;
+    color: #444444;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 button.normal {
     background: #5facea;
@@ -35,33 +42,64 @@ button.normal:hover {
     box-shadow: 0px 2px 7px 0px #0000004a;
     transform: translate(0px, -5px);
 }
-nav li {
-    float: right;
-    border-top: 3px solid transparent;
-    transition: 0.2s;
-    font-family: Lato;
-    padding: 20px;
-    color: #363647;
+nav a {
+    color: #333333;
+    text-decoration: none;
+    font-family: PT Sans;
+    font-weight: bold;
 }
-nav .logo {
-    float: left;
-    padding: 0;
-    border: 0;
-}
-nav .logo img {
-    height: 62px;
-}
-nav li:hover {
-    border-top-color: #5facea
-}
-nav ul {
+.nav-ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    height: 78px;
+    width: 100%;
+    top: 0;
+    z-index: 10;
 }
-nav {
-    display: flow-root;
-    height: 62px;
+body#sticky-menu .nav-ul {
+    position: fixed;
+    box-shadow: -2px 1px 12px 3px #0000004f;
+    background: #ffffff7d;
+    backdrop-filter: blur(2px);
+}
+.nav-ul li#logo {
+     float: left;
+}
+.nav-ul li {
+     float: right;
+     transition: 0.2s;
+}
+.menu-button:hover {
+    background: #5656560f;
+}
+.nav-ul li a {
+    display: block;
+     padding: 0px;
+}
+.menu-button img {
+    max-height: 35px;
+    height: 100%;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+.menu-button:hover img {
+    transform: rotate(360deg);
+}
+.menu-button {
+    border: 0;
+    background: transparent;
+    font-family: Nexa;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+    padding: 10px 6px;
+    height: 78px;
+    min-width: 78px;
+    cursor: pointer;
+    color: #333333;
+    user-select: none;
 }
 @font-face {
     font-family: Nexa;
@@ -157,6 +195,9 @@ footer a {
 .slideshow-container p {
     margin-top: 5px !important;
 }
+.dot {
+    cursor: pointer;
+}
 .home-grid {
     background: #f5f5f5;
     display: grid;
@@ -166,11 +207,9 @@ footer a {
 .title {
     font-size: 29px;
     padding-bottom: 0px;
+    margin: 20px 0px;
 }
-.dot {
-    cursor: pointer;
-}
-.populaire-geems, .lekrkoekj-paginas, .nieuwste-geems {
+.populaire-geems, .lekrkoekj-paginas, .nieuwste-geems, .lekrkoekj-geems {
     width: 100%;
     height: 398px;
     transition: 0.3s;
@@ -182,8 +221,11 @@ footer a {
     overflow: hidden;
     margin-top: 20px;   
 }
-.lekrkoekj-paginas {
-    height: 398px;
+.lekrkoekj-geems {
+    height: 239px;
+}
+.populaire-geems {
+    height: 560px;
 }
 .hovereffect {
     width:162px;
@@ -338,69 +380,39 @@ footer a {
     grid-template-columns: calc(100% / 7) calc(100% / 7) calc(100% / 7) calc(100% / 7) calc(100% / 7) calc(100% / 7) calc(100% / 7);
     padding: 10px;
 }
-.category-button {
-    border-radius: 5px;
-    font-size: 16px;
-    border: 0;
-    padding: 0px 0px 10px 0px;
-    overflow: hidden;
-    cursor: pointer;
-    margin-bottom: 10px;
-    max-width: 162px;
-    width: 100%;
-    background: white;
-    font-family: Nexa;
-    transition: 0.3s;
-    box-shadow: 0px 4px 30px 0px rgba(34,56,101,0.1);   
+.category-grid button.normal img {
+    height: 150px;
 }
-.category-button span {
-    padding: 5px;
+.category-grid button.normal {
+    width: 190px;
+    margin: 10px;
 }
-.category-button#blocked {
-    color: #ea5f5f;
-}
-.category-button#blocked:hover span {
-    font-size: 0px;
-}
-.category-button#blocked:hover span::after {
-    font-size: 16px;
-    content: 'Geblokkeerd!';
-}
-.category-button:hover, .category-button#blocked:hover {
-    box-shadow: 0px 4px 30px 0px rgba(34, 56, 101, 0.18);
-    color: #5facea;
-}
-.category-button img {
-    width: 162px;
-    height: 162px;
-    padding-bottom: 5px;
-}
-@media only screen and (max-width: 1279px) {
+@media only screen and (max-width: 1394px) {
     .category-grid {
         grid-template-columns: calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6);
     }
 }
-@media only screen and (max-width: 1060px) {
+@media only screen and (max-width: 1206px) {
     .category-grid {
         grid-template-columns: 20% 20% 20% 20% 20%;
     }
 }
-@media only screen and (max-width: 875px) {
+@media only screen and (max-width: 1004px) {
     .category-grid {
         grid-template-columns: 25% 25% 25% 25%;
     }
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 806px) {
     .category-grid {
         grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
     }
 }
-@media only screen and (max-width:  540px) {
+@media only screen and (max-width:  608px) {
     .category-grid {
         grid-template-columns: 50% 50%;
     }
 }
-@media only screen and (max-width:  345px) {
+@media only screen and (max-width:  412px) {
     .category-grid {
         grid-template-columns: 100%;
     }
@@ -442,6 +454,21 @@ div#container object, div#container iframe {
     grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
 }
 /* Dark Mode */
+body.dark h1, body.dark h2, .body-dark h3, .body-dark h4, .body-dark h5, .body-dark h6 {
+    color: white;
+}
+body.dark#sticky-menu .nav-ul {
+    background: #3236397d;
+}
+body.dark .menu-button {
+    color: white;
+}
+body.dark img#moon, img#sun {
+    display: none;
+}
+ img#moon, body.dark img#sun {
+    display: inherit;
+}
 body.dark {
     background: #131719;
     color: white;
@@ -464,12 +491,20 @@ body.dark nav li:hover {
 body.dark .home-grid {
     background: #1b2022;
 }
-body.dark .populaire-geems, body.dark .lekrkoekj-paginas, body.dark .nieuwste-geems {
+
+body.dark .populaire-geems, body.dark .lekrkoekj-paginas, body.dark .nieuwste-geems, body.dark .lekrkoekj-geems {
     background: #323639;
 }
 body.dark .hovereffect a.info, body.dark .hovereffect h2 {
     background: #1b2022bf;
     color: white;
+}
+body.dark #darkModeText {
+    font-size: 0px;
+}
+body.dark #darkModeText::after {
+    font-size: 16px;
+    content: 'Licht';
 }
 
 /* 404 pages */
