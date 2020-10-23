@@ -360,9 +360,10 @@ footer a {
     backdrop-filter: blur(4px);
 }
 .category-header-overlay h1 {
-    color: white;
+    color: red;
     margin: 0;
     font-size: 80px;
+    padding-top: 10px;
 }
 @media only screen and (max-width: 930px) {
     .category-header-overlay h1 {
