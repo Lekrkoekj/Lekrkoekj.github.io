@@ -360,7 +360,7 @@ footer a {
     backdrop-filter: blur(4px);
 }
 .category-header-overlay h1 {
-    color: red;
+    color: white;
     margin: 0;
     font-size: 80px;
     padding-top: 10px;
