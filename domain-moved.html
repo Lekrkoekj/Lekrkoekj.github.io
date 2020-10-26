@@ -12,13 +12,15 @@
         <link rel="stylesheet" href="/styles/new-stylesheet.css">
     </head>
     <body>
+        <!-- Nav bar-->
         <nav>
-            <ul>
-                <a href="/"><li class="logo"><img src="https://lekrkoekj.github.io/images/lkg-logo-small.png"></li></a>
-                <a href="/lkg-discord"><li>Discord</li></a>
-                <a href="/geems"><li>Games</li></a>
-                <a href="/"><li>LKG</li></a>
-                <a href="/"><li>Home</li></a>
+            <ul class="nav-ul">
+                <li id="logo"><a href="/"><img src="/images/lkg-logo-small.webp" width="78px" alt="Lekrkoekj Geems" id="site-logo"></a></li>
+                <li><button class="menu-button" aria-label="Dark Mode Switch" onclick="darkModeSwitch()"><img src="/images/moon-icon.webp" alt="Donker" id="moon"><img src="/images/sun-icon.webp" id="sun" alt="Licht"><br><span id="darkModeText">Donker</span></button></li>
+                <li><a href="https://lekr.ml" aria-label="Lekr.ml"><button class="menu-button"><img src="https://lekr.ml/images/me.png" alt="Lekr.ml"><br><span>Lekr.ml</span></button></a></li>
+                <li><a href="/geems" aria-label="Games"><button class="menu-button"><img src="/images/lkd-icon-3.png" alt="Games"><br><span>Geems</span></button></a></li>
+                <li><a href="/lkg" aria-label="LKG"><button class="menu-button"><img src="/images/lkg-logo-small-text.png" alt="LKG"><br><span>LKG</span></button></a></li>
+                <li><a href="/" aria-label="Home"><button class="menu-button"><img src="/images/lekrkoekj-hd.png" alt="Home"><br><span>Home</span></button></a></li>
             </ul>
         </nav>
         <div class="category-header-container" style="background-image: url(/images/lkd-home-background-2.png);"><div class="category-header-overlay"><div class="category-header-title-container"><center><p style="
