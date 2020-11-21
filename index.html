@@ -1,448 +1,241 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
     <head>
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-        <link href="https://fonts.googleapis.com/css?family=Lato|Open Sans&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-        <title>Lekrkoekj Geems - 100+ Unblocked Games</title>
-        <meta name="description" content="Lekrkoekj Geems is a website with 100+ unblocked Flash games."/>
+        <title>Lekrkoekj Geems - Play Online Games Now For Free!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Lato|PT+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <meta name="description" content="Play browser games for free on Lekrkoekj Geems!"/>
         <meta property="og:image" content="https://lekrkoekj.github.io/images/lkg-logo-small.png"/>
         <meta property="og:image:secure_url" content="https://lekrkoekj.github.io/images/lkg-logo-small.png" />
-
-        <link rel="prefetch" href="/">
-        <link rel="prefetch" href="/">
-
-        <!-- Scripts-->
-        
+        <!-- Styles -->
+        <link rel="stylesheet" href="/styles/new-stylesheet.css">
+        <!-- Scripts -->
         <script src="/scripts/darkmode.js"></script>
-        <script src="/scripts/mobile.js"></script>
-        <script src="/scripts/remove.js"></script>
-        <script src="/scripts/random-geem.js"></script>
-        <script src="/scripts/effects.js"></script>
-
-<!-- Styles -->
-
-<link rel="stylesheet" type="text/css" href="/styles/stylesheet.css">
     </head>
+    <body id="sticky-menu">
+        <!-- Nav bar-->
+        <nav>
+            <ul class="nav-ul">
+                <li id="logo"><a href="/"><img src="/images/lkg-logo-small.webp" width="78px" alt="Lekrkoekj Geems" id="site-logo"></a></li>
+                <li><button class="menu-button" aria-label="Dark Mode Switch" onclick="darkModeSwitch()"><img src="/images/moon-icon.webp" alt="Donker" id="moon"><img src="/images/sun-icon.webp" id="sun" alt="Licht"><br><span id="darkModeText">Donker</span></button></li>
+                <li><a href="https://lekr.ml" aria-label="Lekr.ml"><button class="menu-button"><img src="https://lekr.ml/images/me.png" alt="Lekr.ml"><br><span>Lekr.ml</span></button></a></li>
+                <li><a href="/geems" aria-label="Games"><button class="menu-button"><img src="/images/2048-blocks-icon.png" alt="Games"><br><span>Geems</span></button></a></li>
+                <li><a href="/lkg" aria-label="LKG"><button class="menu-button"><img src="/images/lkg-logo-small-text.png" alt="LKG"><br><span>LKG</span></button></a></li>
+                <li><a href="/" aria-label="Home"><button class="menu-button"><img src="/images/lekrkoekj-hd.png" alt="Home"><br><span>Home</span></button></a></li>
+            </ul>
+        </nav>
 
-<body id="view-usersite">
-
-    <!-- Mobile Menu-->
-
-    <div class="mobile-menu sticky"><button class="hamburger" type="button" onclick="openNav()">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button></div><div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-            <a href="/"><button class="menu-button"><img src="/images/lekrkoekj.webp" alt="Lekrkoekj Home"><br><span>Home</span></button></a>
-                <a href="/lekrkoekj"><button class="menu-button"><img src="/images/lekrkoekj.webp" alt="Lekrkoekj"><br><span>Lekrkoekj</span></button></a>
-                <a href="/lekre-pagina-s"><button class="menu-button"><img src="/images/lekrkoekj.webp" alt="Lekre Pagina's"><br><span>Lekre Pagina's</span></button></a>
-                <a href="/mobiele-geems"><button class="menu-button"><img src="/images/phone-icon.webp" alt="Lekre Pagina's"><br><span>Mobiele Geems</span></button></a>
-                <button class="menu-button" onclick="darkModeSwitch()"><img src="/images/moon-icon.webp" class="moon" alt="Donker"><img src="/images/sun-icon.webp" class="sun" alt="Licht"><br><span class="dark-mode-text">Donker</span></button>
-                <h2>Niet op een telefoon?</h2>
-                <p>Zoom dan de pagina uit of maak het venster groter om het hele menu te zien. Als dat niet werkt is je scherm gwn tresj en dan is t jamr.</p>
-        </div>
-      </div>
-
-    <!-- Menubalk -->
-
-<div class="menu sticky"><table width="100%" class="menu-table"><tr><td><a href="/"><div class="logo" alt="LKG Logo">&nbsp;</div></a></td><td><center><a href="/lekrkoekj"><button class="menu-button"><img src="/images/lekrkoekj.webp" alt="Lekrkoekj"><br><span>Lekrkoekj</span></button></a><a href="/retro-geems"><button class="menu-button"><img src="/images/mario-icon.webp" alt="Retro Geems"><br><span>Retro</span></button></a><a href="/papa-louie-geems"><button class="menu-button"><img src="/images/papa-louie-icon.webp" alt="Papa Louie Geems"><br><span>Papa Louie</span></button></a><a href="/puzzel-geems"><button class="menu-button"><img src="/images/puzzle-icon.webp" alt="Puzzel Geems"><br><span>Puzzel</span></button></a><a href="/clicker-geems"><button class="menu-button"><img src="/images/clickers-icon.webp" alt="Clicker Geems"><br><span>Clickers</span></button></a><a href="/tower-defense-geems"><button class="menu-button"><img src="/images/tower-defense-icon.webp" alt="Tower Defense Geems"><br><span>Tower Defense</span></button></a><a href="/io-geems"><button class="menu-button"><img src="/images/io-s-icon.webp" alt="IO Geems"><br><span>IO's</span></button></a><a href="/andere-geems"><button class="menu-button"><img src="/images/misc-icon.webp" alt="Overige Geems"><br><span>Overig</span></button></a><button class="menu-button" onclick="randomlink()"><img src="/images/random-icon.webp" alt="Random Geem"><br><span>Random</span></button><button class="menu-button" onclick="darkModeSwitch()"><img src="/images/moon-icon.webp" class="moon" alt="Donker"><img src="/images/sun-icon.webp" class="sun" alt="Licht"><br><span class="dark-mode-text">Donker</span></button><script async src="https://cse.google.com/cse.js?cx=017866478519957740827:d4wpis2c9wm"></script>
-    <div class="gcse-searchbox" style="display: inline-block;"></div></center></td></tr></table></div>
-
-        <!-- Site Container -->
-
-<div class="search-results"><div class="gcse-searchresults"></div></div>
-    <div class="site-container" id="wrapper">
-        <div class="slideshow-container blue">
+        <div class="slideshow-container">
             <div class="mySlides fade" style="display: block;">
+                <div class="slide-content"><table width="100%"><tr><td width="50%" height="370px"><center><h2>Lekrkoekj Geems is vernieuwd!</h2>
+                <p style="margin-bottom: 12px;">Omdat Flash weggaat aan het einde van het jaar, zijn heb ik alle Flash geems verwijderd. Niemand speelt ook de HTML5 geems, dus die zijn ook verwijderd. Vanaf nu zullen alleen geems van mijzelf op de site staan. Ook heeft LKG een nieuw design en logo.</p></center></td><td width="50%" height=" 370px"class="announcement-td2"><center><img style="max-width: 600px;" src="/images/logo.png"></center></td></tr></table></div>
+            </div>
+            <div class="mySlides fade" style="display: none;">
                 <div class="slide-content"><table width="100%"><tr><td width="50%" height="370px"><center><h2>Download nu de Lekrkoekj Launcher!</h2>
-                <p style="margin-bottom: 12px;">Lekrkoekj Dash, Clicker en Solitaire nu op Windows via de Lekrkoekj Launcher! De geems worden samen met de LKG versie automatisch bijgewerkt!</p><a href="/launcher"><button class="normal" style="margin-right: 5px;">Download nu!</button></a></center></td><td width="50%" height=" 370px"class="announcement-td2"><center><img style="max-height: 350px; height: 100%;" src="/images/lekrkoekj-hd-square.png"></center></td></tr></table></div>
+                <p style="margin-bottom: 12px;">Lekrkoekj Dash, Clicker, Solitaire en Roller nu op Windows via de Lekrkoekj Launcher! De geems worden samen met de LKG versie automatisch bijgewerkt!</p><a href="/launcher"><button class="normal" style="margin-right: 5px;">Download nu!</button></a></center></td><td width="50%" height=" 370px"class="announcement-td2"><center><img style="max-height: 350px; height: 100%;" src="https://i.imgur.com/w9WLr75.png"></center></td></tr></table></div>
             </div>
             <div class="mySlides fade" style="display: none;">
                 <div class="slide-content"><table width="100%"><tr><td width="50%" height="370px"><center><h2>Lekrkoekj Dash v2.6.2 is uit!</h2>
-                <p style="margin-bottom: 12px;">Engelse vertaling, een nieuw bonus level, en controller support toegevoegd! Er zijn ook heel veel bugs gefixt!</p><a href="https://github.com/Lekrkoekj/lekrkoekj-dash/releases/tag/v2.5.1"><button class="normal" style="margin-right: 5px;">Bekijk de changelog!</button></a><a href="/lkd"><button class="normal">Download of speel de geem!</button></a></center></td><td width="50%" height=" 370px"class="announcement-td2"><center><img src="/images/LKDsitepromo.png" style="max-height: 350px; height: 100%;"></center></td></tr></table></div>
+                <p style="margin-bottom: 12px;">Engelse vertaling, een nieuw bonus level, en controller support toegevoegd! Er zijn ook heel veel bugs gefixt!</p><a href="https://github.com/Lekrkoekj/lekrkoekj-dash/releases/tag/v2.6.2"><button class="normal" style="margin-right: 5px;">Bekijk de changelog!</button></a><a href="/lkd"><button class="normal">Download of speel de geem!</button></a></center></td><td width="50%" height=" 370px"class="announcement-td2"><center><img src="/images/LKDsitepromo.png" style="max-height: 350px; height: 100%;"></center></td></tr></table></div>
             </div>
             <div class="mySlides fade" style="display: none;">
                 <div class="slide-content"><table width="100%"><tr><td width="50%" height="370px"><center><h2>Lekrkoekj Clicker v1.3 is uit!</h2>
-                <p style="margin-bottom: 12px;">Na 6 maanden is er weer een nieuwe update ! Engelse vertaling, meer uitgebreide instellingen, en bugfixes!</p><a href="/lkc"><button class="normal">Speel de geem!</button></a></center></td><td width="50%" height=" 370px"class="announcement-td2"><center><img src="https://i.imgur.com/4JgnUOS.png" style="max-height: 350px; height: 100%;"></center></td></tr></table></div>
+                <p style="margin-bottom: 12px;">Na 6 maanden is er weer een nieuwe update! Engelse vertaling, meer uitgebreide instellingen, en bugfixes!</p><a href="/lkc"><button class="normal">Speel de geem!</button></a></center></td><td width="50%" height=" 370px"class="announcement-td2"><center><img src="https://i.imgur.com/4JgnUOS.png" style="max-height: 350px; height: 100%;"></center></td></tr></table></div>
             </div>
-            <div class="mySlides fade" style="display: none;">
-                <div class="slide-content"><table width="100%"><tr><td width="50%" height="370px"><center><h2>LKG heeft een nieuw domein!</h2>
-                <p style="margin-bottom: 12px;">LKG staat nu op lekrkoekj.ml. Alle pagina's van lekrkoekj.github.io sturen je automatisch door naar de goede pagina op dit domein.</p></center></td><td width="50%" height=" 370px"class="announcement-td2"><center><img src="/images/lekrkoekj-slow.gif"></center></td></tr></table></div>
+             
+            
+            <div style="text-align:center; padding: 5px 0px;">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="currentSlide(4)"></span> 
+              </div><div id="slide"></div>
             </div>
-            
-            
-            
-         
-        
-        <div style="text-align:center; padding: 5px 0px;">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-            <span class="dot" onclick="currentSlide(4)"></span> 
-          </div><div id="slide"></div>
-        </div>
-        <div class="white">
-            <script>var slideIndex = 1;
-
-var myTimer;
-
-var slideshowContainer;
-
-window.addEventListener("load",function() {
-    showSlides(slideIndex);
-    myTimer = setInterval(function(){plusSlides(1)}, 10000);
-  
-    //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
-    slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
-  
-    //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
-    // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
-  
-    slideshowContainer.addEventListener('mouseenter', pause)
-    slideshowContainer.addEventListener('mouseleave', resume)
-})
-
-// NEXT AND PREVIOUS CONTROL
-function plusSlides(n){
-  clearInterval(myTimer);
-  if (n < 0){
-    showSlides(slideIndex -= 1);
-  } else {
-   showSlides(slideIndex += 1); 
-  }
-  
-  //COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
-  
-  if (n === -1){
-    myTimer = setInterval(function(){plusSlides(n + 2)}, 10000);
-  } else {
-    myTimer = setInterval(function(){plusSlides(n + 1)}, 10000);
-  }
-}
-
-//Controls the current slide and resets interval if needed
-function currentSlide(n){
-  clearInterval(myTimer);
-  myTimer = setInterval(function(){plusSlides(n + 1)}, 10000);
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n){
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-
-pause = () => {
-  clearInterval(myTimer);
-}
-
-resume = () =>{
-  clearInterval(myTimer);
-  myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
-}</script>       
-    <div class="home-grid"><div class="grid-item"><center><div class="nieuwste-geems"><center><h1 class="title" id="1">Nieuwste Geems</h1></center>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="white">
+                <script>var slideIndex = 1;
+    
+    var myTimer;
+    
+    var slideshowContainer;
+    
+    window.addEventListener("load",function() {
+        showSlides(slideIndex);
+        myTimer = setInterval(function(){plusSlides(1)}, 10000);
+      
+        //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+        slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+      
+        //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+        // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
+      
+        slideshowContainer.addEventListener('mouseenter', pause)
+        slideshowContainer.addEventListener('mouseleave', resume)
+    })
+    
+    // NEXT AND PREVIOUS CONTROL
+    function plusSlides(n){
+      clearInterval(myTimer);
+      if (n < 0){
+        showSlides(slideIndex -= 1);
+      } else {
+       showSlides(slideIndex += 1); 
+      }
+      
+      //COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+      
+      if (n === -1){
+        myTimer = setInterval(function(){plusSlides(n + 2)}, 10000);
+      } else {
+        myTimer = setInterval(function(){plusSlides(n + 1)}, 10000);
+      }
+    }
+    
+    //Controls the current slide and resets interval if needed
+    function currentSlide(n){
+      clearInterval(myTimer);
+      myTimer = setInterval(function(){plusSlides(n + 1)}, 10000);
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n){
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    
+    pause = () => {
+      clearInterval(myTimer);
+    }
+    
+    resume = () =>{
+      clearInterval(myTimer);
+      myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
+    }</script>   
+    <div class="home-grid">
+        <div class="grid-item">
+            <center><div class="lekrkoekj-geems"><center><h1 class="title" id="1">Geems van Lekrkoekj</h1></center>
+                <div class="hovereffect">
+                    <img class="img-responsive" src="/images/roller-icon.png" height="162" width="162" alt="Roller">
+                    <div class="overlay">
+                    <h2>Roller</h2>
+                    <a class="info" href="/geems/roller">Speel</a>
+                    </div>
+                </div>
+                <div class="hovereffect">
+                    <img class="img-responsive" src="/images/lks-icon-transparent.png" height="162" width="162" alt="Lekrkoekj Solitaire">
+                    <div class="overlay">
+                    <h2>Lekrkoekj Solitaire</h2>
+                    <a class="info" href="/lks">Speel</a>
+                    </div>
+                </div>
             <div class="hovereffect">
-                <img class="img-responsive" src="/images/2048-blocks-icon.png" height="162" width="162" alt="2048 Blocks">
+                <img class="img-responsive" src="/images/lkc-icon.png" height="162" width="162" alt="Lekrkoekj Clicker">
                 <div class="overlay">
-                   <h2>2048 Blocks</h2>
-                   <a class="info" href="/geems/2048-blocks">Speel</a>
+                <h2>Lekrkoekj Clicker</h2>
+                <a class="info" href="/geems/lekrkoekj-clicker">Speel</a>
                 </div>
             </div>
-        </div>
-        <div class="hovereffect">
-            <img class="img-responsive" src="/images/roller-icon.png" height="162" width="162" alt="Roller">
-            <div class="overlay">
-               <h2>Roller</h2>
-               <a class="info" href="/geems/roller">Speel</a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
             <div class="hovereffect">
-                <img class="img-responsive" src="/images/lks-icon-transparent.png" height="162" width="162" alt="Lekrkoekj Solitaire">
+                <img class="img-responsive" src="/images/lkd-icon.png" height="162" width="162" alt="Lekrkoekj Dash">
                 <div class="overlay">
-                   <h2>Lekrkoekj Solitaire</h2>
-                   <a class="info" href="/lks">Speel</a>
+                <h2>Lekrkoekj Dash</h2>
+                <a class="info" href="/geems/lekrkoekj-dash">Speel</a>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-        <div class="hovereffect" id="lb">
-            <img class="img-responsive" src="https://i.imgur.com/BXptlkr.png" height="162" width="162" alt="Tetris 2008">
-            <div class="overlay">
-               <h2>Tetris 2008</h2>
-               <a class="info" href="/geems/tetris-2008">Speel</a>
+            <div class="hovereffect">
+                <img class="img-responsive" src="/images/2048-blocks-icon.png" height="162px" width="162" alt="2048 Blocks">
+                <div class="overlay">
+                <h2>2048 Blocks</h2>
+                <a class="info" href="/geems/2048-blocks">Speel</a>
+                </div>
             </div>
-        </div>
-    </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-        <div class="hovereffect">
-            <img class="img-responsive" src="https://i.imgur.com/YuPLdf9.png" height="162" width="162" alt="Tetris Sprint JP">
-            <div class="overlay">
-               <h2>Tetris Sprint JP</h2>
-               <a class="info" href="/geems/tetris-sprint-jp">Speel</a>
+            
             </div>
+            </center>
         </div>
-    </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-        <div class="hovereffect">
-            <img class="img-responsive" src="https://i.imgur.com/IuNGZsV.png" height="162" width="162" alt="Tetris Dash">
-            <div class="overlay">
-               <h2>Tetris Dash</h2>
-               <a class="info" href="/geems/tetris-dash">Speel</a>
-            </div>
-        </div>
-    </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-        <div class="hovereffect" id="rb">
-            <img class="img-responsive" src="https://i.imgur.com/1hCHFOh.png" height="162" width="162" alt="Tetris Kentei">
-            <div class="overlay">
-               <h2>Tetris Kentei</h2>
-               <a class="info" href="/geems/tetris-kentei">Speel</a>
-            </div>
+        <div class="grid-item">
+            <center>
+                <div class="lekrkoekj-paginas">
+                <center><h1 class="title" id="1">LKG Pagina's</h1></center>
+                    <div class="hovereffect" id="lb">
+                        <img class="img-responsive" src="/images/mc-skin.png" height="162" width="162" alt="Lekr.ml">
+                        <div class="overlay">
+                        <h2>Lekr.ml</h2>
+                        <a class="info" href="https://lekr.ml">Bezoek</a>
+                        </div>
+                    </div>
+                    <div class="hovereffect" id="ro">
+                        <img class="img-responsive" src="/images/lkg-logo-small.png" height="162" width="162" alt="Lekrkoekj Home 1.0">
+                        <div class="overlay">
+                        <h2>Lekrkoekj Home 1.0</h2>
+                        <a class="info" href="/lekrkoekj/lekrkoekj-home-1-0">Bezoek</a>
+                        </div>
+                    </div>
+                    <div class="hovereffect" id="ro">
+                        <img class="img-responsive" src="/images/lkg-logo-small.png" height="162" width="162" alt="Over LKG">
+                        <div class="overlay">
+                        <h2>Over LKG</h2>
+                        <a class="info" href="/about">Bezoek</a>
+                        </div>
+                    </div>
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="/images/lekrkoekj-hd-square.png" height="162" width="162" alt="Lekrearrapej">
+                        <div class="overlay">
+                        <h2>Lekrearrapej</h2>
+                        <a class="info" href="https://youtu.be/g8gDHzvtRqQ">Bezoek</a>
+                        </div>
+                    </div>
+                </div>
+            </center>
         </div>
     </div>
-    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-        <div class="hovereffect">
-            <img class="img-responsive" src="/images/lkc-icon.png" height="162" width="162" alt="Lekrkoekj Clicker">
-            <div class="overlay">
-               <h2>Lekrkoekj Clicker</h2>
-               <a class="info" href="/geems/lekrkoekj-clicker">Speel</a>
-            </div>
-        </div>
-    </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-        <div class="hovereffect">
-            <img class="img-responsive" src="/images/lkd-icon.png" height="162" width="162" alt="Lekrkoekj Dash">
-            <div class="overlay">
-               <h2>Lekrkoekj Dash</h2>
-               <a class="info" href="/geems/lekrkoekj-dash">Speel</a>
-            </div>
-        </div>
-    </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-        <div class="hovereffect">
-            <img class="img-responsive" src="https://i.imgur.com/3X93kRV.png" height="162" width="162" alt="Color Tunnel">
-            <div class="overlay">
-               <h2>Earn To Die 2012</h2>
-               <a class="info" href="/geems/earn-to-die-2012">Speel</a>
-            </div>
-        </div>
-    </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-        <div class="hovereffect">
-            <img class="img-responsive" src="https://i.imgur.com/mPXRnK9.png" height="162" width="162" alt="Super Hot">
-            <div class="overlay">
-               <h2>Super Hot</h2>
-               <a class="info" href="/geems/super-hot">Speel</a>
-            </div>
-        </div>
-    </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-        <div class="hovereffect" id="lo">
-            <img class="img-responsive" src="https://i.imgur.com/3rc9sd7.png" height="162" width="162" alt="Connect 4">
-            <div class="overlay">
-               <h2>Connect 4</h2>
-               <a class="info" href="/geems/connect-4">Speel</a>
-            </div>
-        </div>
-    </div>
-        </div></center></div><div class="grid-item"><center><div class="lekrkoekj-paginas"><center><h1 class="title" id="1">Lekrkoekj Pagina's</h1></center>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="hovereffect" id="lb">
-                <img class="img-responsive" src="/images/lekrkoekj-hd-square.png" height="162" width="162" alt="Social Media">
-                <div class="overlay">
-                   <h2>Social Media</h2>
-                   <a class="info" href="/lekrkoekj/social-media">Bezoek</a>
-                </div>
-            </div>
-        </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="hovereffect">
-                <img class="img-responsive" src="/images/lekrkoekj-hd-square.png" height="162" width="162" alt="Random Things">
-                <div class="overlay">
-                   <h2>Random Dingen</h2>
-                   <a class="info" href="/random-dingen">Bezoek</a>
-                </div>
-            </div>
-        </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="hovereffect">
-                <img class="img-responsive" src="/images/lekrkoekj-hd-square.png" height="162" width="162" alt="Lekrkoekj Updates">
-                <div class="overlay">
-                   <h2>Lekrkoekj Updates</h2>
-                   <a class="info" href="/lekrkoekj/lekrkoekj-updates">Bezoek</a>
-                </div>
-            </div>
-        </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="hovereffect" id="rb">
-                <img class="img-responsive" src="/images/lekrkoekj-hd-square.png" height="162" width="162" alt="Lekrkoekj Suggestions">
-                <div class="overlay">
-                   <h2>Lekrkoekj Suggesties</h2>
-                   <a class="info" href="/lekrkoekj/lekrkoekj-suggesties">Bezoek</a>
-                </div>
-            </div>
-        </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="hovereffect" id="lo">
-                <img class="img-responsive" src="/images/lekrkoekj-hd-square.png" height="162" width="162" alt="Lekrkoekj Bugs">
-                <div class="overlay">
-                   <h2>Lekrkoekj Bugs</h2>
-                   <a class="info" href="/lekrkoekj/lekrkoekj-bugs">Bezoek</a>
-                </div>
-            </div>
-        </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="hovereffect">
-                <img class="img-responsive" src="/images/lekrkoekj-hd-square.png" height="162" width="162" alt="Nice pages">
-                <div class="overlay">
-                   <h2>Lekre Pagina's</h2>
-                   <a class="info" href="/lekre-pagina-s">Bezoek</a>
-                </div>
-            </div>
-        </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="hovereffect">
-                <img class="img-responsive" src="/images/lekrkoekj-hd-square.png" height="162" width="162" alt="Nice earrape">
-                <div class="overlay">
-                   <h2>Lekrearrapej</h2>
-                   <a class="info" href="https://youtu.be/g8gDHzvtRqQ">Bezoek</a>
-                </div>
-            </div>
-        </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="hovereffect" id="ro">
-                <img class="img-responsive" src="/images/lekrkoekj-hd-square.png" height="162" width="162" alt="Lekrkoekj Home 1.0">
-                <div class="overlay">
-                   <h2>Lekrkoekj Home 1.0</h2>
-                   <a class="info" href="/lekrkoekj/lekrkoekj-home-1-0">Bezoek</a>
-                </div>
-            </div>
-        </div>
-            </div></center></div><div class="grid-item"><center><div class="populaire-geems"><center><h1 class="title" id="1">Populaire Geems</h1></center>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                <div class="hovereffect" id="lb">
-                    <img class="img-responsive" src="https://i.imgur.com/O0mFzXb.jpg" height="162" width="162" alt="Snake Trouble">
-                    <div class="overlay">
-                       <h2>Snake Trouble</h2>
-                       <a class="info" href="/geems/snake-trouble">Speel</a>
-                    </div>
-                </div>
-            </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                <div class="hovereffect">
-                    <img class="img-responsive" src="https://i.imgur.com/NE55L9T.png" height="162" width="162" alt="Cookie Clicker">
-                    <div class="overlay">
-                       <h2>Cookie Clicker</h2>
-                       <a class="info" href="/geems/cookie-clicker">Speel</a>
-                    </div>
-                </div>
-            </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                <div class="hovereffect">
-                    <img class="img-responsive" src="https://i.imgur.com/YXfde52.jpg" height="162" width="162" alt="Pac-Xon">
-                    <div class="overlay">
-                       <h2>Pac-Xon</h2>
-                       <a class="info" href="/geems/pac-xon">Speel</a>
-                    </div>
-                </div>
-            </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                <div class="hovereffect" id="rb">
-                    <img class="img-responsive" src="https://i.imgur.com/e44NXQp.jpg" height="162" width="162" alt="Papa's Pancakeria">
-                    <div class="overlay">
-                       <h2>Papa's Pancakeria</h2>
-                       <a class="info" href="/geems/papa-s-pancakeria">Speel</a>
-                    </div>
-                </div>
-            </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                <div class="hovereffect">
-                    <img class="img-responsive" src="https://i.imgur.com/0I5NHOk.png" height="162" width="162" alt="Tetris Marathon">
-                    <div class="overlay">
-                       <h2>Tetris Marathon</h2>
-                       <a class="info" href="/geems/tetris-marathon">Speel</a>
-                    </div>
-                </div>
-            </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                <div class="hovereffect">
-                    <img class="img-responsive" src="https://i.imgur.com/6BhVqsv.png" height="162" width="162" alt="Snail Bob 1">
-                    <div class="overlay">
-                       <h2>Bob de Slak 1</h2>
-                       <a class="info" href="/geems/bob-de-slak-1">Speel</a>
-                    </div>
-                </div>
-            </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                <div class="hovereffect">
-                    <img class="img-responsive" src="https://i.imgur.com/EshgW3d.jpg" height="162" width="162" alt="Atari Breakout">
-                    <div class="overlay">
-                       <h2>Atari Breakout</h2>
-                       <a class="info" href="/geems/atari-breakout">Speel</a>
-                    </div>
-                </div>
-            </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                <div class="hovereffect">
-                    <img class="img-responsive" src="https://i.imgur.com/7V18VhG.png" height="162" width="162" alt=" Pokémon Tower Defense 2">
-                    <div class="overlay">
-                       <h2>Pokémon Tower Defense 2</h2>
-                       <a class="info" href="/geems/pokemon-tower-defense-2">Speel</a>
-                    </div>
-                </div>
-            </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                <div class="hovereffect" id="lo">
-                    <img class="img-responsive" src="https://i.imgur.com/MBmP0sZ.png" height="162" width="162" alt="Run 3">
-                    <div class="overlay">
-                       <h2>Run 3</h2>
-                       <a class="info" href="/geems/run-3">Speel</a>
-                    </div>
-                </div>
-            </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                <div class="hovereffect">
-                    <img class="img-responsive" src="https://i.imgur.com/IMPJjYB.jpg" height="162" width="162" alt="Snail Bob 7">
-                    <div class="overlay">
-                       <h2>Bob de Slak 7</h2>
-                       <a class="info" href="/geems/bob-de-slak-7">Speel</a>
-                    </div>
-                </div>
-            </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                <div class="hovereffect">
-                    <img class="img-responsive" src="https://i.imgur.com/jsF3jjK.jpg" height="162px" width="162" alt="Papa's Cheeseria">
-                    <div class="overlay">
-                       <h2>Papa's Cheeseria</h2>
-                       <a class="info" href="/geems/papa-s-cheeseria">Speel</a>
-                    </div>
-                </div>
-            </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                <div class="hovereffect" id="ro">
-                    <img class="img-responsive" src="https://i.imgur.com/kkAy61Q.jpg" height="162" width="162" alt="Pac-Man">
-                    <div class="overlay">
-                       <h2>Pac-Man</h2>
-                       <a class="info" href="/geems/pac-man">Speel</a>
-                    </div>
-                </div>
-            </div>
-                </div></center></div><div class="grid-item"><center>
-                        <div class="home-mobile-message"><h2>LKG op je telefoon</h2><p>Lekrkoekj Geems werkt niet volledig op telefoons. Geems zijn verborgen, omdat telefoons geen Flash ondersteunen. Normale Lekrkoekj Pagina's en Lekre Pagina's kan je wel bekijken.</p>
-                        <p>Binnenkort worden telefoons misschien meer ondersteund.</p></div>
-                    <h2>Lekrknopj's</h2>
-                    <p>(Tijdelijk?) verwijderd.</p>
-                    <p><!--<a href="https://bit.ly/2Mo3VUK"><button class="normal on-white">Klik hier als je hiervan houdt</button></a></p>
-                        <a href="https://bit.ly/2MEPgVU"><button class="normal on-white" style="color:red;">Dit is lekr rood</button></a><a href="https://www.youtube.com/watch?v=WtlR2TgG0kQ"><button class="normal on-white" style="margin-left: 5px">Lekrzeehondj</button></a><a href="https://bit.ly/1uGSeZj"><button class="normal on-white" style="margin-left: 5px">Lekrvleesj</button></a><p><a href="https://bit.ly/2u6PEU3"><button class="normal on-white">Lekrblaasj</button></a><a href="https://bit.ly/UoPAvI"><button class="normal on-white" style="margin-left: 5px">( ͡° ͜ʖ ͡°)</button></a><a href="https://bit.ly/2ToOMJ1"><button class="normal on-white" style="margin-left: 5px">Koetsj</button></a><a href="https://bit.ly/2IbKb7k"><button class="normal on-white" style="margin-left: 5px">Intel Core i69</button></a><a href="https://bit.ly/2FoOZnv"><button class="normal on-white" style="margin-left: 5px">Lekrbotj</button></a></p>--></center></div></div>
 
-
-</div>
-</div>
-    
-            <!-- Lekre Effectj's -->
-    
-            <div class="effect-bar blue"><center><table width="100%"><tr><td width="50%"><center><a href="#bottom"><button class="normal" onclick="showEffects()">Lekre Effectj's</button></a></center></td><td width="50%"><center><a href="#bottom"><button class="normal" onclick="showThemeOptions()">Thema Instellingen</button></a></center></td></tr></table>
-                <div class="effect-menu">
-                <p>Filters, effecten en animaties</p>
-                <button class="normal" id="invert" onclick="toggleInvert()">Draai kleuren om</button><button class="normal" id="saturation" onclick="toggleSaturation()" >10000% Saturation</button><button class="normal" id="turn" onclick="toggleTurn()" >Ondersteboven</button><button class="normal" id="site-spin" onclick="toggleSiteSpin()" >Site draaien</button><button class="normal" id="slow-site-spin" onclick="toggleSlowSiteSpin()" >Sloom site draaien</button><button class="normal" id="img-turn" onclick="toggleTurnIMG()" >Draai plaatj's</button><button class="normal" id="text-turn" onclick="toggleTurnText()" >Draai tekst</button><button class="normal" id="all-turn" onclick="toggleTurnAll()">Draai alles</button><button class="normal" id="all-turn-1deg" onclick="toggleTurnAll1deg()" >Draai alles 1°</button><button class="normal last last" id="all-turn-36deg" onclick="toggleTurnAll36deg()">Draai alles 36°</button><p>Kleuren en achtergronden</p><button class="normal" id="pink-green" onclick="togglePinkGreen()">Deeppink Tekst + Lime Achtergrond</button><button class="normal" id="pink" onclick="togglePink()">Roze Tekst</button><button class="normal" id="white" onclick="toggleWhite()">Witte Tekst</button><button class="normal last" id="white-background" onclick="toggleWhiteBackground()">Witte Achtergrond</button><p>Random Dingen</p><button class="normal" id="f-effect" onclick="toggleF()">F</button><button class="normal" id="spastic-background" onclick="toggleSpasticBackground()">Lekrachtergrondj</button><button class="normal" id="lekrdraaitj" onclick="toggleLekrdraaitj()">Lekrdraaitj</button><button class="normal" id="lekrknippertj" onclick="toggleLekrknippertj()">Lekrknippertj</button><button class="normal" id="lekrschaduwtj" onclick="toggleLekrschaduwtj()">Lekrschaduwtj</button><button class="normal" id="lekrschaduwtj-inset" onclick="toggleLekrschaduwtjInset()">Lekrschaduwtj Inset</button><button class="normal" id="lekrzoompj" onclick="toggleLekrzoompj()">Lekrzoompj</button><button class="normal" id="lekrrandj" onclick="toggleLekrrandj()">Lekrrandj</button><button class="normal last" id="lekrdikrandj" onclick="toggleLekrdikrandj()">Lekrdikrandj</button><p>Andere Dingen</p><button class="normal" id="activate-all" onclick="activateAll()">Activeer alles</button><button class="normal last" id="deactivate-all" onclick="deactivateAll()">Deactiveer alles</button></div>
-                <div class="theme-menu"><p>Achtergronden</p><button class="normal" id="old" onclick="toggleOld()">Lekrkoekj Achtergrond</button><button class="normal last" id="lkg4bg" onclick="toggleLKG4BG()">LKG 4.0.0 Achtergrond</button><p>Kleuren</p><button class="normal" id="green-theme" onclick="toggleGreenTheme()">Groen</button><button class="normal" id="turquoise-theme" onclick="toggleTurquoiseTheme()">Turquoise</button><button class="normal" id="purple-theme" onclick="togglePurpleTheme()">Paars</button><button class="normal" id="pink-theme" onclick="togglePinkTheme()">Roze</button><button class="normal" id="orange-theme" onclick="toggleOrangeTheme()">Oranje</button><button class="normal" id="red-theme" onclick="toggleRedTheme()">Rood</button></div>
-             </center></div>
-
-            <div id="bottom"></div>
-
+        <footer>
+            <div id="footer-inside">
+                <div>
+                    <center>
+                        <img id="footer-img" src="/images/lkg-logo-small-text.png" alt="LKG Logo">
+                        <p id="footer-copyright">2017-2020 - Lekrkoekj Geems</p>
+                    </center>
+                </div>
+                <hr>
+                <div>
+                    <center>
+                        <h2>Contact</h2>
+                        <p>
+                            <a href="mailto:lekrkoekjgeems@gmail.com">lekrkoekjgeems@gmail.com</a>
+                        </p>
+                        <p>
+                            <a href="/lkg-discord">Discord</a>
+                        </p>
+                    </center>
+                </div>
+                <hr>
+                <div>
+                    <center>
+                        <h2>LKG Links</h2>
+                        <p>
+                            <a href="/lkg-discord">LKG Discord</a>
+                        </p>
+                        <p>
+                            <a href="/suggesties">Stuur suggesties in</a>
+                        </p>
+                        <a href="/bugs">Stuur bugreports in</a>
+                    </p>
+                </center>
+            </div>
+        </footer>
     </body>
 </html>
