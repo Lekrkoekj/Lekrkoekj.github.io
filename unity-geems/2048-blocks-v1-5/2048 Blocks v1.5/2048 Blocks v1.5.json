@@ -1,0 +1,16 @@
+{
+"companyName": "Lekrkoekj",
+"productName": "Blocks",
+"productVersion": "1.5-b1",
+"dataUrl": "2048 Blocks v1.5.data.unityweb",
+"wasmCodeUrl": "2048 Blocks v1.5.wasm.code.unityweb",
+"wasmFrameworkUrl": "2048 Blocks v1.5.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#131719",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.13f1"
+}
