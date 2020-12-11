@@ -115,15 +115,15 @@ footer {
     width: 251.17px;
 }
 .android-download-button span::after {
-    content: "      Stable version (1.5.2)";
+    content: "      Stable version (1.5.3)";
     font-size: 13px;
 }
 .lkg-play-button span::after {
-    content: "      Latest version (1.5.2)";
+    content: "      Latest version (1.5.3)";
     font-size: 13px;
 }
 .windows-download-button span::after {
-    content: "      Latest version (1.5.2)";
+    content: "      Latest version (1.5.3)";
     font-size: 13px;
 }
 .github-button span::after {
