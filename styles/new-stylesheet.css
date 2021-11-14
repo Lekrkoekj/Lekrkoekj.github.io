@@ -7,6 +7,7 @@ body {
     color: #595959;
     font-family: Lato;
     font-size: 16px;
+    letter-spacing: -0.5px;
 }
 body {
     --lkg-blue: #5facea;
@@ -22,7 +23,7 @@ body#sticky-menu {
     padding-top: 78px;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: Nexa;
+    font-family: Lexend;
     color: #444444;
     font-weight: bold;
     margin-top: 10px;
@@ -44,6 +45,10 @@ button.normal {
 button.normal:hover {
     box-shadow: 0px 2px 7px 0px #0000004a;
     transform: translate(0px, -5px);
+}
+.announcement-box {
+    padding: 25px;
+    background: #cdaa000f;
 }
 nav a {
     color: #333333;
@@ -93,7 +98,7 @@ body#sticky-menu .nav-ul {
 .menu-button {
     border: 0;
     background: transparent;
-    font-family: Nexa;
+    font-family: Lexend;
     font-weight: bold;
     font-size: 16px;
     transition: 0.3s;
@@ -105,8 +110,8 @@ body#sticky-menu .nav-ul {
     user-select: none;
 }
 @font-face {
-    font-family: Nexa;
-    src: url("/fonts/NexaBold.otf") format("opentype"), url("/fonts/NexaRegular.otf") format("opentype"), url("/fonts/NexaLight.otf") format("opentype")
+    font-family: Lexend;
+    src: url("/fonts/LexendBold.otf") format("opentype"), url("/fonts/LexendRegular.otf") format("opentype"), url("/fonts/LexendLight.otf") format("opentype")
 }
 /* Footer */
 footer h2 {
@@ -149,198 +154,62 @@ footer a {
     color: white !important;
 }
 /* Homepage */
-.slideshow-container {
+.homepage-game {
+    background-position: center;
+}
+.homepage-game h2 {
+    color: white;
+}
+.homepage-game#blocks img {
+    max-width: 890px;
     width: 100%;
-    position: relative;
-    margin: auto;
-    font-family: Lato;
 }
-@media only screen and (min-width: 2560px) {
-        .mySlides, .mySlides td {
-            height: 572px !important;
-        }
-}
-@media only screen and (min-width: 1920px) {
-    .mySlides, .mySlides td {
-        height: 457px;
-    }
-}
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #5facea;
-    opacity: 0.7;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: pointer;
-    transition: background-color 0.6s ease;
-}
-.active {
-    opacity: 1;
-}
-.fade {
-    animation: slideshow-fade 0.25s linear;
-}
-@keyframes fade {
-    0% {opacity: 0} 
-    100% {opacity: 1}
-}
-@keyframes slideshow-fade {
-    0% {transform: scale(0.9); opacity: 0;}
-    100% {transform: scale(1); opacity: 1;}
-}
-@media only screen and (max-width: 300px) {
-    .text {
-        font-size: 11px
-    }
-}
-.slideshow-container p {
-    margin-top: 5px !important;
-}
-.dot {
-    cursor: pointer;
-}
-.home-grid {
-    background: #f5f5f5;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding-bottom: 20px;
-}
-.title {
-    font-size: 29px;
-    padding-bottom: 0px;
-    margin: 20px 0px;
-}
-.populaire-geems, .lekrkoekj-paginas, .nieuwste-geems, .lekrkoekj-geems {
+.homepage-game#clicker img {
+    max-width: 440px;
     width: 100%;
-    height: 398px;
-    transition: 0.3s;
-    background-color: #ffffffbf;
-    max-width: 648px;
-    border-radius: 5px;
+}
+.homepage-game#dash img {
+    max-width: 568px;
+    width: 100%;
+}
+.homepage-game#roller img {
+    max-width: 530px;
+    width: 100%;
+}
+.homepage-game .background-blur {
+    padding: 50px;
+    backdrop-filter: blur(2px);
+    background-color: #1317198c;
+}
+.homepage-game#blocks  {
+    background-image: url(/images/2048-blocks-bg.png);
+}
+.homepage-game#clicker  {
+    background-image: url(/images/lkc-home-background.png);
+}
+.homepage-game#dash  {
+    background-image: url(/images/lkd-home-background.png);
+}
+.game-play-button {
+    background: #5facea;
+    color: white;
+    border: 0;
     box-shadow: 0px 2px 7px 0px #0000001a;
-    transition: 0.3s;
-    overflow: hidden;
-    margin-top: 20px;   
-}
-.lekrkoekj-paginas {
-    height: 239px;
-}
-.populaire-geems {
-    height: 560px;
-}
-.hovereffect {
-    width:162px;
-    height:162px;
-    float:left;
-    overflow:hidden;
-    position:relative;
-    text-align:center;
-    cursor:default;
-    transition: 0.3s;
-    z-index: 1;
-}
-.hovereffect .overlay {
-    width:100%;
-    height:100%;
-    position:absolute;
-    overflow:hidden;
-    top:0;
-    left:0;
-    opacity:0;
-    background-color:rgba(0,0,0,0.5);
-    transition: 0.3s;
-}
-.hovereffect img {
-    display:block;
-    position:relative;
-    transition: 0.3s;
-}
-.hovereffect h2 {
-    color:black;
-    text-align:center;
-    position:relative;
-    font-size:17px;
-    background:#f0f0ebbf;
-    -webkit-transform:translatey(-100px);
-    -ms-transform:translatey(-100px);
-    transform:translatey(-100px);
-    transition: 0.3s;
-    padding:10px;
-    width: 135px;
-    display: inline-block;
-    border-radius: 5px;
-    font-weight: normal;
-    box-shadow: 0px 2px 7px 0px #0000001a;
-}
-.hovereffect a.info {
-    text-decoration:none;
-    display:inline-block;
-    text-transform:uppercase;
-    color: black;
-    border: none;
-    background: #f0f0ebbf;
-    opacity:0;
-    filter:alpha(opacity=0);
-    transition: 0.3s;
-    margin:25px 0 0;
-    padding:7px 14px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 7px 0px #0000001a;
-    font-family: Lato;
+    cursor: pointer;
     font-size: 16px;
+    font-family: Lato;
+    padding: 20px;
+    align-items: center; 
+    margin: 20px;
+    border-radius: 5px;
+    transition: 0.2s;
+    width: 251.17px;
 }
-.hovereffect:hover img {
-    filter: blur(1px);
-    backface-visibility: hidden;
-    -ms-transform:scale(1.2);
-    -webkit-transform:scale(1.2);
-    transform:scale(1.2);
+.game-play-button:hover {
+    box-shadow: 0px 2px 7px 0px #0000004a;
+    transform: translate(0px, -5px);
 }
-.hovereffect:hover .overlay {
-    opacity:1;
-    filter:alpha(opacity=100);
-}
-.hovereffect:hover h2,.hovereffect:hover a.info {
-    opacity:1;
-    filter:alpha(opacity=100);
-    -ms-transform:translatey(0);
-    -webkit-transform:translatey(0);
-    transform:translatey(0);
-}
-.hovereffect:hover a.info {
-    -webkit-transition-delay:0s !important;
-    transition-delay:0s !important;
-}
-.hovereffect#lb {
-    border-radius: 5px 0px 0px 0px;
-}
-.hovereffect#rb {
-    border-radius: 0px 5px 0px 0px;
-}
-@media only screen and (max-width: 930px) {
-    .announcement-td2, .populaire-geems, .lekrkoekj-paginas, .nieuwste-geems {
-        display: none;
-    }
-    .home-mobile-message {
-        display: block;
-    }
-    .game-img {
-        width: 100px;
-        height: 105px;
-    }
-}
-@media only screen and (min-width: 930px) {
-    .home-mobile-message, div#myNav {
-        display: none;
-    }
-}
-@media only screen and (max-width: 1313px) {
-    .home-grid {
-        grid-template-columns: auto;
-    }
-}
+
 /* Categories */
 .category-header-container {
     height: 150px;
@@ -427,7 +296,7 @@ button#fullscreen {
     position: absolute;
     border-radius: 0px 0px 5px 0px;
     background: #ffffffe3;
-    font-family: Nexa;
+    font-family: Lexend;
     font-size: 16px;
     padding: 20px;
     cursor: pointer;
@@ -445,7 +314,7 @@ div#container object {
 div#container {
     margin: 25px;
 }
-body.dark img[alt="Andere Geems"] {
+img[alt="Andere Geems"] {
     filter: invert(1);
 }
 div#container object, div#container iframe {
@@ -458,60 +327,53 @@ div#container object, div#container iframe {
     grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
 }
 /* Dark Mode */
-body.dark h1, body.dark h2, .body-dark h3, .body-dark h4, .body-dark h5, .body-dark h6 {
-    color: white;
+@media (prefers-color-scheme: dark) { 
+    .game-play-button {
+        background: #1b2022;
+    }
+    h1, h2, .body-dark h3, .body-dark h4, .body-dark h5, .body-dark h6 {
+        color: white;
+    }
+    body#sticky-menu .nav-ul {
+        background: #3236397d;
+    }
+    .menu-button {
+        color: white;
+    }
+    body {
+        background: #131719;
+        color: white;
+    }
+    footer {
+        background: #323639;
+    }
+    .dot {
+        background-color: gray;
+    }
+    nav li {
+        color: white;
+    }
+    button.normal {
+        background: #323639;
+    }
+    nav li:hover {
+        border-top-color: gray;
+    }
+    .centered-404 h1, .centered-404 .inside-404 p {
+        color: white !important;
+    }
+    a {
+        color: #00a1ff;
+    }
+    button#fullscreen {
+        background: #131719e3;
+        color: white;
+    }
+    .announcement-box {
+        background: #1b2022;
+    }
 }
-body.dark#sticky-menu .nav-ul {
-    background: #3236397d;
-}
-body.dark .menu-button {
-    color: white;
-}
-body.dark img#moon, img#sun {
-    display: none;
-}
- img#moon, body.dark img#sun {
-    display: inherit;
-}
-body.dark {
-    background: #131719;
-    color: white;
-}
-body.dark footer {
-    background: #323639;
-}
-body.dark .dot {
-    background-color: gray;
-}
-body.dark nav li {
-    color: white;
-}
-body.dark button.normal {
-    background: #323639;
-}
-body.dark nav li:hover {
-    border-top-color: gray;
-}
-body.dark .home-grid {
-    background: #1b2022;
-}
-
-body.dark .populaire-geems, body.dark .lekrkoekj-paginas, body.dark .nieuwste-geems, body.dark .lekrkoekj-geems {
-    background: #323639;
-}
-body.dark .hovereffect a.info, body.dark .hovereffect h2 {
-    background: #1b2022bf;
-    color: white;
-}
-body.dark #darkModeText {
-    font-size: 0px;
-}
-body.dark #darkModeText::after {
-    font-size: 16px;
-    content: 'Licht';
-}
-
-/* 404 pages */
+/* 404 page */
 .centered-404 {
     height: 1219px;
     background-size: cover;
@@ -527,10 +389,6 @@ body.dark #darkModeText::after {
 .home-section h1, .inside-404 h1 {
     text-align: center; 
     font-size: 80px;
-    animation: text-fade-in 1s;
-    animation-delay: 0.3s;
-    animation-fill-mode: forwards;
-    opacity: 0;
 }
 .home-section, .inside-404 {
     width: 98%
@@ -539,10 +397,6 @@ body.dark #darkModeText::after {
     color: white; 
     text-align: center;
     font-size: 20px;
-    animation: text-fade-in 1s;
-    animation-delay: 0.6s;
-    animation-fill-mode: forwards;
-    opacity: 0;
 } 
 @keyframes text-fade-in {
     0% {transform: translateY(+10px); opacity: 0;}

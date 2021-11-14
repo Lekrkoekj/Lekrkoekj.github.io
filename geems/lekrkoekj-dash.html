@@ -3,34 +3,41 @@
     <head>
         <title>Lekrkoekj Dash - Lekrkoekj Geems</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Lato|PT+Sans&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="/lkd-favicon.ico">
-    <meta name="description" content="Play Lekrkoekj Dash now on LKG!"/>
+        <link href="https://fonts.googleapis.com/css?family=Lato|PT+Sans|Lexend&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="/lkd-favicon.ico">
+        <meta name="description" content="Play Lekrkoekj Dash now on LKG!"/>
         <meta property="og:image" content="https://lekrkoekj.github.io/images/lkd-mini-logo-text.png"/>
         <meta property="og:image:secure_url" content="https://lekrkoekj.github.io/images/lkd-mini-logo-text.png" />
 
         <link rel="stylesheet" href="/styles/new-stylesheet.css">
         <!-- Scripts -->
-        <script src="/scripts/darkmode.js"></script>
+        <script src="/scripts//announcement.js"></script>
+        
     </head>
     <body>
         <nav>
             <ul class="nav-ul">
-                <li id="logo"><a href="/"><img src="/images/lkg-logo-small.webp" width="78px" alt="Lekrkoekj Geems" id="site-logo"></a></li>
-                <li><button class="menu-button" aria-label="Dark Mode Switch" onclick="darkModeSwitch()"><img src="/images/moon-icon.webp" alt="Donker" id="moon"><img src="/images/sun-icon.webp" id="sun" alt="Licht"><br><span id="darkModeText">Dark</span></button></li>
+                <li id="logo"><a href="/"><img src="/images/lkg-logo-small-text.png" width="78px" alt="Lekrkoekj Geems" id="site-logo"></a></li>
                 <li><a href="https://lekr.site" aria-label="Lekr.site"><button class="menu-button"><img src="https://lekr.site/images/me.png" alt="Lekr.site"><br><span>Lekr.site</span></button></a></li>
-                <li><a href="/geems" aria-label="Games"><button class="menu-button"><img src="/images/lkd-icon-3.png" alt="Games"><br><span>Games</span></button></a></li>
-                <li><a href="/lkg" aria-label="LKG"><button class="menu-button"><img src="/images/lkg-logo-small-text.png" alt="LKG"><br><span>LKG</span></button></a></li>
-                <li><a href="/" aria-label="Home"><button class="menu-button"><img src="/images/lekrkoekj-hd.png" alt="Home"><br><span>Home</span></button></a></li>
+                <li><a href="/" aria-label="Home"><button class="menu-button"><img src="/images/lkg-logo-small-text.png" alt="Home"><br><span>Home</span></button></a></li>
             </ul>
         </nav>
+        <div class="announcement-box">
+            <center>
+                <h2>Announcement</h2>
+                <p id="announcement-text"></p>
+                <a id="button1link" href=""><button class="normal"id="button1"></button></a>
+                <a id="button2link" href=""><button class="normal"id="button2"></button></a>
+                <a id="button3link" href=""><button class="normal"id="button3"></button></a>
+            </center>
+        </div>
         <div class="category-header-container" style="background-image: url(/images/lkd-home-background-2.png);"><div class="category-header-overlay"><div class="category-header-title-container"><center><p style="
             margin: 0;
             font-size: 8px;
             color: transparent;
         ">p</p><img src="/images/lkd-logo.png" height="102px"></center></div></div></div>
-        <div class="lkd-links"><div><center><p>Download the game!</p><a href="/lkd" target="_blank"><button class="normal">Download</button></a></center></div><div><center><p>Listen to the game's music!</p><a href="https://drive.google.com/drive/folders/1-KuZ-pqaZBzh4C_zjgMxUtXUctRf0i8i?usp=sharing" target="_blank"><button class="normal">Listen</button></a></center></div><div><center><p>Get notifications about game updates!</p><a href="/lkg-discord" target="_blank"><button class="normal">Join the Discord server (DUTCH)</button></a></center></div></div>
+        <div class="lkd-links"><div><center><p>Download the game!</p><a href="/lkd" target="_blank"><button class="normal">Download</button></a></center></div><div><center><p>Listen to music from my games!</p><a href="https://drive.google.com/drive/folders/1-KuZ-pqaZBzh4C_zjgMxUtXUctRf0i8i?usp=sharing" target="_blank"><button class="normal">Listen</button></a></center></div><div><center><p>Get notifications for new updates!</p><a href="/lkg-discord" target="_blank"><button class="normal">Join the Discord server</button></a></center></div></div>
         <center><p>Want to put the game on your own site? Please <a href="/lkg-discord">DM me on Discord</a> or <a href="mailto:me@lekrkoekj.nl">send me an email!</a></p></center>
         <div id="container"><center><button class="button" id="fullscreen">Fullscreen</button>
             <iframe src="/unity-geems/lekrkoekj-dash-current/game.html" width="1152px" height="768px"></iframe></center>

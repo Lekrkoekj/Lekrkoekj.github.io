@@ -3,29 +3,36 @@
     <head>
         <title>Roller - Lekrkoekj Geems</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Lato|PT+Sans&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="/roller-favicon.ico">
-    <meta name="description" content="Play Roller now on LKG!"/>
+        <link href="https://fonts.googleapis.com/css?family=Lato|PT+Sans|Lexend&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="/roller-favicon.ico">
+        <meta name="description" content="Play Roller now on LKG!"/>
         <meta property="og:image" content="https://lekrkoekj.github.io/images/roller-icon.png"/>
         <meta property="og:image:secure_url" content="https://lekrkoekj.github.io/images/roller-icon.png" />
 
         <link rel="stylesheet" href="/styles/new-stylesheet.css">
 
         <!-- Scripts -->
-        <script src="/scripts/darkmode.js"></script>
+        <script src="/scripts//announcement.js"></script>
+        
     </head>
     <body>
         <nav>
             <ul class="nav-ul">
-                <li id="logo"><a href="/"><img src="/images/lkg-logo-small.webp" width="78px" alt="Lekrkoekj Geems" id="site-logo"></a></li>
-                <li><button class="menu-button" aria-label="Dark Mode Switch" onclick="darkModeSwitch()"><img src="/images/moon-icon.webp" alt="Donker" id="moon"><img src="/images/sun-icon.webp" id="sun" alt="Licht"><br><span id="darkModeText">Dark</span></button></li>
+                <li id="logo"><a href="/"><img src="/images/lkg-logo-small-text.png" width="78px" alt="Lekrkoekj Geems" id="site-logo"></a></li>
                 <li><a href="https://lekr.site" aria-label="Lekr.site"><button class="menu-button"><img src="https://lekr.site/images/me.png" alt="Lekr.site"><br><span>Lekr.site</span></button></a></li>
-                <li><a href="/geems" aria-label="Games"><button class="menu-button"><img src="/images/lkd-icon-3.png" alt="Games"><br><span>Games</span></button></a></li>
-                <li><a href="/lkg" aria-label="LKG"><button class="menu-button"><img src="/images/lkg-logo-small-text.png" alt="LKG"><br><span>LKG</span></button></a></li>
-                <li><a href="/" aria-label="Home"><button class="menu-button"><img src="/images/lekrkoekj-hd.png" alt="Home"><br><span>Home</span></button></a></li>
+                <li><a href="/" aria-label="Home"><button class="menu-button"><img src="/images/lkg-logo-small-text.png" alt="Home"><br><span>Home</span></button></a></li>
             </ul>
         </nav>
+        <div class="announcement-box">
+            <center>
+                <h2>Announcement</h2>
+                <p id="announcement-text"></p>
+                <a id="button1link" href=""><button class="normal"id="button1"></button></a>
+                <a id="button2link" href=""><button class="normal"id="button2"></button></a>
+                <a id="button3link" href=""><button class="normal"id="button3"></button></a>
+            </center>
+        </div>
         <div class="category-header-container" style="background-image: url(https://i.imgur.com/vnW9CtK.png);"><div class="category-header-overlay"><div class="category-header-title-container"><center><p style="
             margin: 0;
             font-size: 8px;
