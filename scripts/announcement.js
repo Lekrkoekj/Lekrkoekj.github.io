@@ -1,7 +1,7 @@
-var announcementText = "Sorry for the hassle! The lekrkoekj.nl expired but will be back up soon! LKG has also been updated. The entire site is now in English and I removed a lot of things that weren't necessary anymore. The homepage has been redesigned and I added this nice Announcement box!<br><br>Also, if you didn't know yet, I have a YouTube channel with over 1000 subs! Check it out via the button below!";
+var announcementText = "";
 
-var button1link = "https://youtube.com/c/Lekrkoekj";
-var button1text = "My YouTube Channel";
+var button1link = "";
+var button1text = "";
 
 var button2link = "";
 var button2text = "";
