@@ -1,4 +1,4 @@
-var announcementText = "The lekrkoekj.nl domain is now back up! :D";
+var announcementText = "";
 
 var button1link = "";
 var button1text = "";
