@@ -1,0 +1,171 @@
+<html>
+<head>
+    <title>BeatSaver upvote counter</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Righteous&family=Secular+One&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: "Exo 2";
+            margin: 0;
+            color: white;
+            background: #131719;
+            background-size: cover;
+            background-position: center;
+            font-family: 'Secular One';
+            overflow: hidden;
+            transition: 0.3s;
+        }
+        .blurredBehind {
+            height: 100%;
+            backdrop-filter: blur(27px);
+            background: #13171980;
+            padding-top: 20px;
+        }
+        input#mapperInput {
+            font-size: 16px;
+            font-family: "Secular One";
+            border: 2px solid #323639;
+            background: #1b2022;
+            color: white;
+            height: 50px;
+            padding: 0px 10px;
+            border-radius: 15px 0px 0px 15px;
+        }
+        button#checkButton {
+            height: 50px;
+            font-family: 'Secular One';
+            background: #323639;
+            border: 3px solid #323639;
+            border-radius: 0px 15px 15px 0px;
+            color: white;
+            padding: 0px 10px;
+            cursor: pointer;
+        }
+        img#avatarImg {
+            width: 200px;
+            border-radius: 100px;
+            box-shadow: 2px 5px 5px #000000a8;
+            
+        }
+        img#avatarImg:hover {
+            animation-name: spin;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; 
+        }
+        hr {
+            border-color: #adadad6b;
+            width: 50%;
+            border-width: 2px;
+            border-style: solid;
+            margin: 20px;
+        }
+        div#resultsArea {
+            animation: fade-in 2s ease-in-out;
+        }
+
+        @keyframes fade-in {
+            0% {opacity: 0};
+            100% {opacity: 1}
+        }
+        @keyframes spin {
+            from {
+                transform:rotate(0deg);
+            }
+            to {
+                transform:rotate(360deg);
+            }
+        }
+    </style>
+
+    <script>
+        let BSmapper100upvoteAmount;
+        let mapperUpvotes;
+        let mapperImageUrl = "";
+
+        async function getBSmapper10upvotes() {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    // what to do when complete
+                    let mapperObject = {};
+                    mapperObject = JSON.parse(this.responseText);
+                    BSmapper100upvoteAmount = mapperObject.stats.totalUpvotes;
+                    
+                    getMapperUpvotes();
+                }
+            };
+            xmlhttp.open("GET", "https://api.beatsaver.com/users/name/ryhme", true);
+            await xmlhttp.send();
+            
+        }
+
+        async function getMapperUpvotes() {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    // what to do when complete
+                    let mapperObject = {};
+                    mapperObject = JSON.parse(this.responseText);
+                    mapperImageUrl = mapperObject.avatar;
+                    document.getElementById("avatarImg").src = mapperImageUrl;
+                    console.log(mapperImageUrl);
+                    mapperUpvotes = mapperObject.stats.totalUpvotes;
+                    setBackgroundImage(mapperImageUrl);
+                    
+                    showDifference();
+                }
+            };
+            xmlhttp.open("GET", "https://api.beatsaver.com/users/name/" + document.getElementById("mapperInput").value, true);
+            await xmlhttp.send();
+        }
+
+        function showDifference() {
+            console.log(BSmapper100upvoteAmount);
+            console.log(mapperUpvotes);
+            let upvoteDifference = BSmapper100upvoteAmount - mapperUpvotes;
+
+            // document.getElementById("inputArea").style.display = "none";
+            document.getElementById("resultsArea").style.display = "block";
+            
+            document.getElementById("mapperName").innerText = document.getElementById("mapperInput").value;
+            document.getElementById("differenceText").innerHTML = "<b>" + upvoteDifference + "</b>";
+            document.getElementById("moreDetailsText").innerHTML = "You currently have <b>" + mapperUpvotes + "</b> upvotes, while the #100 mapper has <b>" + BSmapper100upvoteAmount + "</b> upvotes."
+        }
+
+
+        function setBackgroundImage(img) {
+            document.body.style.backgroundImage = "url(" + img + ")";
+        }
+
+    </script>
+</head>
+<body>
+    <div class="blurredBehind">
+        <h1 style="text-align: center;">How many upvotes until #100?</h1>
+        <p style="text-align: center;">How long will it take you to be in the top 100 mappers on BeatSaver?</p>
+        <center><hr></center>
+        <div id="inputArea">
+            <center>
+                <input type="text" placeholder="Enter your BeatSaver username." id="mapperInput"/>
+                <button onclick="getBSmapper10upvotes()" id="checkButton">Check</button>
+            </center>
+        </div>
+        <div id="resultsArea" style="display: none;">
+            
+            <center>
+                <hr>
+                <img src="https://beatsaver.com/static/beatsaver_logo.svg" id="avatarImg"/>
+                <h2 id="mapperName"></h2>
+                <p id="differenceText" style="font-size: 65px; margin-top: -22px; margin-bottom: -31px;"></p>
+
+                <p>upvotes left to reach #100!</p>
+                <p id="moreDetailsText">You currently have ... upvotes, while the #100 mapper has ....</p>
+            </center>
+        </div>
+    </div>
+</body>
+</html>
