@@ -94,6 +94,15 @@
         let mapperUpvotes;
         let mapperImageUrl = "";
 
+        function getNameFromUrl() {
+            if(document.URL.includes("?name=")) {
+                document.getElementById("mapperInput").value = document.URL.split("?name=")[1];
+                document.getElementById("checkButton").click();
+                console.log("name")
+            }
+            
+        }
+
         function submitWithSpacebar(textbox) {
             if (event.key === "Enter") {
                 document.getElementById("checkButton").click();
@@ -166,14 +175,14 @@
             }
         }
 
-
         function setBackgroundImage(img) {
             document.body.style.backgroundImage = "url(" + img + ")";
+            console.log("bg set")
         }
 
     </script>
 </head>
-<body>
+<body onload="getNameFromUrl()">
     <div class="blurredBehind">
         <h1 style="text-align: center;">How many upvotes until #100?</h1>
         <p style="text-align: center;">How long will it take you to be in the top 100 mappers on BeatSaver?</p>
