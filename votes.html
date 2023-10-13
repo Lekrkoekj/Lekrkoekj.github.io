@@ -94,6 +94,8 @@
         let mapperUpvotes;
         let mapperImageUrl = "";
 
+        let nameOfMapper100 = "Scarladore";
+
         function getNameFromUrl() {
             if(document.URL.includes("?name=")) {
                 document.getElementById("mapperInput").value = document.URL.split("?name=")[1];
@@ -123,7 +125,7 @@
                     getMapperUpvotes();
                 }
             };
-            xmlhttp.open("GET", "https://api.beatsaver.com/users/name/ryhme", true);
+            xmlhttp.open("GET", "https://api.beatsaver.com/users/name/" + nameOfMapper100, true);
             await xmlhttp.send();
             
         }
