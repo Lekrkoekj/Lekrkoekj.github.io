@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | 2048 Blocks</title>
+    <title>2048 Blocks</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/2048-blocks-icon.png">
   </head>
-  <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=1366 height=768 tabindex="-1" style="width: 1366px; height: 768px; background: #1B2022"></canvas>
+  <body style="text-align: center; padding: 0; border: 0; margin: 0; overflow: hidden;">
+    <canvas id="unity-canvas" width=1366 height=768 tabindex="-1" style="width: 100%; height: 100vh; background: #1B2022;"></canvas>
     <script src="Build/2048 Blocks.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -25,9 +26,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/2048 Blocks.data.br",
-        frameworkUrl: "Build/2048 Blocks.framework.js.br",
-        codeUrl: "Build/2048 Blocks.wasm.br",
+        dataUrl: "Build/2048 Blocks.data.unityweb",
+        frameworkUrl: "Build/2048 Blocks.framework.js.unityweb",
+        codeUrl: "Build/2048 Blocks.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Lekr",
         productName: "2048 Blocks",
